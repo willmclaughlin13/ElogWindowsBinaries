@@ -1,0 +1,58 @@
+$@MID@$: 21
+Date: Sat, 18 Jun 2022 20:16:18 -0700
+Technician: Kaitlin
+Mill: Fly Tie and Lumber
+Job: 202128
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Brandon found some of&nbsp;the drawings are righthand instead of lefthand</li>
+	<li>Other system has a bug where back setting drops the saw guide
+	<ul>
+		<li>Brandon updated this system from a mystery March 27 2022 update that it was on</li>
+	</ul>
+	</li>
+	<li>Brandon grabbed the system values from the other side to use, should be&nbsp;the same because systems are identical</li>
+	<li>Brandon rewrote&nbsp;the software to change I/O and include the job switches from other side, should be the same because systems are identical</li>
+	<li>Remapping the console isn&#39;t going well. Too many inputs to handle.&nbsp;Triggers weren&#39;t wired in handles, so they&#39;re unusable</li>
+	<li>Wiring is finished, power on started</li>
+	<li>Proc switch shorted out, replaced by sawyers
+	<ul>
+		<li>Later it was found that it was replaced with the wrong kind of proc switch, which caused it not to work</li>
+	</ul>
+	</li>
+	<li>Voltages are normal but PLCs won&#39;t turn on in remote. Brandon found one of the wires was run to the wrong place</li>
+	<li>I got gradients from the temposonics (missing one, Brandon set it to 9.1000 as default).
+	<ul>
+		<li>Brandon went back later to reprogram and get gradient values from tempos</li>
+	</ul>
+	</li>
+	<li>I went to get serial numbers from the scanners but the stickers on the side were missing for four of the seven. Asked Fluffy to go up and read out the rest for me.</li>
+	<li>The internet hub wasn&#39;t working, needed to be replaced</li>
+	<li>Brandon replaces the PLC&nbsp;program because it got corrupted somehow. Unknown cause</li>
+	<li>I measured laser distances. Got help from Brandon on Guide to Laser 1</li>
+	<li>Brandon redoes the console mapping</li>
+	<li>I coiled some cables in the cabinet as cleanup</li>
+	<li>Knees not working
+	<ul>
+		<li>Brandon found there was no fuse for 301 in the remote cabinet, replaced with unused fuse 616</li>
+	</ul>
+	</li>
+	<li>Calibrating encoder: found that the encoder was slipping a lot</li>
+	<li>Chain turner seems to have an air leak
+	<ul>
+		<li>Soft dogs and chain turner were mixed up in wiring by electrician&nbsp;(513-516)</li>
+		<li>Soft dogs are being ignored on account of no one between Brandon, David, Fluffy and me knowing what it means</li>
+		<li>Brandon needs to write software for chain turner forward</li>
+	</ul>
+	</li>
+	<li>Saw guide not working
+	<ul>
+		<li>PLCs are fine, working correctly. Seems to be a millwide issue</li>
+	</ul>
+	</li>
+	<li>6AM-8PM</li>
+</ul>

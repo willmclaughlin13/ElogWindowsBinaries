@@ -1,0 +1,201 @@
+$@MID@$: 229
+Date: Tue, 09 Aug 2022 06:38:55 -0700
+Reply to: 232
+Technician: Basil
+Mill: Nicolet Hardwoods Large Side
+Job: 200902
+System: RS2
+Contact: Steve
+Phone: ???
+Issue: Hardware
+Hardware: Positioner Board
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>After hours. Steve called with knee 3 not working. He had already talked to Chris who suggested swapping the board. Steve swapped the 2 knee system&#39;s card which got them both working. I tracked his package for the board we sent a while ago, it&#39;s to be delivered today. He is sending us his bad boards.</p>
+$@MID@$: 230
+Date: Tue, 09 Aug 2022 07:27:11 -0700
+Reply to: 231
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Other
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scott called saying that the right saw was slow on bandmill offset.&nbsp; He said the left side was working fine on the bandmill offset.&nbsp; I told him that it would not be a software issue since it hasn&#39;t change in awhile.&nbsp; I told him to oil the saw rails.&nbsp; I said it also might be a servo value issue.&nbsp; He complained again that they run into the end of the log about every 20 logs.&nbsp; He also said that the HMI jogs work on moving the yokes out to the dog, but they don&#39;t work to move them back.&nbsp; After I got off the phone with Scott, I looked at the PLC code for the jogs and didn&#39;t see anything that would prevent them from working.</p>
+$@MID@$: 231
+Date: Tue, 09 Aug 2022 07:57:42 -0700
+In reply to: 230
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Other
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>They called again.&nbsp; I logged onto their PLC and found that they changed the left yoke limit to -0.060.&nbsp; I had them change it and we were able to get it set to -43.000.&nbsp; I watched the PLC while they sawed to see what might be the issue with the right saw slow to&nbsp;open on a bandmill offset.&nbsp; At first they both saw were not offsetting, I had them adjust End Point Target Tolerance to 6&quot;.&nbsp; The saws started offsetting, but I could see that the right saw was slow to get on set.&nbsp; I told Scott to lubricate the saw rail.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Scott called saying that the right saw was slow on bandmill offset.&nbsp; He said the left side was working fine on the bandmill offset.&nbsp; I told him that it would not be a software issue since it hasn&#39;t change in awhile.&nbsp; I told him to oil the saw rails.&nbsp; I said it also might be a servo value issue.&nbsp; He complained again that they run into the end of the log about every 20 logs.&nbsp; He also said that the HMI jogs work on moving the yokes out to the dog, but they don&#39;t work to move them back.&nbsp; After I got off the phone with Scott, I looked at the PLC code for the jogs and didn&#39;t see anything that would prevent them from working.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 232
+Date: Tue, 09 Aug 2022 08:47:15 -0700
+Reply to: 234
+In reply to: 229
+Technician: Basil
+Mill: Nicolet Hardwoods Large Side
+Job: 200902
+System: RS2
+Contact: Steve
+Phone: ???
+Issue: Hardware
+Hardware: Positioner Board
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Steve called again saying knee 3 completely stopped moving again. I had him try a jog box, nothing. Tried on knee 2 for a sanity check, still nothing. Turned on hydraulics and tried again. Knee 2 jogs just fine but knee 3 would try and hit a stop immediately. Determined it was beyond its limit and stuck. Manually jogging eventually freed it. Now the knee only goes all the way forward or back, classic no tempo reading. Current position isn&#39;t updating on the optimizer pc. LEDs on the back of the tempo are both off. Swap tempo (second time today doing that), expected them to swap with knee 2 which is known good, but they grabbed another one from somewhere else. New tempo flashing red, solid green indicating magnet out of calibration zone. I had them jog the knee to see if the flashing red ever went away and it did. One of the guys noticed the tempo cable was damaged and repaired previously. They repaired the repair and everything is working again. I&#39;ll recommend a new cable if they call back again.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>After hours. Steve called with knee 3 not working. He had already talked to Chris who suggested swapping the board. Steve swapped the 2 knee system&#39;s card which got them both working. I tracked his package for the board we sent a while ago, it&#39;s to be delivered today. He is sending us his bad boards.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 233
+Date: Tue, 09 Aug 2022 09:25:37 -0700
+Technician: Chris
+Mill: Irving Dixfield
+Job: 2017-29
+System: RS2
+Contact: Berl
+Phone: 2075628347
+Issue: Hardware
+Hardware: Temposonic Probe
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ordered Qty 2 42&quot; Probes</p>
+$@MID@$: 234
+Date: Tue, 09 Aug 2022 09:34:03 -0700
+In reply to: 232
+Technician: Chris
+Mill: Nicolet Hardwoods Large Side
+Job: 200902
+System: RS2
+Contact: Steve
+Phone: ???
+Issue: Hardware
+Hardware: Positioner Board
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Steve called back and ordered a 42&quot; Tempo probe to replace the used one he got from PawTawJohn. Shipping out next day.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Steve called again saying knee 3 completely stopped moving again. I had him try a jog box, nothing. Tried on knee 2 for a sanity check, still nothing. Turned on hydraulics and tried again. Knee 2 jogs just fine but knee 3 would try and hit a stop immediately. Determined it was beyond its limit and stuck. Manually jogging eventually freed it. Now the knee only goes all the way forward or back, classic no tempo reading. Current position isn&#39;t updating on the optimizer pc. LEDs on the back of the tempo are both off. Swap tempo (second time today doing that), expected them to swap with knee 2 which is known good, but they grabbed another one from somewhere else. New tempo flashing red, solid green indicating magnet out of calibration zone. I had them jog the knee to see if the flashing red ever went away and it did. One of the guys noticed the tempo cable was damaged and repaired previously. They repaired the repair and everything is working again. I&#39;ll recommend a new cable if they call back again.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>After hours. Steve called with knee 3 not working. He had already talked to Chris who suggested swapping the board. Steve swapped the 2 knee system&#39;s card which got them both working. I tracked his package for the board we sent a while ago, it&#39;s to be delivered today. He is sending us his bad boards.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 235
+Date: Tue, 09 Aug 2022 09:43:16 -0700
+Technician: Chris
+Mill: Wilson Brothers
+Job: 201623
+System: RS2
+Contact: ?"
+Phone: 
+Issue: Hardware
+Hardware: Temposonic Probe
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Wanted wires coming out of their tempo probe? Going to send pictures to clarify.</p>
+$@MID@$: 236
+Date: Tue, 09 Aug 2022 13:02:51 -0700
+Technician: Juwan
+Mill: Empire Lumber
+Job: 201006
+System: RS2
+Contact: Michael
+Phone: 
+Issue: Configuration
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>He jsut wanted to know how to change the settings from double to single cut.</p>
+$@MID@$: 237
+Date: Tue, 09 Aug 2022 14:30:32 -0700
+Technician: Basil
+Mill: Josey Lumber
+Job: 201505
+System: RS2
+Contact: Gary
+Phone: 
+Issue: PLC FAULT
+Hardware: PLC
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>MicroLogix 1400 was faulting on them often since our last call. I had them swap their spare but it wasn&rsquo;t programmed. Spent a long time getting it programmed and everything is working well now. Told him to call us back asap if it starts faulting again.</p>

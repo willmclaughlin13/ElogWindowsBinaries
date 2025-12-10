@@ -1,0 +1,85 @@
+$@MID@$: 78
+Date: Tue, 19 Dec 2023 11:30:15 -0800
+Technician: Sam
+Mill: Kennebec Grantham
+Job: Many numbers
+System: FlexWorks
+Trip Type: Service
+Attachment: 
+Encoding: HTML
+========================================
+<p>Met Chris the electrician when arriving.&nbsp; He asked me to show him around the system, particularly parts he would have to troubleshoot.</p>
+
+<ul>
+	<li>Showed him RS2 Menu&rsquo;s
+	<ul style="list-style-type:circle">
+		<li>Target Positions</li>
+		<li>Encoder</li>
+		<li>Voltages</li>
+	</ul>
+	</li>
+	<li>Showed him pantograph arm and where currently wires were rubbing</li>
+	<li>Took him to the load end prox switch</li>
+	<li>Went over how to clear the scan heads / prox switches</li>
+	<li>Took him to the resaw PEC detect</li>
+	<li>Showed him state 30 on the carriage HMI screen and if it was stuck in this state &ndash; it was waiting for input from the resaw PEC</li>
+	<li>Showed him the jumped out reject DOOR wiring in the debarker PLC</li>
+	<li>Showed him where to plug the mill network into the mGuard</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>Chris approached me each day asking for the same rundown on the system, stating that he knew nothing about it every preceding time.&nbsp; I&rsquo;m not sure if he retains any information.</p>
+
+<p>&nbsp;</p>
+
+<p>Basil setup inTime and various other packages so I could compile RS2 code.&nbsp; Thanks.</p>
+
+<p>&nbsp;</p>
+
+<p>Went over carriage options with the sawyer and Dennis.&nbsp; We also talked about how they wanted the routing to work.&nbsp; They settled on not dropping CANTS onto resaw pieces.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Went over the incline deck code and added&hellip;</p>
+
+<ul>
+	<li>Auto incline deck</li>
+	<li>15 HP START/STOP Motor</li>
+	<li>Manual Mode (For snow)</li>
+	<li>Indicators of deck moving and incline deck moving</li>
+</ul>
+
+<p>This worked for an hour of testing.&nbsp; The next day they dropped a log onto the PEC wiring and knocked them all out.</p>
+
+<p>&nbsp;</p>
+
+<p>Went how to use the debarker controls.&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>Added optimizer code to start auto slab belt after the carriage PLC brought the shifting roll case out. Before it would hang in manual mode for the rest of time after a resaw or carriage piece. &nbsp;This was because the operator had to manually close the shifting rollcase for those piece types.</p>
+
+<p>&nbsp;</p>
+
+<p>Daniel added the code to handle rollcase back out (closed).&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>TODO:</p>
+
+<ul>
+	<li>Handle back cut board into CANT drop</li>
+	<li>Add auto log deck B forward to Debarker
+	<ul style="list-style-type:circle">
+		<li>If trough is empty, move forward.
+		<ul>
+			<li>When trough is full and bottom lug (home) is open, move forward for X seconds.</li>
+		</ul>
+		</li>
+		<li>When trough is full stop</li>
+	</ul>
+	</li>
+</ul>
+
+<p>&nbsp;</p>

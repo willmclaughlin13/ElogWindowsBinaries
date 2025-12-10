@@ -1,0 +1,42 @@
+$@MID@$: 76
+Date: Thu, 07 Dec 2023 16:38:19 -0800
+Technician: Daniel
+Mill: Kennebec Grantham
+Job: 201917 & 202221
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Carriage
+	<ul>
+		<li>We sawed 6 logs today.&nbsp; The Horizonal Resaw, Edger, &amp; Waste systems were hold us back from running.</li>
+		<li>I installed the software update from last night and discovered the B-Turns were not undogging when they should be.
+		<ul>
+			<li>I investigate the issue and found a line of code that cause the issue.&nbsp; I removed it and it fixed the issue.</li>
+		</ul>
+		</li>
+		<li>On one of the logs they sawed and double routed a slab attached &amp; a cant to the resaw, the cant did not get over to the index line.&nbsp; I added a timer to add a delay to allow the cant to get to the index line.&nbsp; I only saw it happen once and I did not see if the issue was timing or if the cant was on top of the slab attached board.
+		<ul>
+			<li>Updated the HMI to update Timer 17 Description to Double Horizontal Route Delay.&nbsp;</li>
+		</ul>
+		</li>
+		<li>Added code to the Carriage Aux PLC to stop the Edger Transfer Belts and hold the Edger Transfer deck from dispatching any flitches.</li>
+		<li>Removed the Trash Route Input from active PLC rungs.</li>
+		<li>We got the connector for the P2-16TR PLC module from Lewis and I wired the P2-16TR outputs to the digital IO card (7-8, 11-16).</li>
+		<li>I had a good conversation with Chris (Mill Manager) about what they need from us.&nbsp; I apologize for how I reacted yesterday.
+		<ul>
+			<li>He is hopeful we will be able to saw tomorrow and finish testing their big items.
+			<ul>
+				<li>Slab Attached</li>
+				<li>Backcuts - they fixed the issue with the boards dropping to the carriage deck today.</li>
+			</ul>
+			</li>
+			<li>I told him that I was concerned with the Debarker Incline Deck as the code is untested.</li>
+			<li>He said they will need someone out here next week.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>

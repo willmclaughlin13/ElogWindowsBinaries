@@ -1,0 +1,228 @@
+$@MID@$: 246
+Date: Fri, 12 Aug 2022 06:33:11 -0700
+Reply to: 256
+Technician: Basil
+Mill: Piedmont
+Job: 201728
+System: RS2
+Contact: Jimmy Overman
+Phone: 7042021382
+Issue: Hardware
+Hardware: Cabling
+Resolution: Troubleshooting
+Attachment: 220812_065655_PiedmontRunaway.png
+Encoding: HTML
+========================================
+<p>After hours. Called about motion stops when they load a log, turns out they&#39;re just runaways out of the cut. The runaway errors on the sawyer&#39;s display show the targets and positions nearly identical but setworks history has the actual position at either the tempo&#39;s offset value or a strange negative number where the numbers after the decimal are also negative.</p>
+
+<p>They had already changed out the position board before calling me, so I suspect it&#39;s a cabling issue. They have two spare tempo cables they&#39;re going to run across after shift today. I increased their out of cut runaway error to get them running a little smoother until we can troubleshoot Monday.</p>
+$@MID@$: 247
+Date: Fri, 12 Aug 2022 08:37:33 -0700
+Reply to: 248
+Technician: Kaitlin
+Mill: Buffalo Lumber
+Job: 201805
+System: RS2
+Contact: Tyler
+Phone: 608 863 6966
+Issue: Configuration
+Hardware: None
+Resolution: Other
+Attachment: 
+Encoding: HTML
+========================================
+<p>They wanted to set up operator tracking but they have no button for it. I told them I would ask about getting a spare button shipped.</p>
+$@MID@$: 248
+Date: Fri, 12 Aug 2022 08:47:07 -0700
+Reply to: 249
+In reply to: 247
+Technician: Kaitlin
+Mill: Buffalo Lumber
+Job: 201805
+System: RS2
+Contact: Tyler
+Phone: 608 863 6966
+Issue: Configuration
+Hardware: None
+Resolution: Other
+Attachment: 
+Encoding: HTML
+========================================
+<p>Checking the latest software on the server: they do not have operator tracking turned on. Haven&#39;t been able to check what their software looks like on the system because their Team Viewer wasn&#39;t connecting.&nbsp;They may need a software update.<br />
+<br />
+In the first call, they said they have a slab attached button that they aren&#39;t using that we could repurpose. Haven&#39;t contacted them back yet.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>They wanted to set up operator tracking but they have no button for it. I told them I would ask about getting a spare button shipped.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 249
+Date: Fri, 12 Aug 2022 10:16:03 -0700
+Reply to: 251
+In reply to: 248
+Technician: Kaitlin
+Mill: Buffalo Lumber
+Job: 201805
+System: RS2
+Contact: Tyler
+Phone: 608 863 6966
+Issue: Configuration
+Hardware: None
+Resolution: Other
+Attachment: 
+Encoding: HTML
+========================================
+<p>Operator tracking is not turned on. Asked Tyler to call back when the internet on the system is fixed so we can schedule a software update.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Checking the latest software on the server: they do not have operator tracking turned on. Haven&#39;t been able to check what their software looks like on the system because their Team Viewer wasn&#39;t connecting.&nbsp;They may need a software update.<br />
+			<br />
+			In the first call, they said they have a slab attached button that they aren&#39;t using that we could repurpose. Haven&#39;t contacted them back yet.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>They wanted to set up operator tracking but they have no button for it. I told them I would ask about getting a spare button shipped.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 250
+Date: Fri, 12 Aug 2022 11:43:33 -0700
+In reply to: 183
+Technician: Basil
+Mill: Canfor Hermanville RH
+Job: 20122
+System: RS2
+Contact: Kent
+Phone: ???
+Issue: Hydraulic
+Hardware: Linear cant pan
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>They called back saying it was chattering again. I guess they swapped the valve and it started again? Not really sure. I cranked the speed down to 6&quot;/sec which John recommended and lowered the inside gain from 1 to 0. Still chattering he said, but much slower. Their old valve is getting rebuilt and sent back to them. I asked them to call me if it&#39;s still chattering after that.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Firstly, their job name in the jobs folder is Southern LH, which is confusing to say the least</p>
+
+			<p>Secondly, linear cant pan chattering. They already swapped the tempo, servo, and cylinder before calling. I turned down their speed from 26&rdquo;/sec to 20&rdquo;/sec which seems to have fixed it</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 251
+Date: Fri, 12 Aug 2022 12:21:10 -0700
+In reply to: 249
+Technician: Kaitlin
+Mill: Buffalo Lumber
+Job: 201805
+System: RS2
+Contact: Tyler
+Phone: 608 863 6966
+Issue: Configuration
+Hardware: None
+Resolution: Other
+Attachment: 
+Encoding: HTML
+========================================
+<p>They might have a bad version of Team Viewer as well. Stuck until next Wednesday when their IT guy gets to fixing their internet connection.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Operator tracking is not turned on. Asked Tyler to call back when the internet on the system is fixed so we can schedule a software update.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Checking the latest software on the server: they do not have operator tracking turned on. Haven&#39;t been able to check what their software looks like on the system because their Team Viewer wasn&#39;t connecting.&nbsp;They may need a software update.<br />
+						<br />
+						In the first call, they said they have a slab attached button that they aren&#39;t using that we could repurpose. Haven&#39;t contacted them back yet.</p>
+
+						<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+							<tbody>
+								<tr>
+									<td style="background-color:#486090">Quote:</td>
+								</tr>
+								<tr>
+									<td style="background-color:#FFFFB0">
+									<p>They wanted to set up operator tracking but they have no button for it. I told them I would ask about getting a spare button shipped.</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p>&nbsp;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 252
+Date: Fri, 12 Aug 2022 13:51:47 -0700
+Technician: Basil
+Mill: Post Hardwoods
+Job: 201619
+System: RS2 Lumber Pro
+Contact: Erik
+Phone: 
+Issue: Software
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Erik tells me he&rsquo;s getting INtime errors and he&rsquo;s dropping new logs onto the belt when he goes to load them. He says he needs to reboot the system when it happens. I went through a lot of troubleshooting with Daniel, but we couldn&rsquo;t find a good way to see what&rsquo;s causing the error. I asked Erik to save out his setworks and solution history next time it happens, then to let me know.</p>

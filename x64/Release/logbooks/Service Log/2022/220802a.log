@@ -1,0 +1,30 @@
+$@MID@$: 218
+Date: Tue, 02 Aug 2022 09:31:43 -0700
+Technician: Chris
+Mill: JC Hamer Webster Springs
+Job: 201015
+System: Edger
+Contact: Corey
+Phone: 
+Issue: Hardware
+Hardware: PLC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>On Edger, Infeed and Outfeed photo eyes are being tripped, but the internal press rolls are not coming down. He can manually accuate the solinoids to work. Told Corey to trace down the wiring from the PLC to the rolls to see if voltage is getting from the output card to the rolls. He will check and let us know.</p>
+$@MID@$: 219
+Date: Tue, 02 Aug 2022 10:37:43 -0700
+Technician: Chris
+Mill: Oakcrest
+Job: 201116
+System: RS2
+Contact: Junior
+Phone: 
+Issue: Hardware
+Hardware: PLC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Auto Sweep (Cant/Resaw) not working. They can maually operate with console butttons. Photo eyes are making back to the PLC. No config screen in setworks, internal to PLC program. Told to check all wiring, and replace input card for photo eyes, then CPU on PLC.</p>

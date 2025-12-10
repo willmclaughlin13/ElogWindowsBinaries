@@ -1,0 +1,61 @@
+$@MID@$: 184
+Date: Tue, 19 Jul 2022 10:01:47 -0700
+Technician: Juwan
+Mill: Buffalo lumber
+Job: 201805
+System: RS2
+Contact: Tyler
+Phone: 
+Issue: Hardware
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Saw deviation sensor was knocked off guide when log knocked bandsaw. Told them to set between .1 to .3 inches off guide.</p>
+$@MID@$: 185
+Date: Tue, 19 Jul 2022 11:58:36 -0700
+Reply to: 188
+Technician: Basil
+Mill: Canfor Moultrie (Beadles)
+Job: 201616
+System: RS2
+Contact: Joe
+Phone: 229 873 0463
+Issue: Hardware
+Hardware: Encoder
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Huge encoder reference error -140&rdquo; +- 30&rdquo;, always negative. Before they called, they replaced the cable, the encoder, the hillbilly wheel assembly, and the photo eye. I recalibrated them. Still big errors, encoder count is jumping wildly. Sending new encoder and power supply assembly next day while they are going to try one off their shelf</p>
+$@MID@$: 186
+Date: Tue, 19 Jul 2022 13:25:43 -0700
+Technician: Basil
+Mill: Buffalo Lumber
+Job: ???
+System: RS2
+Contact: Tyler
+Phone: 608 863 6966
+Issue: Configuration
+Hardware: Saw Deviation Sensor
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Asked for help configuring their saw deviation sensor after it broke off. I went through the menus with him</p>
+$@MID@$: 187
+Date: Tue, 19 Jul 2022 13:54:42 -0700
+Technician: Basil
+Mill: Copiah Lumber
+Job: ???
+System: RS2
+Contact: Pete
+Phone: 
+Issue: Other
+Hardware: Network Connection
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Pete called asking if we need his computer to have an IP address because they&rsquo;re getting new internet. I confirmed we definitely do need an IP address, we just don&rsquo;t care what it is as long as the PC can get out to the internet.</p>

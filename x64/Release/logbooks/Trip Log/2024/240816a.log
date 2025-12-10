@@ -1,0 +1,26 @@
+$@MID@$: 87
+Date: Fri, 16 Aug 2024 17:10:36 -0700
+Reply to: 88
+Technician: Basil
+Mill: McGee Lumber Co.
+Job: 202403
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Advised millwrights on where to mount the photo eye. My suggestion which they went with was to point the photoeye that&#39;s mounted on the carriage straight down looking for a 12&quot; flag they made bolted to the floor next to the carriage rail. Initially the eye couldn&#39;t see the flag since it was black steel. They painted it red which worked well</li>
+	<li>Finished wiring both the setworks and remote cabinet (which were mounted side-by-side in the cab)</li>
+	<li>Spaced out the scan heads according to the revised drawings</li>
+	<li>Plugged in all scan heads</li>
+	<li>Powered on cabinets</li>
+	<li>Tested carriage AC. All working well except the cant kicker. Not sure what was wrong, but got it fixed after trying a lot of things. I think updating to the latest master did the trick??</li>
+	<li>Struggled with the saw guide for a little while before Daniel helped me realize we don&#39;t allow the saw guide to move beyond limits without any error message. ASG was not connected to a tempo yet</li>
+	<li>Tested encoder, had to change direction</li>
+	<li>Tested reference, working properly</li>
+	<li>Knees wouldn&#39;t move at all. I had Eric the sawyer hold down limit override (active runaways) while I went out to check on the carriage. 30 seconds later all knees suddenly jumped. They&#39;d been down for a long time, maybe they were seized up? After that everything was fine with knees.</li>
+	<li>Calibrated knees</li>
+	<li>Measured carriage and lasers and carriage reference position</li>
+	<li>Replaced console lables</li>
+</ul>

@@ -1,0 +1,109 @@
+$@MID@$: 196
+Date: Tue, 26 Jul 2022 09:38:36 -0700
+Technician: Basil
+Mill: Wagner Owego Headrig 2
+Job: 201430
+System: RS2
+Contact: Ryan Poreda
+Phone: 585-520-8108
+Issue: Software Corruption
+Hardware: None
+Resolution: Problem Fixed?
+Attachment: 220726_094104_WingDing.jpg
+Encoding: HTML
+========================================
+<p>Wingdings in the downtime menu!! I had him hit the downtime button and there was no issue. Fixed itself.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+$@MID@$: 197
+Date: Tue, 26 Jul 2022 10:46:46 -0700
+Technician: Basil
+Mill: Fly Tie RH
+Job: 202110
+System: RS2.5
+Contact: Fluffy
+Phone: 
+Issue: Software
+Hardware: Database
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>AC leaked on their cabinet, Fluffy sealed up the cab so it won&rsquo;t happen again and swapped the brick. They are sending the wet one back for repair. I had to update their SQL database on the spare</p>
+$@MID@$: 198
+Date: Tue, 26 Jul 2022 10:58:16 -0700
+Technician: Basil
+Mill: Robbins RH
+Job: 200818
+System: RS2
+Contact: ???
+Phone: ???
+Issue: Hardware
+Hardware: Network Switch
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>No communication with the boards. Switch failed on them. He told me this happened recently, and they were expecting a spare from Chris for a long time. Their switches were these ancient cisco switches that connected to AC receptacle. The old switch that failed before is now working. I told him to go out and buy any modern 5-port switch and get rid of these old cisco SD2005 switches</p>
+$@MID@$: 199
+Date: Tue, 26 Jul 2022 11:16:47 -0700
+Technician: Basil
+Mill: Josey Lumber
+Job: 201505
+System: RS2
+Contact: Gary
+Phone: 252 578 2664
+Issue: PLC FAULT
+Hardware: None
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Micrologix 1400 fault. I walked them through resetting the fault and told them to call us back if it happened again. They told me their slab belt wasn&rsquo;t working. I had them check fuse 110, they had 110V on both sides, fuse is good. They are going to check on the valve make sure there&rsquo;s power out there and that the valve is working</p>
+$@MID@$: 200
+Date: Tue, 26 Jul 2022 11:34:55 -0700
+Technician: Kaitlin
+Mill: Hancock Casco
+Job: 201322B
+System: RS2
+Contact: Joel Leach
+Phone: 207-595-0518
+Issue: Software Installation
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Dispatch inputs not working (24-28 on digital I/O). Planned to update&nbsp;at the&nbsp;end of their workday with new software, turning auto piece destination on. Going to check software on test system to see if that&#39;s what was causing the issue.</p>
+$@MID@$: 201
+Date: Tue, 26 Jul 2022 13:07:48 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Hydraulic
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scott called and and said that their Yoke 1 was higher than Yoke 2 and that Yoke 2 was positioning correctly vertically.&nbsp; I had them use a level to calibrate Yoke 1 lift to Yoke 2 lift.&nbsp; I also helped them correct one of the yokes left\right position.&nbsp; After all that, they said it was taking too much slab on the left.&nbsp; I showed them where to make adjustments to shift the solution left/right in the optimizer software.</p>
+$@MID@$: 202
+Date: Tue, 26 Jul 2022 13:39:10 -0700
+Technician: Kaitlin
+Mill: Hancock Casco
+Job: 201322B
+System: RS2
+Contact: Joel Leach
+Phone: 207-595-0518
+Issue: Software
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Replaced software and asked Joel to test&nbsp;a few of the inputs. Seems to be working now, but mill is closed for the day.</p>

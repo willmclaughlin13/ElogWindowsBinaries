@@ -1,0 +1,44 @@
+$@MID@$: 2
+Date: Mon, 09 May 2022 09:19:09 -0700
+Technician: Juwan
+Mill: Nicolet Large Side
+Job: 200902
+System: RS2
+Contact: Steve
+Issue: Hydraulic
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Steve says knee 3 moving intermittently causing motion stops. The knee is moving full stroke forward or back randomly.</p>
+$@MID@$: 3
+Date: Mon, 09 May 2022 11:54:28 -0700
+Technician: Basil
+Mill: Baille Potter 
+Job: 201319A
+System: RS2
+Contact: Josh
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Josh called the answering service, scans were terrible. Friday, they swapped four of their scan heads and didn&rsquo;t change the order of the serial numbers. I didn&rsquo;t know and wasted time recalibrating. After the recalibration and rearrangement of serial numbers, their solutions look much better but head 3 and 8 need to be swapped still. They should get their heads today&nbsp; (5/9/22) or tomorrow and call us to get it calibrated correctly.</p>
+$@MID@$: 4
+Date: Mon, 09 May 2022 11:57:05 -0700
+Technician: Basil
+Mill: Kennebec Tamworth
+Job: 201325
+System: RS2
+Contact: Anthony
+Issue: Configuration
+Hardware: 
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>I messed with their opening face the wrong way. Later the same day Marv told me how to do it properly. I sent an email for them to call us back and get their opening face how they want it the right way</p>
+
+<p>Called back and got the opening face looking better although Anthony was just looking from his office window which was far away. Found out he has been using the kerfs to adjust board sizes? Then adjusting the board sizes manually to get the size he wants?? Call with him tomorrow morning to recalibrate everything. Goal is to have 1.05&quot; in the board menu and 1.05&quot; coming off the carriage</p>

@@ -1,0 +1,19 @@
+$@MID@$: 49
+Date: Sat, 03 Dec 2022 19:09:42 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>We taught each board/cant sensor.
+	<ul>
+		<li>During the process, Sam discovered that the sensor structure fluctuated too much on the right and middle sensors.&nbsp; I asked the mill wrights to cut and bolt strut channel between the right and middle sensors.&nbsp; This corrected the issue.</li>
+	</ul>
+	</li>
+	<li>After lunch, Sam worked on the cant transfer and discovered the PLC was not getting the board input from the board\cant sensors.&nbsp; The display on the sensor were showing that the board output were on, but the PLC input card was not registering it.&nbsp; I checked the sensor output up in the junction box and after removing wires and replacing them (including power), that I was able to get them to come on.&nbsp; The 2 middle sensors did not get taught for detecting board and cants, so I taught them.&nbsp; After teaching them, they stopped putting out an output for detecting a board.&nbsp; I recycled power on the system and they started working.&nbsp; I had originally wired the sensor power to 24B (not affected by control power), but after the incident with teaching the middle sensor, I rewired the power to 24D (controlled by control power).</li>
+	<li>When testing the infeed deck cant punch turners, the test cant balanced on the punch turners up in the air.&nbsp; To turn the that cant with punch turners, we had to activate the punch turners before the cant got to the stop pins.</li>
+</ul>

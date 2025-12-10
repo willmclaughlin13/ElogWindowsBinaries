@@ -1,0 +1,169 @@
+$@MID@$: 208
+Date: Thu, 28 Jul 2022 09:05:07 -0700
+Technician: Daniel
+Mill: Cardin
+Job: J202208
+System: Edger
+Contact: Jarrod
+Phone: 423-326-9848
+Issue: Design/Engineering
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>I spoke with Jarrod this morning on the phone about the needs for their Edger controls.</p>
+
+<ul>
+	<li>He is okay with reusing their existing PLC cabinet, with us replacing the backpanel.</li>
+	<li>He does not want a sawyers display or HMI out at the consoles.</li>
+	<li>They are changing their edger from a 4 saw system to a 3 saw system.
+	<ul>
+		<li>This means we can elimate the 4th saw and 3rd picker from the controls.</li>
+	</ul>
+	</li>
+	<li>He ask for a button that disable saw 3.
+	<ul>
+		<li>I think we should set it up so that the PLC will move Saw 3 and picker 2 to their edges when the # of saws in the optimizer machine settings is set to 2.</li>
+	</ul>
+	</li>
+	<li>He asked that we keep the button for disabling positioning Pin # 4.</li>
+</ul>
+$@MID@$: 209
+Date: Thu, 28 Jul 2022 10:08:54 -0700
+In reply to: 182
+Technician: Basil
+Mill: Parkside Lumber
+Job: ???
+System: RS1
+Contact: Ken
+Phone: ???
+Issue: Hardware
+Hardware: Black Box PC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>After learning we do still troubleshoot RS1s, I called them back. Johnny was the mill manager but no longer works there. Left a voicemail for the owner to call us back if they&#39;re still having trouble.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Troubleshot briefly and ultimately recommended he upgrade the system and refused service politely.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 210
+Date: Thu, 28 Jul 2022 10:58:37 -0700
+Technician: Sam
+Mill: Superior Lumber
+Job: 201808
+System: RS2
+Contact: Shawn
+Phone: 
+Issue: Other
+Hardware: None
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Called for spare scanner cable.</p>
+$@MID@$: 211
+Date: Thu, 28 Jul 2022 10:59:03 -0700
+Reply to: 213
+Technician: Basil
+Mill: Durgin & Crowell #2
+Job: 201707
+System: RS2
+Contact: Danny
+Phone:  603-873-0325
+Issue: Hardware
+Hardware: Encoder
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Sawyer was unable to set or jog knees and was getting motion stops. Encoder reference error was -80&rdquo; and setworks history said &ldquo;Ignored sets disabled&rdquo;. Their encoder is connected to their cable spool, but it has some chain and sprocket linkage in between. They said they already went through it looking for slop / slip and tightened the chain. I had them check for a spare encoder and showed the new sawyer how to get around the error when it happens.</p>
+$@MID@$: 212
+Date: Thu, 28 Jul 2022 11:11:00 -0700
+Technician: Juwan
+Mill: WLS
+Job: 202123
+System: RS2
+Contact: Robert
+Phone: 
+Issue: Configuration
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Worked with marv to get them sawing correctly. Timber table seemed to be giving them trouble so we copied saved values to species 4 and turned it off for species 1. They seem to be running smoothly now.</p>
+$@MID@$: 213
+Date: Thu, 28 Jul 2022 11:36:07 -0700
+In reply to: 211
+Technician: Basil
+Mill: Durgin & Crowell #2
+Job: 201707
+System: RS2
+Contact: Danny
+Phone:  603-873-0325
+Issue: Hardware
+Hardware: Encoder
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>They called back to order two new encoders since they didn&#39;t have a spare and asked me to turn off scan set disable for them.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Sawyer was unable to set or jog knees and was getting motion stops. Encoder reference error was -80&rdquo; and setworks history said &ldquo;Ignored sets disabled&rdquo;. Their encoder is connected to their cable spool, but it has some chain and sprocket linkage in between. They said they already went through it looking for slop / slip and tightened the chain. I had them check for a spare encoder and showed the new sawyer how to get around the error when it happens.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 214
+Date: Thu, 28 Jul 2022 13:26:00 -0700
+Technician: Kaitlin
+Mill: WLS
+Job: 202123
+System: RS2
+Contact: Robert
+Phone: 
+Issue: Software
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Monitors got swapped. Changed the monitor order and resolution in the settings so that the sawyer display was fully visible.</p>
+$@MID@$: 215
+Date: Thu, 28 Jul 2022 14:43:47 -0700
+Technician: Kaitlin
+Mill: Kalesnikoff Lumber
+Job: 201621
+System: RS2
+Contact: Ron
+Phone: 250-304-4315
+Issue: Configuration
+Hardware: Slabber
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Needed to move the retract position on the slabber back an inch.</p>

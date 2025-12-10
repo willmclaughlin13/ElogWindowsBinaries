@@ -1,0 +1,24 @@
+$@MID@$: 83
+Date: Wed, 26 Jun 2024 20:35:25 -0700
+Technician: Daniel
+Mill: D.R. Johnson
+Job: 202401
+System: RS2
+Trip Type: Upgrade
+Attachment: 240626_212323_20240626_174230.jpg,240626_212339_20240626_174233.jpg,240626_212358_20240626_174235.jpg,240626_212505_20240626_174238.jpg,240626_212556_20240626_174239.jpg,240626_212617_20240626_174245.jpg,240626_212641_20240626_174247.jpg
+Encoding: HTML
+========================================
+<ul>
+	<li>When we got to the mill, the mill had landed the cables that go between the RS2 &amp; the Quick Swap cabinet.</li>
+	<li>Justin terminated the wires in the RS2 cabinet that went to the Quick Swap cabinet.</li>
+	<li>I terminated the wires in the Quick Swap cabinet that came from the RS2 cabinet.
+	<ul>
+		<li>While terminating LES1 &amp; LES2 from the RS2 cabinet in Quick Swap cabinet, I found that I had spec&#39;d out the wrong cable for LES1 &amp; LES2 going from the Quick Swap cabinet to the switches.&nbsp; It needs 5 conductors.&nbsp; I called Chris and requested 200&#39; of LCI 6174 cable be sent to the mill via overnight.</li>
+	</ul>
+	</li>
+	<li>By the end of the mill&#39;s&nbsp;day, they had landed TM1-TM3, SV1-SV3, &amp; TM8.&nbsp; I terminated them in the Quick Swap cabinet.
+	<ul>
+		<li>FYI - It would be helpful to have a label for the cable every 10&#39; for the last 50&#39; of the cable.&nbsp;</li>
+	</ul>
+	</li>
+</ul>

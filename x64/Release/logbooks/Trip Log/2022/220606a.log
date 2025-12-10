@@ -1,0 +1,41 @@
+$@MID@$: 20
+Date: Mon, 06 Jun 2022 20:01:03 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>I tried to send boards through the edger first thing in the morning, but it was going to pre-spot.&nbsp; When I looked at the data sent from the Optimizer, it told the PLC that it was a no board solution.&nbsp; Looking into it, I had set the &quot;Center to Right&quot; and &quot;Center to Left&quot; yesterday.&nbsp; Before I changed them, the Center to Right value was negative.&nbsp; For this system, that value should be positive.&nbsp; So I swapped the Center To Left and Center to Right values and the system started giving good solutions to the PLC.</li>
+	<li>Phill noticed the thickness of the scanned board was over 3&quot;.&nbsp; I recalibrated the scanners and fixed that issue.
+	<ul>
+		<li>I noticed latter the boards looked like they had a laser that was not calibrated correctly.&nbsp; The same section of a flitch was shifted over from the rest of the flitch.
+		<ul>
+			<li>I did not get to recalibrating the scanners.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>I updated they Optimizer software to display the Actual Thickness instead of the average thickness (Rutland style).</li>
+	<li>I noticed that Picker 2 was out of calibration again.&nbsp; I recalibrated it and it got off of calibration almost immediately.&nbsp; I checked the gradient value of the probe and it was the same as what we had used for setting the positioning scale.&nbsp; I used RMC tools to move the picker 10 inches and it moved about 9.5&quot;.&nbsp; When I had it go back to its original position prior to the move it move about .5 further than the its original position.</li>
+	<li>We worked off and on all day on setting the press timing for 4/4 boards.&nbsp; We finally got it set and verified it.</li>
+	<li>We had issues with the position pins not dropping because they were up against the board or the infeed chain.
+	<ul>
+		<li>The issue with the pin being up against the infeed chain was because I had the min positioning pin limit set to 2.4 and it can never go past -1.5.&nbsp; I corrected the limit and that fixed that issue.</li>
+		<li>I suggested to Sam that he send the catch pins and the positioning pins before the ramps are lowered, but after the infeed press rolls were down.</li>
+	</ul>
+	</li>
+	<li>We had an issue with catch pins pinching the flitch or going over it.&nbsp; The mill added some metal to the ramps to try to fixed the issue.
+	<ul>
+		<li>I watched it after they worked on it and it looked like the catch pin bowed up when the flitch was being positioned.
+		<ul>
+			<li>It looked like to me that there was too much pressure on the catch pins.&nbsp; I lowered the air pressure the infeed and that fixed the issue.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>This was my last day on site and we had not sawn a flitch with Edger.&nbsp; They are going to put saw on the edger tommorrow and start cutting 4/4 flitches with it.</li>
+</ul>

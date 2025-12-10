@@ -1,0 +1,122 @@
+$@MID@$: 26
+Date: Mon, 16 May 2022 07:28:10 -0700
+Technician: Chris
+Mill: Missouri-Pacific
+Job: 202007
+System: RS2
+Contact: Ryan
+Issue: Hydraulic
+Hardware: Servo Valve
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Knee 4 Valve issue. Swap with other knee valve to test. If problem moves, replace.</p>
+$@MID@$: 27
+Date: Mon, 16 May 2022 09:10:53 -0700
+Technician: Chris
+Mill: Wagler & Sons
+Job: 201326
+System: RS2
+Contact: Anthony
+Issue: Other
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Questions on how to change shift time. Told him how and to change after shift.</p>
+$@MID@$: 28
+Date: Mon, 16 May 2022 10:08:21 -0700
+Reply to: 217
+Technician: Basil
+Mill: Parker Lumber
+Job: 202124
+System: RS2
+Contact: David
+Phone: 
+Issue: Configuration
+Hardware: Scan Head
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>David got his loaner scan head. I helped get it connected in our setworks. He&rsquo;s returning his bad head now.</li>
+	<li>Just needed the serial number changed.</li>
+	<li>Also answered questions about resetting face / cancelling entries after kicking off bad logs</li>
+</ul>
+$@MID@$: 29
+Date: Mon, 16 May 2022 10:41:56 -0700
+Technician: Chris
+Mill: Copiah Headrig
+Job: 201223
+System: RS2
+Contact: Terry
+Issue: Hardware
+Hardware: ELO Monitor
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Power Cord to ELO &quot;melted&quot;. Terry will try to find one, if he can&#39;t, he&#39;ll need a new Power Supply or new Monitor.</p>
+$@MID@$: 30
+Date: Mon, 16 May 2022 14:43:25 -0700
+Reply to: 34
+Technician: Chris
+Mill: Missouri-Pacific
+Job: 202007
+System: RS2
+Contact: Ryan
+Issue: Hydraulic
+Hardware: Temposonic Probe
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ryan swapped Tempos on K3 and K4. Problem moved. Bad Tempo. Sending back for eval.</p>
+$@MID@$: 31
+Date: Mon, 16 May 2022 14:46:33 -0700
+Technician: Chris
+Mill: ASAL
+Job: 201622
+System: Edger
+Contact: Not Junior.
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>SCAN POWER OFF on operator screen and will not scan flitches. Told to check power in IF Box and gave AC flow desciption. Will call back if not fix.</p>
+$@MID@$: 32
+Date: Mon, 16 May 2022 15:07:06 -0700
+Reply to: 57
+Technician: Basil
+Mill: Copiah
+Job: 201223
+System: RS2
+Contact: Terry
+Issue: Hardware
+Hardware: ELO Monitor
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Picked up where Chris left off. Asked Chris to ship a new ELO and power supply.&nbsp;<img alt="angel" height="23" src="http://lewc-app:8080/ckeditor/plugins/smiley/images/angel_smile.png" title="angel" width="23" /></p>
+$@MID@$: 33
+Date: Mon, 16 May 2022 15:50:49 -0700
+Technician: Basil
+Mill: ASAL
+Job: 201622
+System: Edger
+Contact: ???
+Issue: Other
+Hardware: Human
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Scanners not coming on. I had him trace power to the PoE switch, 48V there. No blue lights on the scanners. Had him turn the scanner power switch on the console and wait 2 seconds. Then it &ldquo;wasn&rsquo;t scanning&rdquo;. I had him press the scan button on the handle. I am now the edger troubleshooter</li>
+</ul>

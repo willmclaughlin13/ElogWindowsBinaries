@@ -1,0 +1,29 @@
+$@MID@$: 1
+Date: Sat, 20 May 2022 21:23:18 -0700
+Technician: Daniel
+Mill: Rustic Wood Products
+Job: 202203
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>When we arrived, the mill had not done any work on remove their old system.</li>
+	<li>Juwan pulled their old system values off of their old computer and we powered it down.</li>
+	<li>Juwan labeled their AC wires and disconnected them from their old system.</li>
+	<li>We removed the PC, PLC, and IO cards from the cabinet.</li>
+	<li>We removed the old scan heads from the scan beams.</li>
+	<li>We unbolted the RS1 cabinet from the floor.</li>
+	<li>We installed the new sawyer&rsquo;s display.</li>
+	<li>Juwan installed their new console.</li>
+	<li>The mill removed the old RS1 cabinet and installed both the Setwork and Remote IO cabinets in the sawyer&rsquo;s cab.</li>
+	<li>We consulted Kurt and we are going to reuse their existing console cable.&nbsp; The new console cable will be a spare.</li>
+	<li>Their carriage currently has G series probes.&nbsp; We are going to use them and their new probes will be spares for them.&nbsp; We ordered 4 each (3 for knees and 1 for saw guide) of adapter cables (male D60 to female MS) from Laurie.&nbsp;</li>
+	<li>The electricians need to drill a hole in the top of the Setworks cabinet and there was no room above the cabinet to perform the task.&nbsp; I removed the Firesync master, Netgear network switch, and bracket so they could accomplish the task.</li>
+	<li>Reinstalled the bracket, Firesync master, &amp; Netgear network switch after they drilled the hole and fed the Scan cables through the conduit.&nbsp; We hooked up the scan cables to the Firesync and network switch.</li>
+	<li>We mounted the scan heads on the scan beams.</li>
+	<li>Instructed the electricians on what cables need to be ran from the carriage to the remote IO box.</li>
+	<li>We terminated the AC power cables in both cabinets.</li>
+	<li>Went to Walmart and purchased 2 &ndash; 14&rsquo; CAT6 network cables to go between the Setworks and Remote IO cabinet.&nbsp; The network cables we sent were way too long.</li>
+</ul>

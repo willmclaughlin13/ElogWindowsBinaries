@@ -1,0 +1,30 @@
+$@MID@$: 48
+Date: Fri, 02 Dec 2022 18:13:31 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Added 2 selector switches to the console.</li>
+	<li>The mill ran cat5E wire with no ends on it&nbsp;between the scanner I/F box and the Optimizer cabinet.&nbsp; I put ends on both sides of the cat5E wire and tested it with a tester.</li>
+	<li>We powered on the system.</li>
+	<li>We configured the each board/cant sensors for two digital NPN outputs.
+	<ul>
+		<li>We still need to teach them the detection points.&nbsp;</li>
+	</ul>
+	</li>
+	<li>We mounted the scan heads.</li>
+	<li>I fixed a power issue in the scanner I/F box and plugged in the scan heads.
+	<ul>
+		<li>The L1-1S going to the 48vdc power supply came out of the terminal block.</li>
+	</ul>
+	</li>
+	<li>I entered the serial numbers of the scan heads in the correct order into the Optimizer.</li>
+	<li>Adjusted the scan beam so it would not hit the edger on a full stroke.</li>
+	<li>Adjusted the scan beam angle to edger side of the infeed deck.</li>
+	<li>Set the lasers at 48&quot; apart on the right heads, then alligned the left heads with the right heads.</li>
+</ul>

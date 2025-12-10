@@ -1,0 +1,33 @@
+$@MID@$: 59
+Date: Tue, 13 Dec 2022 18:04:11 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>I talked to Marv last night and he mentioned that he was told that the over/under thickness tolerance only affected deciding the thickness of a flitch.&nbsp; I retested a saved raw flitch data with the over/under thickness set 0.5&quot; and 0.1&quot;.&nbsp; Going from 0.5&quot; to 0.1&quot; decreased the width of the board by about 0.8&quot;.&nbsp; I looked at the code and edge wane is affected by the under thickness.
+	<ul>
+		<li>While looking into this, I found some compile time parameters that I thought might affect what is considered wane.&nbsp; I looked at Nicole&#39;s software and use the values from their software and it caused the optimizer to better determine&nbsp;wane (TOP_DROPOUT_TOL &amp; TOP_TOL).&nbsp;
+		<ul>
+			<li>After making these changes, I was able to relax their wane rules.&nbsp; I left them running edge, face, and length wane at 35 and their outside edge wane at 10.</li>
+			<li>I&#39;m not sure if it is detecting square edge boards very good.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Sam worked on getting the forced splits to work for their system.&nbsp; I realized that I had not turned it on in the optimizer.&nbsp; I turned it on and recompiled their software.</li>
+	<li>Observed them running.
+	<ul>
+		<li>I watched the edgings in the waste shoot, and they looked pretty clean.</li>
+	</ul>
+	</li>
+	<li>The right deck VFD tripped out 6-12 times in the afternoon.
+	<ul>
+		<li>Mac and I wired in a VFD reset for the left and right deck.&nbsp; We put a 24vdc relay in the MCC cabinet to reset both VFD&#39;s using&nbsp;the remote PLC output 315.</li>
+	</ul>
+	</li>
+</ul>

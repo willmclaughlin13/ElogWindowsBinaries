@@ -1,0 +1,16 @@
+$@MID@$: 25
+Date: Fri, 13 May 2022 11:33:38 -0700
+Technician: Chris
+Mill: Clark Hardwoods
+Job: 201910
+System: RS2
+Contact: Heath
+Issue: Hardware
+Hardware: Encoder
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Sent Heath a new tested Avatron Encoder with the adapter kit. When arrived, the new encoder did not work, even though it was tested (by Chris). Put back in original encoder and it fails every third or forth pass with a large 100+ and then -100+ in error. Not sure what to do for them.</p>
+
+<p>Possible prox switch range issue, Daniel found a note from original install trip report about setting the prox switch to miss the encoder wheel. Having Heath do that.</p>

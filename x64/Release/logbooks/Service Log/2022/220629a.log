@@ -1,0 +1,86 @@
+$@MID@$: 162
+Date: Wed, 29 Jun 2022 07:44:57 -0700
+In reply to: 160
+Technician: Basil
+Mill: Madison County
+Job: 201801
+System: RS2
+Contact: Tim
+Phone: 314 798 2600
+Issue: Hydraulic
+Hardware: Knees
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Second call from Tim regarding the knees they had the same issue.</p>
+
+<p>After doing several tests we narrowed the problem down to a problem with the hydraulic system.&nbsp;</p>
+
+<p>They found a couple loose wires on there servo valves. They tightened those wires down so at this moment (7:47AM) they are runnng some tests.</p>
+
+<p>They will call back if problem reaccures.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Tom called saying his knees wouldn&#39;t move unless the carriage was moving. I saw his target position was 78&quot; for all the active knees. Had him cycle control power to get the targets back within bounds. System is showing 10V out of the card, but knees aren&#39;t moving still. Tom is going out to the carriage to measure the voltage coming out of the servo cable while the sawyer holds down limit override.</p>
+
+			<p>&nbsp;</p>
+
+			<p>Saw they got it fixed on their own, didn&#39;t call back.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 163
+Date: Wed, 29 Jun 2022 08:25:10 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Other
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scott called and asked if I could get on their system to look at their carriage drive positioning.&nbsp; Per Scott, it was over shooting the front&nbsp;of the log by about 6&quot;.&nbsp; I had him adjust the home position from 12&quot; to 5&quot; or 6&quot;.&nbsp; He said they would watch it and call back if they need any further help.</p>
+$@MID@$: 164
+Date: Wed, 29 Jun 2022 14:03:14 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Other
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>The mill called and said that they were having problems with the carriage drive.&nbsp; later Scott got on the phone and said that the control card in Slot 10 had a fault.&nbsp; I got on their system and connected to their PLC.&nbsp; I reset the module and it started working for them.&nbsp; They then said the rotate 90 was not fully rotating.&nbsp; I had them re-reference the actuator and the fixed that problem.</p>
+$@MID@$: 165
+Date: Wed, 29 Jun 2022 16:10:00 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Other
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scott called again and the carriage would not offset the saws after completing the cut on axis 1.&nbsp; I had them adjust End of Saw Position Target from -50&quot; to -55&quot; and that seamed to fix the issue for them.</p>

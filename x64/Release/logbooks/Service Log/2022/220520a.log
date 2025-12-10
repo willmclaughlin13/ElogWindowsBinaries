@@ -1,0 +1,148 @@
+$@MID@$: 54
+Date: Fri, 20 May 2022 09:39:48 -0700
+Technician: Basil
+Mill: Potlatch
+Job: ???
+System: RS2
+Contact: Ronnie ronnieadair@potlatchdeltic.com
+Issue: Hydraulic
+Hardware: Knees
+Resolution: Problem Fixed?
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ronnie telling me all about his knee troubles. Rambled at me for 30 minutes and finally got to the point. The knees are fine now but he wants me to guess what was wrong. I wasted a lot of time guessing for him. He asked me to send him a quote for new buttons, caps and labels on his console.</p>
+
+<p>What I think happened was his operator jogged the knees outside of their limits with limit override on. Got massive negative numbers and locked it up that way. May also be a hardware issue like the blocking valve. Not sure. He talks very slowly</p>
+$@MID@$: 55
+Date: Fri, 20 May 2022 09:55:09 -0700
+In reply to: 50
+Technician: Basil
+Mill: Kennebec Solon
+Job: 201318
+System: RS2
+Contact: Alex
+Issue: Hardware
+Hardware: PLC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Returned Alex&rsquo;s call. Roll case still isn&rsquo;t working correctly. They&rsquo;ve been resetting the PLC every time. They think it&rsquo;s their impact plate getting double hit. They ran a lighter wood yesterday for the first time in a while and had this issue consistently. Today, with a heavier wood, it&rsquo;s much better but still an issue. I&rsquo;m going to watch their PLC at lunch when Alex double triggers the eye to see where it&rsquo;s getting stuck in the PLC.</li>
+</ul>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>Emergency call Thursday morning, they swapped their PLC CPU and it doesn&rsquo;t have the latest program on it. I backed up their existing program yesterday and uploaded it to their spare PLC.</li>
+				<li>They will run with it for a week before sending us their other CPU to make sure that was the problem.</li>
+				<li>Error came back.</li>
+			</ul>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<ul>
+							<li>Called to tell me their PLC has been faulting regularly. I suggested we swap the CPU which we scheduled for tomorrow. Sam recommended I have them reseat all the modules, then wait with the current CPU until it faults and we can see the error message. I don&rsquo;t have Alex&rsquo;s info to contact, will have to wait until tomorrow</li>
+						</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 56
+Date: Fri, 20 May 2022 11:43:11 -0700
+In reply to: 45
+Technician: Basil
+Mill: Post Hardwoods
+Job: 201619
+System: RS2 Lumber Pro
+Contact: Erik
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Erik called after receiving the loaner&nbsp;scan head to get it swapped. Changed the serial number for him but we couldn&rsquo;t do a normal calibration because they didn&rsquo;t have a long enough log. Scans look very good now anyways.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Same issue as yesterday. Every time they cycle control power, it kills all scan heads except number 2. I told them to stop turning off scan power until we install their loaner head and disconnect the bad head in the meantime.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<ul>
+							<li>More trouble with their scanners. Scan head two came on and the rest of them were off and wouldn&rsquo;t come on. Rebooted the cabinet which fixed the issue. Also, their scan abort delay error was popping up. I increased it from 1.5 to 2.5. Copiah&rsquo;s Lumber Pro delay was 10 seconds</li>
+						</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 57
+Date: Fri, 20 May 2022 11:44:06 -0700
+In reply to: 32
+Technician: Basil
+Mill: Copiah
+Job: 201223
+System: RS2
+Contact: Terry
+Issue: Hardware
+Hardware: ELO Monitor
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Received new ELO and needed help calibrating. Not as easy as I thought on Windows XP</li>
+</ul>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Picked up where Chris left off. Asked Chris to ship a new ELO and power supply.&nbsp;<img alt="angel" height="23" src="http://lewc-app:8080/ckeditor/plugins/smiley/images/angel_smile.png" title="angel" width="23" /></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

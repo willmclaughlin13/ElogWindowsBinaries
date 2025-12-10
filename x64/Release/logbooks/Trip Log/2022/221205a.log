@@ -1,0 +1,29 @@
+$@MID@$: 51
+Date: Mon, 05 Dec 2022 19:36:02 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Mac had&nbsp;mentioned that there was slop in the saw shifts yesterday and I discussed it with the mill.&nbsp; Told them if there is slop, then we can&#39;t accurately position the saws.</li>
+	<li>The mill replaced the broken hydraulic valve on one of the press rolls.&nbsp; Some of the press rolls are slow to go up and down.</li>
+	<li>The left joystick was hard to move left again (takes almost 2&nbsp;hands to move it left).&nbsp; I emailed Laurie and requested 1 each be sent to us overnight.</li>
+	<li>The gang outfeed rollcase was not coming on.&nbsp; I traced the issue to the common wire from the VFD was not on the correct terminal in the MCC cabinet (it was wired to the drawings, but the drawings were wrong).</li>
+	<li>Worked with the mill and electricians on figuring out how the arbor start sequence worked.&nbsp; Mac got involved in the conversation and straightened us all out.</li>
+	<li>&nbsp;Sam tuned the RMC for the saws and the saw shift lasers.</li>
+	<li>Sam sent some boards through the edger and the press rolls did not come down.
+	<ul>
+		<li>It was discovered that the infeed flappers were not adjusted correctly.
+		<ul>
+			<li>It took Mac a 1-2 hours to fix the flappers.</li>
+		</ul>
+		</li>
+		<li>After the flappers were fixed, the board side press rolls still did not come down when a board was sent through.&nbsp; This turned out to be because the encoder was counting the wrong direction.&nbsp; Swapped the brown and red wires coming into the PLC cabinet from the encoder on the board side infeed.</li>
+	</ul>
+	</li>
+	<li>I measured the chain positions and first laser to the front of the edger.&nbsp; Entered the values into the optimizer.</li>
+</ul>

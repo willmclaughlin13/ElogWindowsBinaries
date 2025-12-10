@@ -1,0 +1,32 @@
+$@MID@$: 94
+Date: Wed, 04 Sep 2024 17:47:31 -0700
+Technician: Daniel
+Mill: Bruggeman
+Job: 202126
+System: Edger
+Trip Type: Installation
+Attachment: 240904_181117_20240904_171250.jpg,240904_181143_20240904_171045.jpg,240904_181221_20240904_171057.jpg,240904_181251_20240904_171121.jpg
+Encoding: HTML
+========================================
+<ul>
+	<li>Fabbed the MCC back panel for the new motor starter for M11.&nbsp; Installed and wired the M11 motor starter in the MCC.</li>
+	<li>Terminated REF, ETL, &amp; OTL in the PLC cabinet.</li>
+	<li>Terminated SE1 in both the PLC cabinet and the junction box.</li>
+	<li>The cable for the console arrived and the electricians pulled it.&nbsp; I terminated the cables (CS1, LES1, &amp; ES1) in both the PLC cabinet and the console.</li>
+	<li>I terminated the AC power wires for the Sawyer&#39;s screen both in the sawyer&#39;s screen cabinet &amp; the PLC cabinet.</li>
+	<li>Finished terminating the AC Inputs/Outputs wires in the PLC cabinet.</li>
+	<li>PLC cabinet - Terminated Circuit 2 power from the main breaker panel.</li>
+	<li>The electricians ran the second network cable between the PLC and MCC cabinets.</li>
+</ul>
+
+<p>Left to terminate:</p>
+
+<ul>
+	<li>Overhead positioning sensors.
+	<ul>
+		<li>Raymond has installed the mounting structure for the sensors.&nbsp;</li>
+		<li>I ordered 60&#39; of encoder cable &amp; a sensor cable&nbsp;from Laurie today so I can get them wired in tomorrow.</li>
+	</ul>
+	</li>
+	<li>The electricians need to install a power receptacle for the UPS.</li>
+</ul>

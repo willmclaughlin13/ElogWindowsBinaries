@@ -1,0 +1,66 @@
+$@MID@$: 69
+Date: Tue, 19 Sep 2023 15:30:09 -0700
+Technician: Brandon
+Mill: Park Falls 
+Job: 202303 - System #1
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>&nbsp;</p>
+
+<p><strong>Mon 9/4/23:</strong></p>
+
+<ul>
+	<li>We flew to Minneapolis, MN and drove to the Northern Lights Inn in Park Falls, WI.</li>
+</ul>
+
+<p><strong>Tue 9/5/23:</strong></p>
+
+<ul>
+	<li>We went to the mill to meet with everyone and started answering questions to help the mill guys continue getting things done.</li>
+	<li>I explained the power situation that we needed for our circuits, and the electrician started working on those.</li>
+	<li>I spent most of the day explaining the mill layout to Justin. I showed him each machine and explained the routing process and what type of lumber comes out of each one. I also explained the most common service calls and walked him through all of the common troubleshooting procedures to help him with the bulk of the service calls going forward.</li>
+	<li>The electricians got the power setup from the breaker panel, and pulled the carriage AC cable and the console power cable into the cabinet. I told them that we would wire everything inside the cabinet so I could train Justin and they could continue with the other things we needed since they were behind.</li>
+	<li>I showed Justin how to strip down the cables, route and trim the lengths, and then terminate. I did the console power while he worked on all the AC termination.</li>
+	<li>Those were the only cables we had, so we called it a day since it was getting a little late.</li>
+</ul>
+
+<p><strong>Wed 9/6/23:</strong></p>
+
+<ul>
+	<li>I worked with Justin on terminating the DC cables from the carriage.</li>
+	<li>I called Marty and confirmed the drawings needed for the scan frame have been sent. I talked with Kevin and the mill guys and they started with the small frame. They had to modify the support beam to lower it for the long frame. They planned on getting the long one up first thing in the morning.</li>
+	<li>I unplugged all the cables from the knees so that Cleereman could couple the hoses so it was ready to flush. I also took the wire in the cabinet for the safety valve and set it next to L1-2A so I could provide constant 120V when they were ready to flush. They were working on the cable drum and decided to start flushing in the morning, so I showed the electrician the wire to plug in.</li>
+	<li>We powered on and had issues with the PC and PLC. The PC wasn&rsquo;t booting up past a blue screen saying critical startup error, so I had Justin swap the spare in. This booted up fine and I could get a hotspot going for Daniel to look at the PLC. It was saying the base was bad, I tried the spare CPU just in case but no luck. I called Chris to overnight a PLC base rack and another black brick to replace the spare I took.</li>
+	<li>I took pictures of some apparent water damage and rust in the keyboard tray and by the PLC.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><strong>Thur 9/7/23:</strong></p>
+
+<ul>
+	<li>I checked and verified they had started flushing the hydraulics when we got to the mill.</li>
+	<li>Justin and I terminated the prox switches and the laser start/stop, and he helped me pull the excess back out to the rub rail so all the extra cable was available for use when the actual prox switch was installed.</li>
+	<li>They finished putting the wire duct and long scan frame up. I helped them get the heads put up, spaced them out, locked them down and plugged them in. We just needed to wire in the IF box when they finished pulling wires so we could try to turn on the lasers and adjust the angle of the frames.</li>
+	<li>I swapped out the PLC base when it got to the mill. The old one was all corroded and looked to have water damage behind the power supply slot. I took pictures for records and got the PLC working with the new one.</li>
+	<li>I moved the safety blocking valve wire back to 201 after we were done flushing the hydraulics.</li>
+</ul>
+
+<p><strong>Fri 9/8/23:</strong></p>
+
+<ul>
+	<li>We wired in the AC and DC for scanning.</li>
+	<li>We put in the serial numbers for the heads, and turned on the lasers.</li>
+	<li>I had the mill guys help me adjust the angle of the scan frames and lock it in place, and then I showed Justin how we measure the distance of the laser spacing.</li>
+	<li>I helped the electricians find the correct placement for the prox switches, and had them mount the laser warning light.</li>
+	<li>I finished calibrations for the encoder, knees, and scanners. I trained the sawyer on some things he needed to know while going through all the calibrations.</li>
+</ul>
+
+<p><strong>Sat 9/9/23:</strong></p>
+
+<ul>
+	<li>We flew back to Portland, OR.</li>
+</ul>

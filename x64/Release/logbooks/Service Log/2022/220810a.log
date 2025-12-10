@@ -1,0 +1,63 @@
+$@MID@$: 238
+Date: Wed, 10 Aug 2022 11:07:27 -0700
+Reply to: 240
+Technician: Daniel
+Mill: Jones Lumber
+Job: J201324
+System: RS2
+Contact: Randy
+Phone: 
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Randy called and said their 2 exchange heads are not working.&nbsp; Lasers are not on.&nbsp; They are not on Teamviewer, so I told him to check to see if Setworks still has the S/N for the 2 heads in it.&nbsp; He is going to check and call back if he still needs further help.</p>
+$@MID@$: 239
+Date: Wed, 10 Aug 2022 11:07:28 -0700
+Reply to: 241
+Technician: Chris
+Mill: Kendrick Forest
+Job: 201809
+System: RS2
+Contact: Morgan
+Phone: 
+Issue: Software
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Questions about how to create new species files, how to modify, and how to get to reports options.</p>
+$@MID@$: 240
+Date: Wed, 10 Aug 2022 11:37:25 -0700
+In reply to: 238
+Technician: Chris
+Mill: Jones Lumber
+Job: J201324
+System: RS2
+Contact: Randy
+Phone: 
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>They were shutting off the power switch without exiting setworks, losing the new laser serial numbers. Shut down properly, now they work.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Randy called and said their 2 exchange heads are not working.&nbsp; Lasers are not on.&nbsp; They are not on Teamviewer, so I told him to check to see if Setworks still has the S/N for the 2 heads in it.&nbsp; He is going to check and call back if he still needs further help.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

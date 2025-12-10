@@ -1,0 +1,21 @@
+$@MID@$: 30
+Date: Mon, 18 Jul 2022 15:43:00 -0700
+Technician: Daniel
+Mill: Scott Brothers
+Job: J202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>When we got there, they could doing anything with the carriage (no knee movement, no carriage ac).&nbsp; I opened up the Setworks cabinet and found I forgot to put the PLC into run mode when I switch PLC CPUs the night before.</li>
+	<li>I noticed that the system sometimes&nbsp;was not sending the flitch where it needed to go.&nbsp; This was because when they would drop the cant off, it would send its route to the PLC and override the flitch route.&nbsp; I had Kaitlin update the optimizer to use the dispatch piece strobe.&nbsp; I updated the PLC code to use the strobe.
+	<ul>
+		<li>I watched the PLC code and noticed that the routing active tag was never true after a route waiting transferred out of waiting.&nbsp; There was a race condition in the PLC logic, so I put a 5 thousandth of second delay before transferring the routing waiting.</li>
+	</ul>
+	</li>
+	<li>I later noticed a cant was sent to the edger.&nbsp; After some considerable amount of time, I was able to track down the piece of code in the optimizer that was causing the issue.&nbsp; In the virtual pant sub routine, it was extending the dispatch strobe when the end of log is &gt; 18&quot; from the front of guide.&nbsp; The auto dispatch backstand routine gets called on new log, so the end of log information gets reset and caused the strobe to delay.&nbsp; At that point when the pant opens up, it turns of the delay and never strobes.&nbsp; To fix it I added a check in the logic for the extend to prevent it from extending the delay if the cut flag pant is not on for any of the faces.</li>
+	<li>I did some training with Anthony on the menus.</li>
+	<li>I tried to setup the system to email the reports, but they did not have the right information for me to set it up.&nbsp; I setup the system with a network printer and turned on auto print reports.</li>
+</ul>

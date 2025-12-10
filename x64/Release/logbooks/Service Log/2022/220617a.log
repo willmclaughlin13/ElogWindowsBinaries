@@ -1,0 +1,38 @@
+$@MID@$: 124
+Date: Fri, 17 Jun 2022 11:15:32 -0700
+Technician: Basil
+Mill: New Life Forest Products
+Job: 201706
+System: RS2
+Contact: Eric Jones
+Phone: 9289400246
+Issue: Software Installation
+Hardware: Reference Prox
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Made a software update to help with their emails (which so far has made it worse). Went to test the software only to find it wasn&#39;t referrencing. Had Eric check on the photo eye and he found it was broken off from one of their cleaners earlier today. He&#39;s repairing it now and going to calll me back.</p>
+
+<p>&nbsp;</p>
+
+<p>PE repaired and everything running smoothly. Initial problem with their new email system had the error: <!--StartFragment-->Method not found: &#39;System.String System.String.Format (System.IFormatProvider, System.String, System.Object)<!--EndFragment-->. This was a windows 7 machine, I fixed this by installing .NET framework 4.8 manually. It made me reboot after. My script installs but doesn&#39;t prompt for reboot, maybe that&#39;s all I needed.</p>
+
+<p>Initial problem with emails turned out to be IT enabled 2FA on their gmail mailbox, so the update didn&#39;t help that. They will need to disable that in order for our system to work</p>
+
+<p><!--EndFragment--></p>
+$@MID@$: 125
+Date: Fri, 17 Jun 2022 12:17:12 -0700
+Technician: Basil
+Mill: Clearlake Forest Products
+Job: 202129
+System: RS2.5
+Contact: Eric
+Phone: 
+Issue: Hardware
+Hardware: Cabling
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Eric called after hours saying he couldn&#39;t get the system to come on. Turns out it was just the sawer&#39;s display. I remoted in and saw it wasn&#39;t being seen by Windows and had him check the HDMI. He went to unplug the cable from the PC, touched it, and it connected. He unplugged and plugged it back in and it reconnected. It must have been loose. Suddenly BIG CRISIS, no AC funcitonality on the carriage. I monitor PLC and see the dog down output is on, Eric hits it with his meter, 120VAC. I ask him if the air is on for the carriage and it wasn&#39;t. Back to bed</p>

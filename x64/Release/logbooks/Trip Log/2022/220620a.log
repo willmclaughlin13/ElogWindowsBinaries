@@ -1,0 +1,88 @@
+$@MID@$: 22
+Date: Mon, 20 Jun 2022 18:37:57 -0700
+Technician: Kaitlin
+Mill: Fly Tie and Lumber
+Job: 202128
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>6/19</p>
+
+<ul>
+	<li>We checked the USB hub for any issue that could cause it to malfunction and came to the conclusion that the USB hub was bad.</li>
+	<li>Chain turners were set backward. Fixed.</li>
+	<li>PLC outputs were set wrong: off by one on the PLC program compared to the drawings. Brandon decided&nbsp;to change the wiring to match the program (513-516).</li>
+	<li>Asked Marv for advice on the encoder problems (massive errors, all red) and told to recalibrate encoder and see if the initial measurement was wrong. Did not fix.
+	<ul>
+		<li>Swapped encoder. Problem persists.</li>
+		<li>Resistors used to be built in, but have been replaced with add ons. Possible cause.</li>
+	</ul>
+	</li>
+	<li>I measured the knees for knee calibration.</li>
+	<li>Found that a second laser switch was&nbsp;hooked up that wasn&#39;t on the drawings.</li>
+	<li>Laser angle needs to be adjusted, too high.</li>
+	<li>Kicker wasn&#39;t working. Brandon thought it was because of auto scan and removed that from the code.
+	<ul>
+		<li>Actual cause: log loader wire missing in drawings, never got hooked up.</li>
+		<li>We found that several wires were left unconnected in the main cabinet. Assumed that this was the cause of some PLC issues.
+		<ul>
+			<li>Missing wires: log loader, load end/unload end</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Started sawing today.</li>
+	<li>Need a tarp for the scanners.</li>
+	<li>No double beep on scan complete.</li>
+	<li>Routing isn&#39;t working.
+	<ul>
+		<li>One of the problems is that there&#39;s no slab belt output. It just mirrors whatever input it gets.</li>
+		<li>Other problem is input strobing is required to signal the different parts of the mill. Brandon worked on this for most of this day and the next.</li>
+	</ul>
+	</li>
+	<li>Roll deck speed up on saw/slow on idle is working now</li>
+	<li>Found that timber bind was enabled with zero delay, kept middle dogs from moving</li>
+	<li>Scan calibration</li>
+	<li>The sawyer who isn&#39;t here wants virtual kickers with manual kickers</li>
+	<li>Mill is functional! For the most part.</li>
+	<li>Log&nbsp;turner filter changed.</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p>6/20</p>
+
+<ul>
+	<li>Watching the sawyer.</li>
+	<li>Brandon politely refused to get rid of back set for Mike.</li>
+	<li>Scan distance changed.</li>
+	<li>Auto face changed to 90 degrees.</li>
+	<li>Around 8AM the cab is shaken. One of the dogs on the carriage was out too far and hit something.
+	<ul>
+		<li>This tripped the second breaker in the main cabinet, the main breaker&nbsp;on the wall, and killed the power supply.</li>
+		<li>Brandon checked carriage for loose wires.</li>
+		<li>Servo power supply trashed. Replaced.</li>
+		<li>Knees recalibrated. Saw forward limit changed to 2 inches.</li>
+	</ul>
+	</li>
+	<li>For safety reasons, Brandon changed the code to put a size limit on transfers.</li>
+	<li>For safety reasons, limit override has been disabled on the system.
+	<ul>
+		<li>Fluffy has been shown how to put it back on for emergencies.</li>
+	</ul>
+	</li>
+	<li>Downtime menu missing number labels. Added back in through console mapping.</li>
+	<li>Cant pins need to be installed by mill.</li>
+	<li>Will fixed the SQL.</li>
+	<li>Brandon and Daniel got the strobe code working.</li>
+	<li>Small logs (pencil logs) were getting&nbsp;bad scans. Scan angle readjusted.</li>
+	<li>Console buzzer not working: buzzer wire got bit off and needed to be rewired.
+	<ul>
+		<li>Other console issues: socket board seems to be bad. Some button spots won&#39;t light up even with buttons replaced.</li>
+		<li>Chain turner toggle won&#39;t light up because of an issue in the code.</li>
+	</ul>
+	</li>
+	<li>Issue with the saw guide where it drops down on back cuts.</li>
+</ul>

@@ -1,0 +1,47 @@
+$@MID@$: 19
+Date: Sun, 05 Jun 2022 08:15:29 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>I recalibrated the pickers because it was discovered yesterday that PLC was giving Picker 2 a command to set the actual position to zero.</li>
+	<li>I measured the press roll positions from the photo eye for Sam.</li>
+	<li>Helped Sam with the calculations for the press roll timing.</li>
+	<li>I looked into what I noticed with the solution on the optimizer the saw widths did not match width of the board.&nbsp; There was no issue.&nbsp; The reason it did not match was the board was a leading edge square and the difference was the square board offset.</li>
+	<li>When I went to tune the saws, the values were increasing when they should be decreasing.&nbsp; When we had the issue with the positioning pins, we negated the saws positioning scale when we should not have.&nbsp; I remove the negation from the saws positioning scale and recalibrated the saws.</li>
+	<li>I tuned the left saw and copied its tuning values to the middle and right saws.</li>
+	<li>I retuned the positioning pins to eliminate some jittering I saw.</li>
+	<li>Sam and I worked on press roll time, but we ran into issue that prevent us from setting up the press roll timing.</li>
+	<li>Sam made some tweaks to the PLC program to fix some issues that arose.
+	<ul>
+		<li>The infeed/edger state machine stopped sending the saw sets and picker sets to the RMC.</li>
+		<li>Data transfer from hook to hook stop working.</li>
+		<li>Sam had several program transfers to the PLC that reset some values that caused issues with processing a flitch.</li>
+		<li>I suggested to Sam to pre-position the positioning pins for the next board to speed up the loading process.
+		<ul>
+			<li>Some of these changes caused other parts of the load process to not work properly.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>The catch pin 3 was coming out slow.&nbsp; Sam told Phill and they worked on it.&nbsp; The swapped it with #4 and it still did the same thing.&nbsp; Everything they tried did not work.
+	<ul>
+		<li>Sam had Phill check the voltage on both sides of the fuse in the setworks cabinet and there was power.&nbsp; I checked the voltage out at their terminal box and there was no voltage.&nbsp; I was going to replace it with another unused wire, but when I removed it from the terminal block in the Setworks cabinet, I discovered that I failed to strip the insulation off it.&nbsp; I corrected the issue and it started coming out fast.</li>
+	</ul>
+	</li>
+	<li>I worked with Sam to get the right combination for 2-Stage edger press rolls.
+	<ul>
+		<li>Full Down always on</li>
+		<li>Full Up Always off</li>
+	</ul>
+	</li>
+	<li>The Outfeed belt VFD kept faulting out.&nbsp; Error code E06.3.&nbsp; The error had to do with a breaking resistor and they don&#39;t have one.&nbsp; After spending a while working on it, I found that I could turn that feature off by setting B090 to 0.</li>
+	<li>The outfeed jump chains weren&#39;t working, the photo eye was always on.&nbsp; I adjusted the photo eye and fixed the issue.</li>
+	<li>I had asked Larry if there were any remote start/stops and I reverified it today.&nbsp; He said there were no remote start/stops.&nbsp; Phill came in later in the day and said there were.</li>
+	<li>We were at the mill till&nbsp;a little after 2am, to get it work for press roll timing.</li>
+</ul>

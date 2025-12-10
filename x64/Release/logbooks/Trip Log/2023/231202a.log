@@ -1,0 +1,28 @@
+$@MID@$: 71
+Date: Sat, 02 Dec 2023 19:59:04 -0800
+Technician: Daniel
+Mill: Kennebec Grantham
+Job: 201917 & 202221
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>RS2.5
+	<ul>
+		<li>I installed the updated software on their system. &nbsp;The knees would not move. &nbsp;I determined that Auto Saw Guide(ASG) was causing the problem. &nbsp;It turns out we cannot have the ASG cannot be in SV6 &amp; TM6 (on the second positioner board) if it uses a servo and Auto Sawguide Positioner flag is turned on. &nbsp;I moved it to SV2 &amp; TM2 on the positioner board in the Setworks cabinet. &nbsp;The way the code is now, using TM6 will cause some arrays to go&nbsp;out of bounds.</li>
+		<li>After fixing the knee issue, the saw guide would not move. &nbsp;I set the offset in the ASG setup screen and the position was correct there, but not on the Targets and Position screen. &nbsp;After chasing my tail for hours, I realize that the issue was that I needed to reverse direction of the tempo value. &nbsp;I changed the direction flag in the machine.my file and that fixed the position issue, but it still wouldn&#39;t move. &nbsp;I checked the voltage at valve and it was getting voltage. &nbsp;I swapped the analog signal wires and the fixed the issue. &nbsp;I adjust the gains and speed for the saw guide to make it&#39;s movements smoother.</li>
+		<li>We hooked up the scanners and found Head 6 has a bad cable.</li>
+	</ul>
+	</li>
+	<li>Debarker Aux Controls
+	<ul>
+		<li>I uploaded the latest PLC program to the PLC.
+		<ul>
+			<li>In the process of uploading the program, we found out that our WI-FI router we bring and use to connect to PLCs would not work properly. &nbsp;We went to Best Buy that evening and purchased a new one.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>

@@ -1,0 +1,102 @@
+$@MID@$: 103
+Date: Wed, 08 Jun 2022 09:00:05 -0700
+Technician: Basil
+Mill: Kendrick FP
+Job: 201809
+System: RS2
+Contact: Jeremy 563-608-6142
+Issue: Hardware
+Hardware: Reference Prox
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Power went out and carriage wouldn&rsquo;t reference. I had him disconnect and reconnect the prox. Switch. It was always on. It started working again either on its own or they &ldquo;flicked it&rdquo; like he said they normally do. I asked Chris to send them two new ones.</li>
+</ul>
+$@MID@$: 104
+Date: Wed, 08 Jun 2022 10:48:22 -0700
+Technician: Kaitlin
+Mill: Ray White Lumber
+Job: 202121
+System: RS2.5
+Contact: Mike
+Issue: Hydraulic
+Hardware: Slabber
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Intermittent slabber issue where 2 inch boards are cutting a quarter inch thicker than they want; other boards seem to be cutting fine.&nbsp;Mike thought it was being caused by the gradient value being entered wrong, and it was fixed for a while after entering the correct value, but the issue returned. We told them to recalibrate their knees and then recalibrate the scanner based on the knees so we could make certain that it wasn&#39;t a calibration issue. Expecting&nbsp;to get a call back this afternoon (12:30 to 1:30 pm)</p>
+$@MID@$: 105
+Date: Wed, 08 Jun 2022 11:18:30 -0700
+Reply to: 118
+Technician: Basil
+Mill: JC Hamer Webster Springs
+Job: ???
+System: RS1
+Contact: Corey?
+Phone: 
+Issue: Configuration
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Corey called, headrig #3 has shallow opening faces on fourth faces. Rs1 system&rsquo;s Bturner out isn&rsquo;t working. I saw on the drawings it was spare 4 for all knees for some reason. I suggested he map a button to spare 4 and try it. Both systems offline on Teamviewer, he&rsquo;s going to call back when he has one online.</p>
+$@MID@$: 106
+Date: Wed, 08 Jun 2022 12:43:55 -0700
+Technician: Basil
+Mill: Blue Triangle EO
+Job: 201433
+System: Edger
+Contact: ???
+Issue: Hardware
+Hardware: VFD
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Said they changed a saw positioner with the power running then their system started&nbsp;faulting out. Operator taped down the VFD reset button. We can&rsquo;t see his PLC so there&rsquo;s not much we can do to help</p>
+$@MID@$: 107
+Date: Wed, 08 Jun 2022 12:56:10 -0700
+Technician: Basil
+Mill: Robert S. Coleman Lumber
+Job: 201309
+System: RS2
+Contact: Chad? Karen has the info now
+Issue: Hydraulic
+Hardware: Servo Valve
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ordered one servo valve to be sent ASAP. Handed over to Karen</p>
+$@MID@$: 108
+Date: Wed, 08 Jun 2022 13:42:07 -0700
+Technician: Basil
+Mill: Durham
+Job: 200816
+System: RS1
+Contact: Mike 864 986-2011
+Issue: Hardware
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Couple scan heads are out. Their system isn&rsquo;t on TeamViewer, they just got new internet and it doesn&rsquo;t seem to be online now. They are going to fix it and call back. They also asked about the status of their seal kit order, but we couldn&rsquo;t find that info for them. Hopefully Chris can help when he&rsquo;s back</p>
+$@MID@$: 109
+Date: Wed, 08 Jun 2022 13:52:13 -0700
+Technician: Kaitlin
+Mill: Ray White Lumber
+Job: 202121
+System: RS2.5
+Contact: Mike
+Issue: Hydraulic
+Hardware: Slabber
+Resolution: Problem Fixed?
+Attachment: 
+Encoding: HTML
+========================================
+<p>Recalibrated knees, slabber, scanners. Scanners had already been wiped down two days ago. Told them to run tomorrow and call back if they are still having slabber issues.</p>

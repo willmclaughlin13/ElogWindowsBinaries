@@ -1,0 +1,25 @@
+$@MID@$: 56
+Date: Sun, 10 Dec 2022 17:20:26 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Mac &amp; I reverified the center line the mill used to align the saw center to the board side of the machine.&nbsp; The saw center was still off from the board side machine center, but it is the best the mill can do until the edger is fixed.</li>
+	<li>Once the mill was done aligning the positioning lasers to the saws, we calibrated the laser positions.</li>
+	<li>We calibrated the scanners.
+	<ul>
+		<li>When the positioning laser were set to&nbsp;4&quot;, there was at least a 0.5&quot; in distance between the laser from the front of the edger to the back of the infeed deck.&nbsp; So, we used the centering arms to position the calibration bar for calibration.</li>
+		<li>Since the saw center is not the center of the centering arms, I used the front of the right positioning laser to determine how much to shift the solution to get the solution on saw center.&nbsp; I set the Board Positioning Offset to -0.625&quot;.</li>
+	</ul>
+	</li>
+	<li>I updated the machine parameters for the new saw limits.</li>
+	<li>I observed the machine edging boards.&nbsp; It looked like the solutions were not getting offset by Board Positioning Offset.&nbsp; I checked the optimizer software code and found that the Board Positioning Offset value was not being used.&nbsp; I updated the code to use the Board Positioning Offset for M-Series with no-fixed saws.</li>
+	<li>We measured the board widths and used their measurements to calibrate the saws.</li>
+	<li>I continued to observe the machine run, I compared the boards coming out of the edger to the optimizer solution.&nbsp; They look like they match the solution.</li>
+	<li>I noticed that the Force Splits screen was not populating the data correctly.&nbsp; I started working on fixing the code for 2 saw edgers.&nbsp;</li>
+</ul>

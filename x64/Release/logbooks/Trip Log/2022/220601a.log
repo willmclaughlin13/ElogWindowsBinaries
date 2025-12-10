@@ -1,0 +1,58 @@
+$@MID@$: 15
+Date: Wed, 01 Jun 2022 20:34:36 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Readjusted the scan deck photo eyes to start sensing&nbsp;a board about 4&quot; away from the hooks.</li>
+	<li>Larry located and marked the HPU motor coil and aux wires in the bundle of wires they brought into the setworks cabinet.&nbsp; I terminated them in the setworks cabinets and powered on the HPU okay.</li>
+	<li>Moved and spaced the scan heads.&nbsp; Phill wanted them moved about 3&quot; further away from the index line.
+	<ul>
+		<li>When I moved and spaced the scan heads, I spaced them at 24&quot; apart and they need to be 25&quot; apart.&nbsp; I respaced the scan heads.</li>
+	</ul>
+	</li>
+	<li>At lunch we went to Lowes and picked up a laser level to help us measure the center of scan head 1 to index line.
+	<ul>
+		<li>Note: we made the front of the saw the index line.</li>
+		<li>I updated the Optimizer with the scan head positioning.</li>
+	</ul>
+	</li>
+	<li>I calibrated the scan deck encoder for the scanners.</li>
+	<li>I calibrated the scan heads using their old calibration bar (2x4).</li>
+	<li>I scanned a board and the optimizer was unable to produce a valid solution even though the scan data was good.
+	<ul>
+		<li>I went through the figure saws routine and tried to match its configuration to Emporium&#39;s (J201718) because the two edgers are similar.</li>
+		<li>I reloaded the saved board data and it gives a solution, but it is not able to position the optimized solution.
+		<ul>
+			<li>Worked on correcting this issue back at the hotel and was able to fix it by removing their Job # from a piece of code int the figure saws routine.</li>
+		</ul>
+		</li>
+		<li>The scanned board is square edge and on the optimizer it drew the board with no wane and positioned the saws to cut it.&nbsp; It then drew what looks like and all wane board next to it.
+		<ul>
+			<li>Worked on correcting this issue back at the hotel and was able to fix it by adding their Job # to some code in the View screen.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Move Pin 2 and Laser 1 &amp; Laser 2.
+	<ul>
+		<li>The RMC is not getting a reading from the tempo for Laser 2.&nbsp; I swapped wires with Laser 1 &amp; Laser 2 and the problem followed the cable.&nbsp;
+		<ul>
+			<li>There may be a short in the cable and might need to be replaced.&nbsp; We will have to look at it tomorrow to verify that is the case.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Larry was trying to locate the wires for the saw lubing system (WaterMizer) and he replaced a few I actually had found at the lube pump.&nbsp; After he left for the day, I reinstalled the original wires at the lube pump.</li>
+	<li>The mill ran a wire down machine center for us to calibrate the pins, saws, and pickers hydraulic.</li>
+	<li>I located all the gradient values for the tempos and wrote them down.
+	<ul>
+		<li>Sam had to rework the PLC code and RMC account for adding the feedworks encoder to the RMC before we could enter gradient values.&nbsp;</li>
+	</ul>
+	</li>
+</ul>

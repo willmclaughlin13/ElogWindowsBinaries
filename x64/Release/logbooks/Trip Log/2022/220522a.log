@@ -1,0 +1,29 @@
+$@MID@$: 3
+Date: Sun, 22 May 2022 10:49:00 -0700
+Technician: Daniel
+Mill: Rustic Wood Products
+Job: 202203
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Updated them to the latest master.</li>
+	<li>Updated Web Reports on their system. (I left a copy of the IIS_SQL_UPDATE on their thumb drive)</li>
+	<li>We cleaned up the inside of the cabinets.</li>
+	<li>Set the angle on the scan beam over the cab.</li>
+	<li>We had them testing the carriage AC and knee movements again and the knees stopped moving.&nbsp; The PLC showed that the HSV was on.&nbsp; After some trouble shooting, we found that there was no power to the Remote IO for the AC outputs.&nbsp; I trace the problem to a wire in the setworks cabinet.&nbsp; I reterminated the wire and everything worked again.</li>
+	<li>The Windows&nbsp;was automatatically locking the brick.&nbsp; We checked the power setting in Windows and they looked correct.&nbsp; They lost power last night after we left, so Juwan thought we might still be getting power surges.&nbsp; I remembered we had not installed the surge protector on the UPS.&nbsp; Powered down the system and installed the surge protector.&nbsp; Did not have any further problems after that.</li>
+	<li>We had them cut a cant for the scanner calibration.&nbsp; After they finished cutting the log, we cleaned the scan heads and then we calibrated the scanners.</li>
+	<li>They sawed 1 log after calibrating the scanners and it looked ok.&nbsp;</li>
+	<li>The sawyer complained that the cant pins did not go back in automatically.&nbsp; The cant pins were just setup as a spare.&nbsp; Switch them to the Cant Catcher and set the delay to 10 seconds.&nbsp; Most likely we will need to be adjusted.</li>
+	<li>Set the optimizer adjustments to below:
+	<ul>
+		<li>Cant face insurance - 1in</li>
+		<li>Cant face violation - 0.5in</li>
+		<li>Board face violation Width - 0.5in</li>
+		<li>Board face violation Length - 0.5ft</li>
+	</ul>
+	</li>
+</ul>

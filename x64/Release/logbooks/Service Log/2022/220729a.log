@@ -1,0 +1,83 @@
+$@MID@$: 216
+Date: Fri, 29 Jul 2022 11:52:09 -0700
+In reply to: 207
+Technician: Basil
+Mill: Nicolet Large Side
+Job: 200902
+System: RS2
+Contact: Steve
+Phone: 715 889 5082
+Issue: Software Corruption
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Reports coming through as all 0s. I found their shift end time was 00:00 which is before their start time. Fixed that and told Steve to call us back at the end of the next shift if it happens again.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Bandmill offset wasn&#39;t working correctly. Old system values had a negative K1 to guide. Confirmed the carriage references beyond the saw. Explains why when we calibrated encoder counts per foot off the front of the saw it referenced. Had to mess with some numbers but negative K1 to guide is much better.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Called after their knee 2 launched past the hard stop and off the front of the carriage. No knee movement at all. Couldn&rsquo;t even move the target positions. Setworks history showed limit override on and jog knee held down, but the positions wouldn&rsquo;t change. Negative values for targets and positions. After a lot of troubleshooting, called Daniel who found the system values were corrupted. Knee offsets were 0, all kinds of major issues. Restored system values from 2020, set up new flash drive so this won&rsquo;t happen again. Knee 1 is broken and disabled, so we ignored it. Calibrated the rest of the knees, calibrated the encoder, measured K1 to closest saw tooth gullet, calibrated scanners.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 217
+Date: Fri, 29 Jul 2022 11:52:46 -0700
+In reply to: 28
+Technician: Basil
+Mill: Parker Lumber
+Job: 202124
+System: RS2
+Contact: David
+Phone: 
+Issue: Configuration
+Hardware: Scan Head
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Old scan head is repaired and installed + calibrated.</p>
+
+<p>Gmail reports fixed / swapped power distribution board so laser switches work.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>David got his loaner scan head. I helped get it connected in our setworks. He&rsquo;s returning his bad head now.</li>
+				<li>Just needed the serial number changed.</li>
+				<li>Also answered questions about resetting face / cancelling entries after kicking off bad logs</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

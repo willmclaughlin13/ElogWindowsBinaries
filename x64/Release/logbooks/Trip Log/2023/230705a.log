@@ -1,0 +1,22 @@
+$@MID@$: 68
+Date: Wed, 05 Jul 2023 08:55:11 -0700
+Technician: Kaitlin
+Mill: Interfor Longview
+Job: 202214
+System: RS2.5
+Trip Type: Service
+Attachment: 
+Encoding: HTML
+========================================
+<p>07/03/2023</p>
+
+<p>Came to test carriage outputs after the carriage was replaced.</p>
+
+<ul>
+	<li>Slab gate was only giving output to the PLC momentarily, even in manual. It&#39;s a software issue with the AUTO_SLAB_CANT_DUMP switch where the slab belt output will always be on a delay if the pantograph switch is on, which means that it will pop back up after whatever the specified delay is (or instantly if there is no delay).</li>
+	<li>Knees were constantly in runaway. Was a mechanical issue. Hydraulics were leaking.</li>
+	<li>One of the dogs seemed to be binding, and one of the turners seemed to be moving slower than the other.</li>
+	<li>The scan power output on the power distribution board died while we were testing, and the board&nbsp;had to be replaced.</li>
+	<li>Sizes on the boards turned out okay for now, so we skipped knee calibration.</li>
+	<li>Huge tapering issues on the first boards of a log. We believe it&#39;s because the bad dog was causing a gap between the log and the back of the carriage.</li>
+</ul>

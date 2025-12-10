@@ -1,0 +1,192 @@
+$@MID@$: 8
+Date: Wed, 11 May 2022 09:18:12 -0700
+Technician: Chris
+Mill: Nicolet Large Side
+Job: 200902
+System: RS2
+Contact: Steve
+Issue: Hydraulic
+Hardware: Positioner Board
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Knee 3 Still motion stops and losing tempo signal. Swapping Tempos between Knees 2 and 3 to se if problem moves.&nbsp;</p>
+$@MID@$: 9
+Date: Wed, 11 May 2022 09:47:37 -0700
+Technician: Kaitlin
+Mill: Jones Lumber
+Job: 201324
+System: RS2
+Contact: -
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scanner 5 lasers sometimes flash&nbsp;on and off. Appears&nbsp;fine on Team Viewer; one of the lasers on head 2 isn&#39;t getting data.&nbsp;Told them to clean scanners, check cables, talk to Chris, if all else fails ship it to us.</p>
+$@MID@$: 10
+Date: Wed, 11 May 2022 10:13:24 -0700
+Technician: Chris
+Mill: AHI - Warm Springs
+Job: 201425
+System: RS2
+Contact: Brian Loudermilk
+Issue: Hardware
+Hardware: Console
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>5104607078 - Cell&nbsp; - Needs Loaner Console</p>
+$@MID@$: 11
+Date: Wed, 11 May 2022 12:38:53 -0700
+Technician: Chris
+Mill: Mill River
+Job: 201101
+System: Edger
+Contact: Mike Roberts
+Issue: Hardware
+Hardware: Photo Sensor
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Feed In Photo Sensor seems bad. Mike will check.</p>
+
+<p>Sensor seems to work fine. XP Brick needs Teamviewer 12 on it. Sent Mike a link with the download. He will install.</p>
+
+<p>Found bad relay in between PLC and sensor. Replaced and now seems to work fine. Will call back if does not.</p>
+$@MID@$: 12
+Date: Wed, 11 May 2022 12:48:30 -0700
+Technician: Chris
+Mill: Clark Hardwoods
+Job: 201910
+System: RS2
+Contact: Heath
+Issue: Hardware
+Hardware: Encoder
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Reference errors. Dropped call. Will call back.</p>
+
+<p>EDIT: Prox Switch blocked when not. Told to blow out hole or reposition switch.</p>
+$@MID@$: 13
+Date: Wed, 11 May 2022 12:57:27 -0700
+Technician: Chris
+Mill: Copiah
+Job: 201439
+System: RS2 Lumber Pro
+Contact: Terry
+Issue: Software Corruption
+Hardware: Thumb Drive
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Reloaded Bin and DILL from copy stored on hard drive. Their Thumb Drive corrupts after incorrect shutdown occassionally.</p>
+$@MID@$: 14
+Date: Wed, 11 May 2022 13:08:38 -0700
+Technician: Juwan
+Mill: Hood Industries
+Job: 202113
+System: RS2
+Contact: --
+Issue: Configuration
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Calling to ask about where to make knee adjustments. Showed them the scanner option section for knee calibration</p>
+$@MID@$: 15
+Date: Wed, 11 May 2022 13:10:38 -0700
+Technician: Juwan
+Mill: Durham Lumber
+Job: 200816
+System: RS1
+Contact: --
+Issue: Hardware
+Hardware: Black Box PC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Calling about the new black box that we sent yesterday. Encountered problems with dogs up/down not working. Turns out whoever poured coka cola on their old box went through the system and cut several wires throughout the cabinet.</p>
+$@MID@$: 16
+Date: Wed, 11 May 2022 14:10:05 -0700
+Technician: Chris
+Mill: Hood Industries
+Job: 202113
+System: RS2
+Contact: Randy
+Issue: Configuration
+Hardware: Knees
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Needed walked thorugh the Knee Calibration process</p>
+$@MID@$: 17
+Date: Wed, 11 May 2022 14:26:00 -0700
+Technician: Chris
+Mill: TR Miller
+Job: 201829
+System: RS2
+Contact: J.T.
+Issue: Hydraulic
+Hardware: Slabber
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Slabber will cavitate on full stroke. Check nitrogen level on Accum.</p>
+$@MID@$: 18
+Date: Wed, 11 May 2022 15:00:39 -0700
+Technician: Chris
+Mill: Malhuer
+Job: 200001
+System: MultiBus
+Contact: Sierra - 5416201979
+Issue: Hardware
+Hardware: Multibus Card
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Sending in Encoder Board for eval.</p>
+$@MID@$: 19
+Date: Wed, 11 May 2022 15:19:38 -0700
+Technician: Chris
+Mill: Durham Hardwoods
+Job: 200816
+System: RS1
+Contact: Brad
+Issue: Hardware
+Hardware: Black Box PC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Wires reconnected for prox switches, now scanners not working seeing. Three of Four lasers seen by dignostics, none see actual data. Reseated PCI card, rebooted, nothing even in local mode.</p>
+
+<p>Set them up to run manual and will call back in morning</p>
+$@MID@$: 20
+Date: Wed, 11 May 2022 15:52:56 -0700
+Technician: Basil
+Mill: Hood Industries
+Job: 202113
+System: RS2
+Contact: Randy 601 434 3465
+Issue: Configuration
+Hardware: Slabber
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Randy called with the slabber taking way too much and leaving less than a board. Somehow when he was calibrating, he changed the offset for the slabber by about 2&rdquo;. We set it back to where it was, measured the first board and made our final adjustments.</li>
+</ul>

@@ -1,0 +1,69 @@
+$@MID@$: 25
+Date: Fri, 15 Jul 2022 17:45:43 -0700
+Technician: Kaitlin
+Mill: Scott Bros
+Job: 202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>7/15: Mill waited to set things up until we and Raymond got here.</p>
+
+<ul>
+	<li>Crates opened and brought into mill</li>
+	<li>Scan frame is welded and scanners are put up</li>
+	<li>The remote cabinet has been installed on the wall of the cab</li>
+	<li>Tempo and servo cables pulled and wired</li>
+</ul>
+
+<p>Issues</p>
+
+<ul>
+	<li>USB hub screws came loose in cabinet</li>
+	<li>The COM 1 cable was not wired at all, may not have been tested</li>
+	<li>Needed another end plate for the scanner cable case; Daniel ordered this</li>
+	<li>75 ft network cables not needed with where the cabinet is now located, replaced with 14 ft cables</li>
+	<li>Tempo and servo cables had not been labeled on the ends</li>
+</ul>
+$@MID@$: 26
+Date: Fri, 15 Jul 2022 20:35:09 -0700
+Technician: Daniel
+Mill: Scott Brothers
+Job: J202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 220715_204854_20220715_064251.jpg
+Encoding: HTML
+========================================
+<ul>
+	<li>The mill had only the scan frame mounting beam installed when we got there.</li>
+	<li>The mill started tearing out their old system and Roney inquired if the post needed to be removed.&nbsp; I though he was talking about the posts for the handles on the joystick, but he was talking about the posts for the joystick.&nbsp; They had removed the joysticks for the carriage drive and log turner as well as the control box for them before I realized what they had done.&nbsp; Roney said that Big John had told him when he was down they a while back that everything in the cab was getting replaced.&nbsp; They reinstalled them.</li>
+	<li>When we were helping unpack the crates, I looked into the Setwork Cabinet and saw that the COM cable coiled up at the bottom of the cabinet not terminated into the Power Distribution board.&nbsp; I terminated it into the Power Distribution board and plugged it into the computer.</li>
+	<li>Kaitlin and I hauled the scan heads, cables, console, encoder, remote I/O cabinet, and the tempos&nbsp;up to the installation area.</li>
+	<li>Me and Raymond put the scan duct together.</li>
+	<li>Raymond from Corley helped them with getting the scan beam and scan duct mounted.</li>
+	<li>I had the mill install the new tempos.</li>
+	<li>Roney realized after starting to bring the tempo and servo cables across the pantograph arm, that there were no labels on the wires indicating which cable was which.
+	<ul>
+		<li>I trace each cable by connecting two wires on one end and checking continuity between the two wired at the connector for the wires.</li>
+	</ul>
+	</li>
+	<li>The mounted the Remote IO cabinet and brought into the cabinet the tempo, servo, and carriage ac.
+	<ul>
+		<li>Kaitlin terminated the tempo and servo cables.</li>
+		<li>I cut the ac cable and stripped the outer insulation and the inner jacket.</li>
+	</ul>
+	</li>
+	<li>I talked with Roney about the dispatch and they could benefit from Piece Destination for routing edger and trimmer (no edging required)&nbsp;pieces.
+	<ul>
+		<li>I asked Kaitlin to update their software for Piece Destination.
+		<ul>
+			<li>Back at the hotel, I sent her a message to look at Roy Anderson (J201405) for Piece Destination for Scott Brothers.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Their old system edger transfer worked by using a high speed encoder and a photo-eye.&nbsp; Back at the hotel, I updated the PLC program to delay the transfer by 0.5 seconds on the falling edge of the photo-eye and then raise the transfer chains for a 1.5 seconds.&nbsp; We will have to work on the timing once everything is running.</li>
+	<li>We mounted the scanners.&nbsp; The mill still has to run the wires for the scan heads.</li>
+</ul>

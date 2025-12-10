@@ -1,0 +1,34 @@
+$@MID@$: 73
+Date: Mon, 04 Dec 2023 17:52:18 -0800
+Technician: Daniel
+Mill: Kennebec Grantham
+Job: 201917 & 202221
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>RS2.5
+	<ul>
+		<li>I installed the Optimizer and PLC changes I made last night for the dispatch.</li>
+		<li>I tested the updates and had to re-assign modbus address to group the read values together.</li>
+		<li>I was testing the scanning and dispatch by simulating cutting.&nbsp;
+		<ul>
+			<li>I found some old Job specific code in their software that I removed.&nbsp; It was no longer applicable.</li>
+			<li>In testing I also found that I didn&#39;t have the Trash route turning on for slabs.&nbsp; I added their Job # to a piece of code to fix that issue.</li>
+			<li>At the end of the day, I realized that for the edger boards it was strobing the dispatch towards the end of the log and it needs to be sooner so the shifting rollcase can close after a slab cut.&nbsp; I need to look into the code to see if I can find where it sending the strobe.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Carriage Aux Controls
+	<ul>
+		<li>I mapped the input for the Horizontal Resaw Detector to DI-0.1.4.13.&nbsp;&nbsp;</li>
+		<li>Jim said that the Block Tranfer Deck was going to need a photo eye added to it to tell us when the Gang Deck&nbsp;is full.&nbsp; I added the logic to the PLC to not allow pieces to be transfered to the Gang Deck if it is full.&nbsp; I aslo added logic to stop the Block Transfer Deck chains once the Block Transfer Deck is full &amp; the Gang Deck is full.</li>
+		<li>I told the Mill that they had a damaged solenoid valve on the block transfer deck.&nbsp; They didn&#39;t have a spare, so they swapped it and removed the valve for the last hook.&nbsp; Once they got air on the deck, I tested it and the valves were in the wrong order.&nbsp; The PECs were in the correct order, but not the valves.&nbsp; I reversed the order of the valve output in the PLC.</li>
+		<li>I also fixed an bug with the Bandmill Slat Bed (Belt).&nbsp; I was able to hold down the start button and it would run when the Outfeed was turned off.&nbsp; No it won&#39;t try to start when the Outfeed is off.</li>
+	</ul>
+	</li>
+	<li>Note: We are still waiting on them to finish installing the Incline Deck to the debarker and to finish installing the PEC for the shifting rollcase.</li>
+</ul>

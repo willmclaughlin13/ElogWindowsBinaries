@@ -1,0 +1,54 @@
+$@MID@$: 17
+Date: Fri, 03 Jun 2022 20:55:31 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>We received the 5vdc power supply.&nbsp; I installed it on the back panel and wired it into the encoder phoenix connector.&nbsp; That fixed the issue with the RMC saying&nbsp;there is no transducer for the Feedworks encoder.</li>
+	<li>I looked into the scanning issue back at the hotel last night.
+	<ul>
+		<li>I noticed that settings.xml file for the scanners was not getting updated to what the program showed that it should be updating to.&nbsp; After a little bit, I discovered when I transferred the update program to Stanfill&#39;s computer, I put it on the thumb drive and not on the c drive where it was being ran from.</li>
+		<li>I recalibrated the scanners after the settings.xml file was correct and that fixed the waves issue.</li>
+	</ul>
+	</li>
+	<li>It a lot of trial and error to setup the feedworks and outfeed belt VFD parameters, but we got each drive setup and configured for 4 selectable speeds.</li>
+	<li>I measured the feedworks speeds and the outfeed belt speeds and determined the motor run speeds needed.&nbsp; Per Phil, the for speeds are 325fpm, 300fpm, 250fpm, &amp; 200fpm.
+	<ul>
+		<li>Feedworks
+		<ul>
+			<li>325fpm -&gt; 66.5hrz</li>
+			<li>300fpm -&gt; 61.3hrz</li>
+			<li>250fpm -&gt; 51.5hrz</li>
+			<li>200fpm -&gt; 41.5hrz</li>
+		</ul>
+		</li>
+		<li>Outfeed belt
+		<ul>
+			<li>325fpm -&gt; 40.0hrz</li>
+			<li>300fpm -&gt; 36.5hrz</li>
+			<li>250fpm -&gt; 30.3hrz</li>
+			<li>200fpm -&gt; 24.35hrz&nbsp;</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>I calibrated the feedworks encoder.</li>
+	<li>We blew several 5amp slow blow fuses for L1-2B today.&nbsp; I could not locate any problem wires, so I replace the fuse with a 10amp fuse.&nbsp; So far that has fixed the issue.</li>
+	<li>I tuned the pickers.
+	<ul>
+		<li>When I started to tune the pickers, I could not move the left picker.&nbsp; I got the jog box out and tried to move it and I still could not move it.&nbsp; I discovered the stop color for the left picker was preventing from moving, so I move it to be next to the picker.&nbsp; That fixed that issue.</li>
+		<li>After I got the pickers move, I could only move them fast in one direction and really slow the other direction.&nbsp; I discovered the mill had left one of the hydraulic shut off valves close.&nbsp; I opened the valve and the moved fast in both directions.</li>
+		<li>I discovered the values the pickers were moving positive as they moved toward left when they should be moving negative.
+		<ul>
+			<li>Sam updated the PLC and we reentered their gradient values to fix the issue.</li>
+			<li>I recalibrated the pickers.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>

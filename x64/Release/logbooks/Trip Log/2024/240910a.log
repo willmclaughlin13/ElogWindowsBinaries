@@ -1,0 +1,26 @@
+$@MID@$: 101
+Date: Tue, 10 Sep 2024 15:43:10 -0700
+Technician: Daniel
+Mill: Bruggeman
+Job: 202126
+System: Edger
+Trip Type: Installation
+Attachment: 240910_160624_20240910_104144.jpg
+Encoding: HTML
+========================================
+<ul>
+	<li>Helped Jon test his kick back function.&nbsp; We decided to make it part of the configuration screen and not to use it here at Bruggeman.</li>
+	<li>Tested the scanning some more and adjusted some of the modeling parameters to clean up some wane issues that popped up.</li>
+	<li>Tested the set function from the operator&#39;s console and it did not work.&nbsp;
+	<ul>
+		<li>I had forgotten to turn on the #define to use Species E for forced splits.</li>
+		<li>After turning on the #define to use Species E for forced splits, the system worked for left and right taper selections, but not center.
+		<ul>
+			<li>Jon didn&#39;t have the PLC sending the optimizer a value for center taper.&nbsp; Once he corrected that, that fixed the issue.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Jon talked to Vic about a foot switch for the right deck jog.&nbsp; Vic found a foot switch for us to use, so we will wire it in tomorrow.</li>
+	<li>Vic &amp; Raymond installed the saw in the edger; however, we could not run the edger because it was locked out by an electrician that wasn&#39;t there today.</li>
+</ul>

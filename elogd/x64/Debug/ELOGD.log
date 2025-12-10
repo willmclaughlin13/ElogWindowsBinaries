@@ -1,0 +1,221 @@
+﻿  auth.cxx
+  crypt.cxx
+  elogd.cxx
+  mxml.cxx
+  strlcpy.cxx
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(115,21): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(256,22): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(302,21): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(516,14): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(581,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(308,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(309,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(425,35): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(445,41): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(473,35): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(517,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(573,37): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(1114,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2027,44): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2114,14): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2162,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2180,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2196,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2221,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2238,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2251,23): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2271,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2287,23): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2311,23): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2323,23): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2354,22): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(2527,57): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(3863,56): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(3868,25): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(3870,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(3982,37): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(4415,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(4417,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(4501,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(4688,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(4690,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(4823,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(4825,19): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(4992,33): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5001,32): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5009,34): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5178,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5180,16): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5557,25): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5786,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5895,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5925,24): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5989,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(5997,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6006,24): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6246,24): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6317,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6325,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6334,24): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6356,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6357,53): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6368,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6369,53): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6389,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6391,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6403,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6409,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6410,59): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6417,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6419,42): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6447,41): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6452,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6456,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6458,42): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6500,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6506,30): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6508,30): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6510,30): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6515,30): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6517,30): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6519,30): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6530,30): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6531,56): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6547,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6548,59): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6551,33): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6552,59): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6569,30): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6570,56): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6590,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6591,53): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(6683,27): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(8413,72): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(8420,45): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(11374,30): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(12574,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(12817,45): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(12820,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(12860,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(12931,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(12984,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(12990,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(13045,16): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(13073,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(13138,28): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(13140,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(13165,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(13206,36): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(13208,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14668,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14685,23): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14723,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14725,22): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14735,67): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14742,42): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14762,17): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14770,67): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(14777,42): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(15569,34): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(15838,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(15862,37): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(15870,36): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(15898,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(16100,29): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(16169,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(16192,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(16433,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(16555,23): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(16557,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(16815,40): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(18550,13): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(21187,75): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(21211,72): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(21239,88): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(21967,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(21978,32): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(22117,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(22307,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(22713,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(22752,37): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(22798,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(28620,42): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(28760,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(28764,63): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(28766,67): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(29027,22): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(29376,64): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(29414,64): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(29697,18): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30003,27): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30216,88): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30218,92): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30320,32): warning C4244: '-=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30572,28): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30601,34): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30608,32): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30626,31): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30629,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30637,34): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(30639,28): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(31080,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(31147,37): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx(31159,36): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(201,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(448,17): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(451,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(536,46): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(539,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(561,17): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(735,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(857,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(1163,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(1238,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(1713,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(1925,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  regex.c
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1549,54): warning C4244: '=': conversion from '__int64' to 'pattern_offset_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1550,63): warning C4244: '=': conversion from '__int64' to 'pattern_offset_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1551,52): warning C4244: '=': conversion from '__int64' to 'pattern_offset_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1559,72): warning C4244: '=': conversion from '__int64' to 'pattern_offset_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1980,19): warning C4244: '=': conversion from '__int64' to 'unsigned long', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(2158,44): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(2742,31): warning C4047: '=': 'regoff_t *' differs in levels of indirection from 'int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3195,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3271,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3293,36): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3332,57): warning C4244: '=': conversion from '__int64' to 'regoff_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3337,33): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3341,39): warning C4244: '=': conversion from '__int64' to 'regoff_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3342,37): warning C4244: '=': conversion from '__int64' to 'regoff_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3351,40): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3361,25): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3599,34): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3603,26): warning C4311: 'type cast': pointer truncation from 'const char *' to 'int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3603,49): warning C4311: 'type cast': pointer truncation from 'const char *' to 'int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3609,16): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3609,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3664,28): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3669,32): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3752,10): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3752,10): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3804,10): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3804,10): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3897,13): warning C4311: 'type cast': pointer truncation from 'fail_stack_elt_t' to 'unsigned int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3897,13): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3929,10): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3929,10): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3942,10): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3942,10): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4105,10): warning C4311: 'type cast': pointer truncation from 'fail_stack_elt_t' to 'unsigned int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4105,10): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3095,38): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3609,16): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3752,10): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3804,10): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3929,10): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3942,10): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4479,20): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4615,23): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4601,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ELOGD.vcxproj -> C:\Users\willm\source\repos\ElogWindowsBinaries\x64\Debug\elogd.exe

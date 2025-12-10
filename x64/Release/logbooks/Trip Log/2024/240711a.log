@@ -1,0 +1,23 @@
+$@MID@$: 86
+Date: Thu, 11 Jul 2024 08:22:30 -0700
+Technician: Daniel
+Mill: D.R. Johnson
+Job: 202401
+System: RS2
+Trip Type: Upgrade
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Removed the Firesync Master 2410 and installed the loaner Firesync Master 2400 after their shift on Wednesday (7/10).</li>
+	<li>I got to the mill about 5 minutes after the start of their shift.&nbsp; The scans looked normal and good.&nbsp; Talked with Mark (sawyer) and he said it was much better.</li>
+	<li>While talking with Mark, he said the slobber use to pre-spot on dogs down and the log transfer chains back air bags used to raise when the log loader was active.
+	<ul>
+		<li>Updated their software to turn on Slabber Pre-spot.&nbsp; Installed the updated software and it was new logging when they were turning the log.&nbsp; I turned off Emulate Single Cut New Log and uploaded the new software.&nbsp; That fixed the new logging issue when turning a log.&nbsp; Set the slobber pre-spot position to 2&quot;.</li>
+		<li>Worked with Leroy (mill electrician) to get the transfer chains back air bags to raise when the stop and loader is active.&nbsp; I terminated a wire for Spare 1 and tied it to the stop and loader in the Console Mapping.&nbsp; Leroy wired Spare 1 to a relay out in the mill to raise it when we turn on that spare.</li>
+	</ul>
+	</li>
+	<li>Talked with Ed Underwood and he was happy that we got the issue fixed.&nbsp; I told him that they don&#39;t need to do anything with the scan structure.</li>
+	<li>Ed enquired on how to change the opening faces and I showed him how to change it for both Sets and Computes.</li>
+	<li>I checked in with Mark before leaving the mill and he had no issues that needed to be resolved.&nbsp; I&nbsp;left the mill around 10:10am.</li>
+</ul>

@@ -1,0 +1,35 @@
+$@MID@$: 74
+Date: Tue, 05 Dec 2023 16:54:13 -0800
+Technician: Daniel
+Mill: Kennebec Grantham
+Job: 201917 & 202221
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>When we got there, Dennis (Mill Owner) was in the saw cab with Jim.&nbsp;
+	<ul>
+		<li>We discussed the routing.&nbsp;
+		<ul>
+			<li>All cants goto the resaw unless the operator selects the Gang route.</li>
+			<li>We need a way to dispatch a slab attached board and a cant to the resaw at the same time.
+			<ul>
+				<li>I wrote job specific code in the Optimizer to turn on an output when pressed the &quot;Double Resaw Route&quot; button and then turns off on New Log.&nbsp; I added the&nbsp;button to the Operator&#39;s console for Double Resaw Route.</li>
+				<li>I added logic to carriage PLCs to make the Horizontial Resaw state machine to hold for a second Route Pulse to send the pieces to the resaw.&nbsp; Added State 25 to the logic to make this happen.</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		<li>We also discussed error messages popping up on the Sawyer&#39;s Screen when they Edger Deck is full, when their Gang Deck is full, &amp; when their waste system is off.
+		<ul>
+			<li>I added logic to the carriage PLCs to send a flag to the Optimizer when the Edger Deck is full, when their Gang Deck is full, &amp; when their waste system is off.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Dennis sawed some logs and on the first &amp; only back cut, the cut off flitch fell between the carriage and the double cut rollcase.&nbsp; They are going to have to modify the rollcases to fix the issue.</li>
+	<li>The mill&nbsp;temporarily wired in the prox switch for a&nbsp;piece present at the shifting rollcase.&nbsp; I briefly got to test it.</li>
+	<li>We talked with Jim &amp; Chris (Mill Electrician) about the placement of the sensor for the Debarker Incline Deck.</li>
+</ul>

@@ -1,0 +1,20 @@
+$@MID@$: 100
+Date: Sat, 07 Sep 2024 18:48:57 -0700
+Technician: Daniel
+Mill: Bruggeman
+Job: 202126
+System: Edger
+Trip Type: Installation
+Attachment: 240909_145110_BeforeTopToleranceAdjustment.png,240909_145123_AfterTopToleranceAdjustment.png,240909_150536_Screenshot_2024-09-09_150148.png,240909_150550_Screenshot_2024-09-09_150202.png
+Encoding: HTML
+========================================
+<ul>
+	<li>I wired in the start/stop switch on the console for the additional outfeed motors that the electrician requested.</li>
+	<li>The mill got us some dried-out flitches to use for testing.&nbsp; However, the scanner did not like them.&nbsp; It was saying they had more wane on them than they actually had.
+	<ul>
+		<li>Looking at the code, the Top Tolerance is used to help pick the start of wane on the top.&nbsp; It was originally set at 0, so I changed it to 100 and that made it worse.&nbsp; I tried making it -100, but the menu would not except a negative value.&nbsp; I modified the code for the menu so it will except a negative value.&nbsp; I was able to set it to -100 and that cleaned it up.&nbsp; I ended up settling for -50.&nbsp; Attached is a before screen shot and an after screen shot.</li>
+		<li>When we first started testing the scanning, all we had was square boards.&nbsp; The system was consistently showing wane down the left side of the board when there was none.&nbsp; After making the change of the Top Tolerance from 0 to -50, it has cleaned up the wane on the square board.&nbsp; It now classifies the board as square.</li>
+	</ul>
+	</li>
+	<li>I got the parts I ordered from Chris for wiring in the inputs/outputs for the additional outfeed motors that the electrician requested.&nbsp; I installed and wired the inputs/outputs into the MCC cabinet.</li>
+</ul>

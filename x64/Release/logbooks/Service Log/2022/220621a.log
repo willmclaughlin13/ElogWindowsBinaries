@@ -1,0 +1,106 @@
+$@MID@$: 132
+Date: Tue, 21 Jun 2022 06:32:27 -0700
+Technician: Basil
+Mill: Pearl River
+Job: 201440
+System: RS2
+Contact: Javier
+Phone: 6017544411
+Issue: Hardware
+Hardware: Cabling
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>All three knees are running away. I noticed the load end SE switch was open even though Javier told me he was in the hole, I asked him to drive it further into the hole to make sure that light came on. It did come on, but as he drove the carriage down, I noticed&nbsp; the reading on the tempos started jumping from 30 to 15 to -20. Had them drive the carriage back and forth. The issue is repeatable in the load end, but totally fine in the unload end. I suggested it&#39;s likely the tempo cables on the pantograph arm. As the angle gets more extreme, the issue presents itself. They are going to check the full length of all three cables and call us back.</p>
+$@MID@$: 133
+Date: Tue, 21 Jun 2022 07:39:37 -0700
+Technician: Daniel
+Mill: WR Deacon & Sons
+Job: J201314
+System: RS2
+Contact: Anthony 
+Phone: 
+Issue: PLC FAULT
+Hardware: PLC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Anthony called stating they have a fault on their&nbsp;PLC.&nbsp; The error code was 0071h.&nbsp; According to the manual for the Allen Bradley Micrologix 1400, there is an error with an expansion I/O module.&nbsp; I had them reseat the ribbon cables to each module and had them reset the PLC.&nbsp; If they have any further issues with it, they will call back.</p>
+$@MID@$: 134
+Date: Tue, 21 Jun 2022 09:28:14 -0700
+Technician: Basil
+Mill: BPM London
+Job: ???
+System: RS2
+Contact: AJ
+Phone: 606 438-5254
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Kstation Data error popped up on the Sawyer&#39;s display. All laser lights on. They rebooted and it went away. I gave them a few guesses as to why that could have happened and asked them to call me immediately if it happened again.</p>
+$@MID@$: 135
+Date: Tue, 21 Jun 2022 09:32:18 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: JR
+Phone: 706-830-2535
+Issue: Part Return
+Hardware: Prox Switch
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>JR called inquiring on the status of call tag for the return of an Inductive Prox Switch that they requested from Chris a couple of weeks ago.&nbsp; I sent Chris a message on Slack to call JR back concerning the call tag.</p>
+$@MID@$: 136
+Date: Tue, 21 Jun 2022 10:31:25 -0700
+Technician: Basil
+Mill: Madison Lumber
+Job: ???
+System: RS2
+Contact: Tim
+Phone: 603 723-6456
+Issue: Other
+Hardware: Black Box PC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Tim called to ask about the status of his Win 10 PC upgrade. Said last he heard from Chris was 12 months ago saying he was next on the list. I&#39;ll try to get some info from Chris</p>
+$@MID@$: 137
+Date: Tue, 21 Jun 2022 11:07:16 -0700
+Technician: Basil
+Mill: Baille Superior RH
+Job: 201808
+System: RS2
+Contact: Shawn Howard
+Phone: ???
+Issue: Scanning
+Hardware: Scan Frame
+Resolution: Problem Fixed?
+Attachment: 
+Encoding: HTML
+========================================
+<p>Shawn called noticing his opening faces were bad. Went to calibrate and two heads wouldn&#39;t take. Off by 3+ inches. I suggested the scan frame may have been knocked out of alignment. We redid the base calibration which got the opening faces looking good again. Scans were looking good but we were picking up a lot of the knee bunks underneath the log. I told Shawn we like to have the lasers hang 3-4&quot; below the knee bunk and he said his were more like 8-9&quot; on the right side of the carriage and barely extending on the left. They are going to inspect and make sure the scan fram is hanging correctly. I told them to give me a call if they re-adjust it so we can calibrate again.</p>
+$@MID@$: 138
+Date: Tue, 21 Jun 2022 12:19:30 -0700
+Reply to: 145
+Technician: Daniel
+Mill: Timbermen
+Job: J201526
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Hydraulic
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scott called and asked if I could get on their system to look at their yoke positioning.&nbsp; I told him I would call him back in a few minutes.&nbsp; I logged into their system and got connected to their PLC.&nbsp; I called and left a message for Scott to call me back at the office.&nbsp; I watched on Teamviewer and it looks like they are done for the day.</p>

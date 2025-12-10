@@ -1,0 +1,33 @@
+$@MID@$: 43
+Date: Tue, 13 Sep 2022 16:45:41 -0700
+Technician: Kaitlin
+Mill: Gates Milling
+Job: 202116
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>09/12</p>
+
+<ul>
+	<li>Brandon spaced out the heads and got serial numbers from them</li>
+	<li>Daniel was called to fix the FireSync software when we found out it wasn&#39;t connecting to the heads at all: the IP address it was trying to connect to was wrong</li>
+	<li>Auto saw guide was measured and calibrated</li>
+	<li>Air pressure was fixed on carriage so the dogs could move</li>
+	<li>The first 3 knees were still not moving - build up on base was keeping them from moving, had to be cleaned/ground down, then we blew the fuse and had to replace it</li>
+	<li>Hydraulic safety valve needs to be replaced. Safety limits not working on carriage</li>
+	<li>Default sets set up</li>
+	<li>Saw deviation set up</li>
+</ul>
+
+<p>09/13</p>
+
+<ul>
+	<li>We got a log cut</li>
+	<li>Brandon gave a short lesson to the sawyer</li>
+	<li>Brandon working on routing modifications to the software, added delay timer for resaw transfer</li>
+	<li>Waste routing spare wired in</li>
+	<li>Mill end prox switch jumped out</li>
+	<li>Metal log and slab to edger routes added in spares, but not wired in yet</li>
+</ul>

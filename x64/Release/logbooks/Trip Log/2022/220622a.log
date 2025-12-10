@@ -1,0 +1,25 @@
+$@MID@$: 24
+Date: Wed, 22 Jun 2022 18:25:29 -0700
+Technician: Kaitlin
+Mill: Fly Tie and Lumber
+Job: 202128
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>6/22</p>
+
+<ul>
+	<li>Modified drawings to include wires changed in the&nbsp;cabinets</li>
+	<li>Thumb drive corrupted.&nbsp;Opening from C drive, acting strangely, forced to reboot the brick</li>
+	<li>Scanning issue where a lot of the scan data gets dropped is&nbsp;only on large logs. Brandon changed parameters to help with it, but they may just need to saw slower</li>
+	<li>Brandon told them to ziptie the HDMI cable to the monitor so it stops shaking loose and flickering</li>
+	<li>Need to do:
+	<ul>
+		<li>Send: a new thumb drive, spare power supply for the servos, new chain turner button complete with label</li>
+		<li>Look into the saw guide and possibly rewrite the code to support double cut mills better. Needs to remember shape of log for back cuts</li>
+		<li>Sawyer display doesn&#39;t update the cutoff piece all the time. Sometimes it looks like slab attached and sometimes it drops properly</li>
+	</ul>
+	</li>
+</ul>

@@ -1,0 +1,16 @@
+$@MID@$: 41
+Date: Sat, 10 Sep 2022 12:00:04 -0700
+Technician: Kaitlin
+Mill: Gates Milling
+Job: 202116
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Attempted to power on: voltages in the cabinet looked okay</li>
+	<li>PC unable to boot, stuck in BIOS. No spare was ever shipped: placed on backorder according to the mill, but must have been marked complete back at Lewis without it ever being shipped.</li>
+	<li>Will troubleshooting the PC for us. Best guess is that the SSD is bad and we need to buy a temporary external drive until we can get a new PC shipped.</li>
+	<li>Still need to space out the lasers on the scan bar so they&#39;re more evenly spaced out.</li>
+</ul>

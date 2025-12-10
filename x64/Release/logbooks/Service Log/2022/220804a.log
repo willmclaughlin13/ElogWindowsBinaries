@@ -1,0 +1,30 @@
+$@MID@$: 225
+Date: Thu, 04 Aug 2022 07:20:10 -0700
+Technician: Daniel
+Mill: Bryant & Young
+Job: J201618
+System: RS2
+Contact: Derick
+Phone: 
+Issue: Scanning
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Derick called and said his lasers would not come on.&nbsp; I got on the computer after it restarted and kstation was not running.&nbsp; I exited setworks and launched the startup batch file and it strarted everything correctly.&nbsp; There lasers were working again.&nbsp; Derick wanted to know how to fix it if happens again.&nbsp; I told him if he doesn&#39;t see kstation running in the taskbar, than exit setwork, launch kstation from the desktop, then relaunch setwork.</p>
+$@MID@$: 226
+Date: Thu, 04 Aug 2022 08:24:42 -0700
+Technician: Daniel
+Mill: Church & Church
+Job: J201720
+System: Enddogger
+Contact: Jerry
+Phone: 336-957-0810
+Issue: Hardware
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Jerry called and said their dog was not opening or closing.&nbsp; He is able to open/close it with the jog box.&nbsp; I got on their system and RMC Tools shows the dog has a No Transducer fault.&nbsp; I had him to get his spare temp and tested it outside the cylinder.&nbsp; It was still showing a no transucer fault, but the position was changing.&nbsp; I had him plug the cable back into the tempo in the cylinder and it worked normally.</p>

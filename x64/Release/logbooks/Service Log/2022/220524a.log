@@ -1,0 +1,61 @@
+$@MID@$: 62
+Date: Tue, 24 May 2022 09:00:20 -0700
+Technician: Chris
+Mill: Quality Hardwoods
+Job: 201441
+System: RS2
+Contact: Dan
+Issue: Hydraulic
+Hardware: Knees
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Knee (which one not specifed) jerking runaways and mtion stops. Told to lubricated knee to check for binding, then check cables for wear. Call back if parts needed.</p>
+$@MID@$: 63
+Date: Tue, 24 May 2022 09:08:38 -0700
+Technician: Chris
+Mill: Rogers Lumber
+Job: 200007
+System: Edger
+Contact: Jake
+Issue: Other
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Jake wants to know how to save a flitch to a file. They are occassionally having flitches that scan wrong and he wants to save the record for troubleshooting. Emaiing Daniel and Sam for an answer</p>
+$@MID@$: 64
+Date: Tue, 24 May 2022 12:52:10 -0700
+Technician: Brandon
+Mill: Clear Lake
+Job: 202129
+System: RS2.5
+Contact: Bill
+Issue: Hardware
+Hardware: PLC
+Resolution: Problem Fixed?
+Attachment: 220524_140614_image.png,220525_043142_Capture.JPG
+Encoding: HTML
+========================================
+<p>Bill said dogs and drop belt wouldn&#39;t work this morning, he cycled power to fix it. It sounded like he had a PLC fault, so I explained how to use the toggle to force stop and flip back to run mode to clear faults. I walked through face adjustments and some other scanning features that he couldn&#39;t remember while talking with him.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+$@MID@$: 65
+Date: Tue, 24 May 2022 13:22:06 -0700
+Reply to: 67
+Technician: Basil
+Mill: Kennebec Greenfield
+Job: 201615
+System: RS2
+Contact: Bill Bishop
+Issue: Hydraulic
+Hardware: Knees
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>All three knees are moving behind the saw sometimes. First time it happened was yesterday. When the operator returns after a front cut to take another front cut, he changes direction and the band mill offset jumps all the knees back 0.075&rdquo;. He continues down the track and just before he clears the saw, the knees sometimes jump forward several inches. Says he nearly hit the saw with a cant before he manually jogged the knees backwards. Encoder errors look good, so set disable should be working well. No errors or anything, maybe we are within the 4&rdquo; mark. I asked Bill to call me tomorrow when if it happens again and to reboot the cabinet after shift today.</p>

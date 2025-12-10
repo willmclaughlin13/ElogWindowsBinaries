@@ -1,0 +1,32 @@
+$@MID@$: 2
+Date: Sat, 21 May 2022 21:36:08 -0700
+Technician: Daniel
+Mill: Rustic Wood Products
+Job: 202203
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>I could not find their old system values on the thumb drive that Juwan had copied them to.&nbsp; So me &amp; Juwan setup their old computer and pulled their old system values off of their old computer.&nbsp; I verified that they were there on my laptop before powering down the old computer.</li>
+	<li>We terminated the console, SE1, PSW, HYD PRESSURE, Laser Remote 1, and Laser Remote 2 cables in the Setworks cabinet.</li>
+	<li>We reused their existing Laser Remotes, so I rewired them to match just like an RS2 upgrade.</li>
+	<li>We replaced their old handles with the new Cobra style handles.</li>
+	<li>We spaced the scan heads.</li>
+	<li>Juwan terminated the tempo, servo, and encoder cables in the Remote IO cabinet.</li>
+	<li>We powered on the system and the verified correct voltage for the analog, positioner, digital IO, and the computer prior to plugging them in.</li>
+	<li>We verified power on the tempo and servo cables at the connector prior to plugging them in.</li>
+	<li>We powered down the system and plugged the scanners in.</li>
+	<li>Juwan entered the S/Ns for the scan heads into Setworks and powered on the lasers.</li>
+	<li>We verified the AC worked on the carriage.&nbsp; There were sever wires that were landed to the incorrect output (off by 1).&nbsp; Corrected all the wiring for the carriage and all the functionality of the carriage AC worked correctly (dogs, turners, and kickers).</li>
+	<li>Note &ndash; they physically removed the log dog from the carriage.&nbsp; So the carriage currently has no log dog.</li>
+	<li>We tested the knee movement and they moved correctly.</li>
+	<li>We could not get the Slab drop or the cant pins to work.&nbsp; I realized that we did not have a neutral going out to them from our system.&nbsp; When we disassembled their old system, we labeled a wire for L1-2D, when it should have been a neutral.&nbsp; I moved that wire to the N2 and the slab drop and cant pins worked.</li>
+	<li>We tested the load end prox switch (we reused their existing prox. Switch).</li>
+	<li>We tested the pant. Switch, but it was not working in Setworks.&nbsp; The input on the digital IO board was indicating it was working.&nbsp; Mapped it in the console mapping and it started working ins setworks.</li>
+	<li>Juwan calibrated the knees, the encoder, and saw guide.</li>
+	<li>Juwan measured and set Knee 1 to guide in Setworks.</li>
+	<li>Juwan measured and set the laser spacing for scan heads in Setworks.</li>
+	<li>We set the angle of the main scan bar.&nbsp; We were unable to set the angle of the scan bar over the cab at that time.</li>
+</ul>

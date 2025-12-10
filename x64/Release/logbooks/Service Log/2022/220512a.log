@@ -1,0 +1,56 @@
+$@MID@$: 21
+Date: Thu, 12 May 2022 08:13:11 -0700
+Technician: Juwan
+Mill: Kennebec Tamworth
+Job: 201325
+System: RS2
+Contact: Anthony
+Issue: 
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Anthony called for Will. He wanted to set face parameters to the same as solon. I set roughness allowance back to zero like solon, everything else was left the same as all other opening face parameters were the same. He told me he wont be able to complete that log table that was requested till friday next week.</p>
+$@MID@$: 22
+Date: Thu, 12 May 2022 09:06:43 -0700
+Technician: Basil
+Mill: Kennebec Tamworth
+Job: 201318
+System: RS2
+Contact: Anthony Carrier 603-323-6000 X 500
+Issue: Configuration
+Hardware: 
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Called to make sure he was happy with Juwan&rsquo;s changes from earlier when he matched Solon&rsquo;s MOF / roughness settings. I thought he may want to match their board and kerf sizes too, but he didn&rsquo;t. Today we were supposed to measure out 10 boards front and back cut to make sure the thickness was consistent and rule out hardware issues. Then go from there with the correct board size and only move the kerf to get it how we want. Instead I moved their knee width from 20&rdquo; to 10&rdquo;, and changed their scan timeout from 1 second to 10 seconds. Manually adjusted some laser calibration. Next Friday 20<sup>th</sup> we will measure out boards and get it done right.</p>
+$@MID@$: 23
+Date: Thu, 12 May 2022 10:20:39 -0700
+Technician: Chris
+Mill: Jones Lumber
+Job: 201324
+System: RS2
+Contact: Calvin
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Head 5 still flashing. Reseated Screw in cable and helped but didn&#39;t fix. Told to blow out and reseat connections in IF box. Also has one head with one laser out. Will call back tomorrow with SN and will send Exchange head.</p>
+$@MID@$: 24
+Date: Thu, 12 May 2022 13:32:14 -0700
+Technician: Basil
+Mill: Kennebec Tamworth
+Job: 201325
+System: RS2
+Contact: Anthony
+Issue: 
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>4<sup>th</sup> face slabs are too heavy. His scans don&rsquo;t look good, we&rsquo;re going to calibrate tomorrow</p>

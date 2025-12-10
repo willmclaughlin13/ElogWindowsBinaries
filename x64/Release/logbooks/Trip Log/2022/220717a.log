@@ -1,0 +1,75 @@
+$@MID@$: 28
+Date: Sun, 17 Jul 2022 19:37:10 -0700
+Technician: Daniel
+Mill: Scott Brothers
+Job: J202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Helped Kaitlin with updating their software for&nbsp;Piece Destination (routing to edger and trimmer only).</li>
+	<li>I terminated the dirty power (L1-2B) into the cabinet.</li>
+	<li>Start-up
+	<ul>
+		<li>We checked the 24 vDC power once we turned on the system before pluging powering on the positioner cards, analog cards, digital card, and the PC.</li>
+		<li>We measured and verified the knee spacing.</li>
+		<li>We entered the head S/N and powered on the lasers.</li>
+		<li>We set the scanner angle (lasers about 3&quot; below the knee)</li>
+		<li>We verified the tempo, servo, and encoder power at the connector side.</li>
+		<li>We set the knee gradients in the optimizer.</li>
+		<li>We tested the ac functionality.
+		<ul>
+			<li>We change the turners from manual to bturners in the software and had issues with the up.&nbsp; The issue was the delay (Dogs-In to Turner-Up) was set to 0.&nbsp; I set it to 0.01 and it started working.</li>
+		</ul>
+		</li>
+		<li>When testing the Edger Transfer, the photo was not working.&nbsp; Traced the issue to the wrong wire spliced together in a junction box.&nbsp; I also modified the PLC code to increase the delay from falling edge of the photo to when the chains come up.</li>
+		<li>We measured and set the laser spacing.</li>
+		<li>We discovered the encoder was counting the wrong direction.&nbsp; Kaitlin swapped the red and brown wires in the Remote IO cabinet.</li>
+		<li>We measured and set the K1 to Guide at reference.</li>
+		<li>We setup their limits.</li>
+		<li>I set up their delays.</li>
+		<li>We calibrated the encoder and&nbsp;knees.</li>
+		<li>We ensured the Load End Prox switch was working.
+		<ul>
+			<li>At first it was not working.&nbsp; It turned out it was not sensing far enough.&nbsp; I taught it to see further, but I had done the process wrong.&nbsp; It was now seeing too far.&nbsp; I figured out the correct way to teach the sensor and got it working correctly.</li>
+		</ul>
+		</li>
+		<li>I worked with the mill on setting up the lumber lengths, board &amp; cant sizes, cant face table, kerfs, minimum opening face, and the timber table.</li>
+		<li>We had the sawyer square up a 8.125 x 8.125 cant and we calibrated the lasers.</li>
+		<li>The trimmer pieces were going to the edger, so I had Kaitlin copy the code from Roy Anderson Mill 2 for their edger/trimmer routing and that fixed the issue.</li>
+		<li>I helped the mill relabel the preset buttons.</li>
+		<li>I installed their spare PLC CPU and programed it with the updated PLC program.&nbsp; The one that was shipped in the cabinet is now their spare.</li>
+	</ul>
+	</li>
+</ul>
+$@MID@$: 29
+Date: Sun, 17 Jul 2022 19:38:41 -0700
+Technician: Kaitlin
+Mill: Scott Bros
+Job: 202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>Jul 16</p>
+
+<ul>
+	<li>Main setworks cabinet installed, everything got wired by end of day</li>
+	<li>I was working on piece destination software</li>
+	<li>Printer unused and put away, mill needs to set up email reports instead</li>
+</ul>
+
+<p>Jul 17</p>
+
+<ul>
+	<li>Asked Daniel for help on the piece destination software, will be tested more tomorrow</li>
+	<li>System tested -- network cables needed to be swapped, one of the dogs had wires mixed up in the remote, Brownsville turners require BTURNER_AUTO to be turned on in order to go up and out</li>
+	<li>Went through set up and calibration for everything required for the system to run</li>
+	<li>Watched Daniel help sawyer set up cants/boards/timber table/shifts/etc</li>
+	<li>Email reports still need to be set up</li>
+	<li>More buttons needed for console</li>
+	<li>Need to be standby tomorrow to teach the system to the sawyer tomorrow</li>
+</ul>

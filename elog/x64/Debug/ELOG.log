@@ -1,0 +1,73 @@
+﻿  crypt.cxx
+  elog.cxx
+  mxml.cxx
+  strlcpy.cxx
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(115,21): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(256,22): warning C4267: '+=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(302,21): warning C4267: '=': conversion from 'size_t' to 'uint32_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(516,14): warning C4267: '-=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx(581,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elog.cxx(268,22): warning C4244: '=': conversion from 'SOCKET' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elog.cxx(432,33): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elog.cxx(839,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elog.cxx(848,34): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elog.cxx(855,43): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elog.cxx(881,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(201,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(448,17): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(451,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(536,46): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(539,47): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(561,17): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(735,15): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(857,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(1163,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(1238,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(1713,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx(1925,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  regex.c
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1549,54): warning C4244: '=': conversion from '__int64' to 'pattern_offset_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1550,63): warning C4244: '=': conversion from '__int64' to 'pattern_offset_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1551,52): warning C4244: '=': conversion from '__int64' to 'pattern_offset_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1559,72): warning C4244: '=': conversion from '__int64' to 'pattern_offset_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(1980,19): warning C4244: '=': conversion from '__int64' to 'unsigned long', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(2158,44): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(2742,31): warning C4047: '=': 'regoff_t *' differs in levels of indirection from 'int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3195,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3271,39): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3293,36): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3332,57): warning C4244: '=': conversion from '__int64' to 'regoff_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3337,33): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3341,39): warning C4244: '=': conversion from '__int64' to 'regoff_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3342,37): warning C4244: '=': conversion from '__int64' to 'regoff_t', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3351,40): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3361,25): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3599,34): warning C4018: '<': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3603,26): warning C4311: 'type cast': pointer truncation from 'const char *' to 'int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3603,49): warning C4311: 'type cast': pointer truncation from 'const char *' to 'int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3609,16): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3609,16): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3664,28): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3669,32): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3752,10): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3752,10): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3804,10): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3804,10): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3897,13): warning C4311: 'type cast': pointer truncation from 'fail_stack_elt_t' to 'unsigned int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3897,13): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3929,10): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3929,10): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3942,10): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3942,10): warning C4312: 'type cast': conversion from 'unsigned int' to 'fail_stack_elt_t' of greater size
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4105,10): warning C4311: 'type cast': pointer truncation from 'fail_stack_elt_t' to 'unsigned int'
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4105,10): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3095,38): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3609,16): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3752,10): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3804,10): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3929,10): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(3942,10): warning C4101: 'destination': unreferenced local variable
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4479,20): warning C4267: 'initializing': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4615,23): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c(4601,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ELOG.vcxproj -> C:\Users\willm\source\repos\ElogWindowsBinaries\x64\Debug\elog.exe

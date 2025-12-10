@@ -1,0 +1,111 @@
+$@MID@$: 156
+Date: Tue, 28 Jun 2022 08:01:01 -0700
+Technician: Chris
+Mill: West Fraser Leola
+Job: 9907
+System: MultiBus
+Contact: Joshua
+Phone: 5017329514
+Issue: Hardware
+Hardware: Positioner Board
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>No hyd movement. Verified tempo readings and voltages. Told to go try to move valves with battery box.</p>
+$@MID@$: 157
+Date: Tue, 28 Jun 2022 08:12:02 -0700
+Technician: Daniel
+Mill: Roy Anderson
+Job: J201905
+System: Edger
+Contact: Paul
+Phone: 270-819-0710
+Issue: Scanning
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Paul called and asked if I could take a look at trying to speed up the system for scanning.&nbsp; He said that it hesitates after pressing the scan button.&nbsp; I looked at the PLC code and the system is waiting&nbsp;for the skew chains to be stopped before scanning.&nbsp; However, the stop bit from the RMC was flickering.&nbsp; To correct this, I increased the Stop Threshold in the RMC for all the chains from .1 in/sec to .75 in/sec.&nbsp; I also had Paul increase the decel rate for the skew chains from 80 to 100.&nbsp; Paul said it was better.</p>
+$@MID@$: 158
+Date: Tue, 28 Jun 2022 08:25:04 -0700
+Technician: Chris
+Mill: Deer Creek
+Job: 201908
+System: RS2
+Contact: Chandler
+Phone: 3303178936
+Issue: Software
+Hardware: None
+Resolution: Software Update
+Attachment: 
+Encoding: HTML
+========================================
+<p>Email reports not working. Using Gmail. Software build from 2020. Needs update.&nbsp;</p>
+$@MID@$: 159
+Date: Tue, 28 Jun 2022 08:28:10 -0700
+Technician: Chris
+Mill: BPM Whitesburg
+Job: 9721 Linebar
+System: MultiBus
+Contact: Andy
+Phone: 6062605003
+Issue: Hardware
+Hardware: Temposonic Probe
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Andy needs a 12&quot; Tempo for their linebar. Need to program and configure. Needs Next Day.</p>
+$@MID@$: 160
+Date: Tue, 28 Jun 2022 12:38:40 -0700
+Reply to: 162
+Technician: Basil
+Mill: Madison County
+Job: 201801
+System: RS2
+Contact: Tim
+Phone: 314 798 2600
+Issue: Hydraulic
+Hardware: Knees
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Tom called saying his knees wouldn&#39;t move unless the carriage was moving. I saw his target position was 78&quot; for all the active knees. Had him cycle control power to get the targets back within bounds. System is showing 10V out of the card, but knees aren&#39;t moving still. Tom is going out to the carriage to measure the voltage coming out of the servo cable while the sawyer holds down limit override.</p>
+
+<p>&nbsp;</p>
+
+<p>Saw they got it fixed on their own, didn&#39;t call back.</p>
+$@MID@$: 161
+Date: Tue, 28 Jun 2022 15:10:04 -0700
+Technician: Basil
+Mill: New Life Forest Products
+Job: 201706
+System: RS2
+Contact: Eric Jones
+Phone: 928-940-0246
+Issue: Software
+Hardware: Emailing Reports
+Resolution: Problem Fixed?
+Attachment: 
+Encoding: HTML
+========================================
+<p>Eric has been having trouble with his emails not sending. I updated their software which didn&rsquo;t help. Found out Google hardened their Gmail. Found a solution that will work for them and everyone else, then shared that solution with the team.</p>
+
+<p>&nbsp;</p>
+
+<p><strong>Below is the email I sent to Eric:</strong></p>
+
+<blockquote>
+<p>I&rsquo;ve been troubleshooting this issue and finally found a good solution.</p>
+
+<p>Google recently hardened their Gmail and no longer allows authenticating with a username and password only from any third-party apps like ours.</p>
+
+<p>The fix for this is a combination of 2-factor authentication as well as an app-password. I just tested this with your current software and my a test Gmail account. After following the steps in the link below, I was able to send emails again. When I generated the app password, I just copied and pasted from google, which excluded the spaces. Here&rsquo;s what mine looked like:</p>
+
+<p>To set this up for you guys, you&rsquo;ll need to re-enable 2-factor authentication and change the password in the Lewis menues (setup options, email setup) to match the app password. From there, everything should work.</p>
+
+<p><a href="https://support.google.com/accounts/answer/185833?hl=en">https://support.google.com/accounts/answer/185833?hl=en</a></p>
+</blockquote>

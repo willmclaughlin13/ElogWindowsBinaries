@@ -1,0 +1,56 @@
+$@MID@$: 58
+Date: Mon, 23 May 2022 08:51:17 -0700
+Technician: Chris
+Mill: Wagler and Sons
+Job: 201326
+System: RS2
+Contact: Anthony
+Issue: Hardware
+Hardware: PLC
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>AB 1400 PLC Faulted, and when fault code cleared, base had lost program. Told to put spare in, and send back program-less PLC base for reprogramming.</p>
+$@MID@$: 59
+Date: Mon, 23 May 2022 08:57:30 -0700
+Technician: Chris
+Mill: Kykenkee
+Job: 201722
+System: Scragg
+Contact: Kevin
+Issue: Hardware
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>#5 head on Right side of Scragg is not working, lasers not lit. Remoted on and seems to be seeing data. Sawyer then said that solotions are not right. Told to clean and calibrate, then call back.</p>
+$@MID@$: 60
+Date: Mon, 23 May 2022 09:22:06 -0700
+Technician: Chris
+Mill: Algoma Lumber
+Job: 200904
+System: MultiBus
+Contact: Ken
+Issue: Hardware
+Hardware: Temposonic Probe
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Sending in Temposonic probe bought from other vendor for programming (Internal). Does not need adapter cable (already G Series cables)</p>
+$@MID@$: 61
+Date: Mon, 23 May 2022 09:49:03 -0700
+Technician: Basil
+Mill: Parton Lumber
+Job: 201633A
+System: RS2
+Contact: Ricky
+Issue: Other
+Hardware: None
+Resolution: Problem Fixed?
+Attachment: 
+Encoding: HTML
+========================================
+<p><strong>AFTER HOURS CALL </strong>They called our answering service. I was half dead when I talked to Ricky but the important info&nbsp;I got was whatever the issue was, they already fixed it. I checked on TeamViewer, and they were making saw dust.</p>

@@ -1,0 +1,62 @@
+$@MID@$: 178
+Date: Fri, 15 Jul 2022 09:43:49 -0700
+Technician: Basil
+Mill: Parker Lumber
+Job: 202124
+System: RS2.5
+Contact: David Horton
+Phone: 
+Issue: Configuration
+Hardware: Cabling
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>David called to ask about the wire I had in the spot for the oiler. I suspect I just landed a wire there and taped it off on the other end. He&rsquo;s going to remove it and run another wire under the cab where I guess the oiler is.</p>
+$@MID@$: 179
+Date: Fri, 15 Jul 2022 11:21:36 -0700
+Reply to: 180
+Technician: Basil
+Mill: Fly Tie LH
+Job: 202128
+System: RS2.5
+Contact: Fluffy
+Phone: 
+Issue: Scanning
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scans were terrible. Something was causing them to get cut off and only like 3 heads got a single line of scanning. Ultimately found USBs disconnected perhaps by night shift charging phones. Reconnected the flash drive was disconnected. Reconnected and rebooted and everything is working again as expected. Messaged Brandon to see if there was a reason it was disconnected but I expect he would have tossed it if it was bad. Carefully restored their system values after some of the changes we&rsquo;ve made recently.</p>
+$@MID@$: 180
+Date: Fri, 15 Jul 2022 14:04:53 -0700
+In reply to: 179
+Technician: Basil
+Mill: Fly Tie LH
+Job: 202128
+System: RS2.5
+Contact: Fluffy
+Phone: 
+Issue: Scanning
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Installed new flashdrive and set that up for them. Discovered the USB B connection on the hub was running out to the USB A on the UPS? No idea what&#39;s going on over there. Got the hub connected to the PC properly and they&#39;re going to find a USB A to USB A for the UPS.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Scans were terrible. Something was causing them to get cut off and only like 3 heads got a single line of scanning. Ultimately found USBs disconnected perhaps by night shift charging phones. Reconnected the flash drive was disconnected. Reconnected and rebooted and everything is working again as expected. Messaged Brandon to see if there was a reason it was disconnected but I expect he would have tossed it if it was bad. Carefully restored their system values after some of the changes we&rsquo;ve made recently.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

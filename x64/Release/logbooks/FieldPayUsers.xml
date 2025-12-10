@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [ <!ENTITY myentity "my entity value" > ]>
+<!-- created by MXML on Wed Jan 22 13:59:12 2025 -->
+<list>
+  <user>
+    <name>DJORDAN</name>
+    <password encoding="SHA256">/Iwozwz33.nZkiOGTk7PxzsRqFrJEpYLN8261pGKSUA</password>
+    <full_name>Daniel Jordan</full_name>
+    <last_logout>Wed Jan 15 08:32:08 2025</last_logout>
+    <last_activity>Wed Jan 22 13:59:12 2025</last_activity>
+    <email>DJordan@lewiscontrols.com</email>
+    <inactive>0</inactive>
+    <email_notify/>
+  </user>
+</list>

@@ -1,0 +1,20 @@
+$@MID@$: 60
+Date: Wed, 14 Dec 2022 13:28:21 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>We got there and observed them running.&nbsp; Solutions and edgings looked good.&nbsp; While observing the edgings, a couple of boards fell off of the outfeed belt.</li>
+	<li>At their first break, Sam wanted to change the PLC timing for reading and writing to the RMC.&nbsp; During this time, I created a flash drive for the optimizer and ran it from it.
+	<ul>
+		<li>After break, we found that the optimizer was getting multiple next scan packets.&nbsp; Sam made some changes to try to fix it, but it did not work.&nbsp; He reverted the PLC code back to a working version from this morning.</li>
+		<li>The optimizer was having communication problems with RMC, so I switched the program back to running off of the hard drive and removed our wireless router connected the PLC network.&nbsp; After that, we had no more issues.</li>
+	</ul>
+	</li>
+	<li>We left the mill around 1:30pm.</li>
+</ul>

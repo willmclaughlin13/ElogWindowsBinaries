@@ -1,0 +1,43 @@
+$@MID@$: 65
+Date: Mon, 27 Feb 2023 13:51:09 -0800
+Technician: Kaitlin
+Mill: Wagler
+Job: 201326A
+System: RS2
+Trip Type: Upgrade
+Attachment: 
+Encoding: HTML
+========================================
+<p>WED, FEB 22, 2023<br />
+- Mill still needs to put up scan beam, conduits, IF box, and a wall to block sunlight<br />
+- I rearranged their console buttons: took log dog out, moved cant pins, put scanner on and scanner calibration in.<br />
+&nbsp; &nbsp; &nbsp;- They did not receive any taper buttons, so I reused the log dog button for auto taper.<br />
+&nbsp; &nbsp; &nbsp;- They are still missing the three other settings.<br />
+- They did not receive a micro USB cable for the Productivity PLC. It was not on their packing list. I used a spare that I brought with me.<br />
+- I took their old PLC out and put the new PLC into the cabinet.<br />
+- By the end of the day, the scan beam, conduits, and IF box were all up. The wall still needed to be put up.</p>
+
+<p>THU, FEB 23, 2023<br />
+- Working while the wall was being put up.<br />
+- Finished wiring in the main cabinet.<br />
+- Got the scanheads up and instructed someone how to wire the IF box.<br />
+- Cabinet powered on with no immediate issues.<br />
+- Spares worked on carriage.<br />
+- I found one of the USB ports on the PC was not working at all.<br />
+- Web reports was not working.<br />
+- Mill needed to get hoses for the carriage.<br />
+- Hydraulics did not seem to be getting any input. I had missed some wiring on the PLC, and the mill needed to hook their neutral cable in the junction box.<br />
+- The proximity sensor was not working. We found that someone had tied all of the wires together midway through the cable, and used the now unused mill end proximity switch to replace it.</p>
+
+<p>FRI, FEB 24, 2023<br />
+- Will fixed web reports. The website in IIS manager needed to be remade.<br />
+- Got the carriage calibrated.<br />
+- Had a scanning issue because all of the lasers were disabled when it shipped. Scan on also needed to be turned on for all faces.<br />
+- I updated their software to get rid of the auto saw guide menus.<br />
+- Mill still wants:<br />
+&nbsp; &nbsp; - The 3 missing taper buttons + 2 spares<br />
+&nbsp; &nbsp; &nbsp; &nbsp; - Finally shipped on Monday, Feb 27.<br />
+&nbsp; &nbsp; - Wifi/printer set up<br />
+&nbsp; &nbsp; - Email reports<br />
+&nbsp; &nbsp; - A fix for an issue where manual entries don&#39;t give a proper solution<br />
+&nbsp;</p>

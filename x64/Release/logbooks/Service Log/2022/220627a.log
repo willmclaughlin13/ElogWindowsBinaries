@@ -1,0 +1,72 @@
+$@MID@$: 152
+Date: Mon, 27 Jun 2022 07:17:03 -0700
+Technician: Juwan
+Mill: WR Deacon
+Job: 201314
+System: RS2
+Contact: Anthony
+Phone: 5402926517
+Issue: Hardware
+Hardware: Black Box PC
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>He&#39;s been experiencing intermittent control power failures for the past 3ish weeks. The problem has spread throughout the system.&nbsp;</p>
+
+<p>The UPS may be dead.</p>
+
+<p>Anthony plugged the cabinet directly into the power receptical and its working fine now. He&#39;s working on getting a surge protector while they wait for the new UPS.</p>
+
+<p>They have ordered a new UPS.</p>
+$@MID@$: 153
+Date: Mon, 27 Jun 2022 08:15:39 -0700
+Technician: Chris
+Mill: Anthony Timberlands Beirne
+Job: 201811
+System: RS2
+Contact: Tommy
+Phone: 8703532517
+Issue: Hardware
+Hardware: PLC
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Mill says they have no PLC AC output. Analog board shows no communication in Winsetworks. They dont have spares, got another board from Bearden. Now everything works. When I am on site next month, we&#39;ll go over spares list.</p>
+$@MID@$: 154
+Date: Mon, 27 Jun 2022 08:22:42 -0700
+Technician: Chris
+Mill: Windy Ridge
+Job: 201909
+System: RS2
+Contact: Bo
+Phone: 2762840880
+Issue: Scanning
+Hardware: Scanner Calibration
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Bo said he calibrated the scanners and now he&#39;s a &quot;1/2 inch heavy&quot; on solutions. Told him to re-clean the scanners and check the angle of the scanner bar and call back and I&#39;ll walk them through another calibration.</p>
+$@MID@$: 155
+Date: Mon, 27 Jun 2022 12:23:40 -0700
+Technician: Juwan
+Mill: Oakcrest
+Job: 201116
+System: RS2
+Contact: Jason Adams
+Phone: 
+Issue: Hardware
+Hardware: Temposonic Probe
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>knee 3 not jogging correctly, RT op is shutting down intermittently.</p>
+
+<p>Having Jason swap tempos 2 and 3 to see if problem swaps knees.</p>
+
+<p>Ran a new wire from the board to the knees. Fixed the issue with knee 2.</p>
+
+<p>Ran new wire to knees 2 + 3 new tempo wand to knee 3.</p>

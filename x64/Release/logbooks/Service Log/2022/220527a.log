@@ -1,0 +1,72 @@
+$@MID@$: 73
+Date: Fri, 27 May 2022 10:08:14 -0700
+Technician: Chris
+Mill: Kennebec Tamworth
+Job: 2013-25
+System: RS2
+Contact: Ryan
+Issue: Scanning
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Needed help with Scanner Calibration.</p>
+$@MID@$: 74
+Date: Fri, 27 May 2022 11:24:07 -0700
+In reply to: 72
+Technician: Chris
+Mill: Canfor Hermanville RH
+Job: 201222
+System: RS2
+Contact: ?
+Issue: Hydraulic
+Hardware: Servo Valve
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Swapped valves and lubricated, no fix. Told to swap cylinders with Knee 4 over weekend. Could be leaking seal inside cylinder.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Knee 1 is lagging behind other knees. Lube the crap out of the kneeway, then swap valves. Call back with results.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 75
+Date: Fri, 27 May 2022 12:47:03 -0700
+Technician: Basil
+Mill: Josey Lumber
+Job: 201505
+System: RS2
+Contact: Trip
+Issue: Hardware
+Hardware: UPS
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Trip called after his TripLite UPS failed this morning. It shutoff completely and wouldn&rsquo;t work, so we know it&rsquo;s not just a bad battery. I sent him a link and info on the APC UPS we recommend.</p>
+$@MID@$: 76
+Date: Fri, 27 May 2022 14:07:33 -0700
+Technician: Basil
+Mill: Algoma Lumber
+Job: ???
+System: RS2
+Contact: Ken
+Issue: Hydraulic
+Hardware: Temposonic Probe
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ken says his new tempo isn&rsquo;t working correctly. The knee shoots all the way out, then all the way the other direction. He already checked the wires by swapping with another knee. I suggested the magnet may have been dislodged when the tempo got broken off the carriage. He&rsquo;s home for the long weekend, so we couldn&rsquo;t test any ideas.</p>

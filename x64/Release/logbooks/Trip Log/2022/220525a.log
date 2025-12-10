@@ -1,0 +1,31 @@
+$@MID@$: 6
+Date: Wed, 25 May 2022 18:59:26 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Sam had a sore throat and took a Covid 19 home test.&nbsp; He tested positive for Covid 19.&nbsp; I took a Covid 19 home test and tested negative.</li>
+	<li>The mill electrician and his wife were working with Sam and they both went to the doctor.&nbsp; They don&#39;t have Covid, but they both have strep throat.</li>
+	<li>I fixed a wiring issue with the mills network cable for the Optimizer.</li>
+	<li>We received the part I ordered from Lewis.</li>
+	<li>Installed the Q4 module into the RMC.</li>
+	<li>I terminated the network cables with the CAT5e connectors from Lewis.&nbsp; I tested to the cable when I was finished and only had 1 test good.&nbsp; I check the ends and found that I had messed 4 ends up.&nbsp; I had 2 spare connectors, so I reterminated the operator consol and remote console network cables that were bad.&nbsp; I retested those cable and they tested good.
+	<ul>
+		<li>I went to Lowes on the way back to the hotel and picked up more CAT5e connectors.</li>
+	</ul>
+	</li>
+	<li>I added the 10-pin phenoix contector to the back panel and wired it into the Q4 module.</li>
+	<li>I installed 18awg white wire to fix the issue with DC ground.</li>
+	<li>I cleaned up the wiring in the Setwork cabinet.
+	<ul>
+		<li>While cleaning it up, I discovered that the white and red wire for the servo cable had been terminated wrong in the setworks cabinet.&nbsp; I swapped red and white wires on all 11 servo cables in the setworks cabinet.</li>
+		<li>Also while cleaning up the wiring, I found that the some of the temp and servo cables were landed to the wrong axis.&nbsp; I verified which cables that were in question by performing an ohms test on the cables.&nbsp; I corrected the issue by reterminating the cables to the correct axis.</li>
+	</ul>
+	</li>
+	<li>I terminated the feedworks encoder cable.&nbsp;</li>
+</ul>

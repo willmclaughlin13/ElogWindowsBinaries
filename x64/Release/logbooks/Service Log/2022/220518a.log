@@ -1,0 +1,145 @@
+$@MID@$: 44
+Date: Wed, 18 May 2022 10:28:37 -0700
+Reply to: 49
+In reply to: 39
+Technician: Daniel
+Mill: Clark Hardwoods
+Job: 201910
+System: RS2
+Contact: Keith
+Issue: Hardware
+Hardware: Encoder
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>We discovered that the Avatron encoders don&#39;t work with the 5vdc power supplies on longer cable runs.&nbsp; We tested a BEI encoder and it work just fine with the 5vdc power supplies on longer cable runs (150&#39;).&nbsp; Chris told the custmer we would ship them a new encoder and 5vdc power supply adpter cable overnight on 05/17.&nbsp; However, after discovering the issue with the Avtron encoders not working with the 5vdc power supplies on longer cable runs, we only shipped them the BEI endcoder overnight.&nbsp; They should get the encoder on 05/18.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Per Daniel, told Heath to shut system completely down, replace BEI Encoder with Avatron, and then power on to properly inititalize encoder and then try to reference/scan.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Reference errors, likely caused by bad load end prox switch. Handed over to Chris</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 45
+Date: Wed, 18 May 2022 10:54:38 -0700
+Reply to: 56
+In reply to: 41
+Technician: Basil
+Mill: Post Hardwoods
+Job: 201619
+System: RS2 Lumber Pro
+Contact: Erik
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Same issue as yesterday. Every time they cycle control power, it kills all scan heads except number 2. I told them to stop turning off scan power until we install their loaner head and disconnect the bad head in the meantime.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>More trouble with their scanners. Scan head two came on and the rest of them were off and wouldn&rsquo;t come on. Rebooted the cabinet which fixed the issue. Also, their scan abort delay error was popping up. I increased it from 1.5 to 2.5. Copiah&rsquo;s Lumber Pro delay was 10 seconds</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 46
+Date: Wed, 18 May 2022 15:42:23 -0700
+Reply to: 50
+Technician: Basil
+Mill: Kennebec Solon
+Job: 201318
+System: RS2
+Contact: Alex
+Issue: Hardware
+Hardware: PLC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Called to tell me their PLC has been faulting regularly. I suggested we swap the CPU which we scheduled for tomorrow. Sam recommended I have them reseat all the modules, then wait with the current CPU until it faults and we can see the error message. I don&rsquo;t have Alex&rsquo;s info to contact, will have to wait until tomorrow</li>
+</ul>
+$@MID@$: 47
+Date: Wed, 18 May 2022 15:45:15 -0700
+Reply to: 48
+Technician: Basil
+Mill: Hancock Bethel
+Job: 201533
+System: RS2
+Contact: Jason Coolidge
+Issue: Hardware
+Hardware: Knees
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Jason called, knee 3 is not getting to set. It&rsquo;s consistently. 0.5&rdquo; behind. Knee cal. @12&rdquo; gets it to 11.5&rdquo;. They told me they swapped the valve and the cable and the card. The system is trying to move the knee, but it can&rsquo;t. I think as it gets close to set, the voltage drops too low to compete with the bad valve pushing against it? I had them swap knee 3 and knee 2 valve to double check. Tried everything, I&rsquo;m almost certain it&rsquo;s binding and not moving when the voltage gets too low. I can make it get closer to getting on set by ramping up the gains. Also voltage never goes positive even though it can jog forward and back without issue</p>
+$@MID@$: 48
+Date: Wed, 18 May 2022 18:14:33 -0700
+In reply to: 47
+Technician: Basil
+Mill: Hancock Bethel
+Job: 201533
+System: RS2
+Contact: Jason Coolidge
+Issue: Hardware
+Hardware: Knees
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>We finally got the voltage positive by shutting off all the hydraulic valves to the other knees, but it didn&#39;t improve our situation. Constantly undershooting.</p>
+
+<p>If I ramp up the inside gain, I can reduce the error until it starts running away constantly. There&#39;s something resisting the knee moving in both directions when the power gets too low. The other big clue is knee 3 moves all the way forward when it has no power. All other knees move backward.&nbsp;</p>
+
+<p>This was 5 hours on the phone</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Jason called, knee 3 is not getting to set. It&rsquo;s consistently. 0.5&rdquo; behind. Knee cal. @12&rdquo; gets it to 11.5&rdquo;. They told me they swapped the valve and the cable and the card. The system is trying to move the knee, but it can&rsquo;t. I think as it gets close to set, the voltage drops too low to compete with the bad valve pushing against it? I had them swap knee 3 and knee 2 valve to double check. Tried everything, I&rsquo;m almost certain it&rsquo;s binding and not moving when the voltage gets too low. I can make it get closer to getting on set by ramping up the gains. Also voltage never goes positive even though it can jog forward and back without issue</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

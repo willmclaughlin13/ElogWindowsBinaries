@@ -1,0 +1,43 @@
+$@MID@$: 16
+Date: Thu, 02 Jun 2022 20:19:24 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>I looked into the reason the RMC is not getting a reading from the tempo for Laser 2 and found the issue.&nbsp; I turned out that the power (24B) and dc ground were swapped when it was wired into the phoenix connector.&nbsp; Swapped them and it works now.</li>
+	<li>The RMC says there is no transducer for the Feedworks encoder.
+	<ul>
+		<li>I rechecked the wiring for the encoder and did not find any issues.</li>
+		<li>I looked at their old drawings and they used a 5vdc power supply.&nbsp; I looked at documents online for the encoder and it looks like it needs 5vdc, but I&#39;m not a 100% that is true.&nbsp; I ordered 2 - 5vd power supplies from Laurie overnight.</li>
+	</ul>
+	</li>
+	<li>I&#39;m not happy with the scan data.&nbsp; The edges of square edged lumber &amp; calibration bar have waves.&nbsp; It looks like possibly that the lasers are reading in the data from left to right, but the optimizer is thinks they right to left (or visa versa).
+	<ul>
+		<li>I originally calibrated the scanners with their old calibration bar.&nbsp; I recalibrated the scanners with the calibration bar we provided and got the same results.</li>
+		<li>I will have to look into this further.</li>
+	</ul>
+	</li>
+	<li>Sam finished the&nbsp;rework of the PLC code and RMC account for adding the feedworks encoder to the RMC and he&nbsp;enter the gradient values for each tempo.&nbsp;</li>
+	<li>We calibrated the positioning pins, saws, and the pickers to the center of the infeed chain.
+	<ul>
+		<li>When we calibrated originally, we calibrated it with the right of center being negative and left being positive.&nbsp; This is backwards.&nbsp; The correct way is values left of center are negative and values right of center are positive.
+		<ul>
+			<li>To fix the calibrations without recalibrating, we negated the positioning scale and position offset for each tempo in the RMC.&nbsp; Note - for this to work, you have negate both values and then download the changes to the RMC.</li>
+		</ul>
+		</li>
+		<li>Sam updated the formula for updating the positioning scale to negate the value.&nbsp; Without negating the positioning scale, the values of the pins were moving negative as the pins moved toward the infeed deck.</li>
+	</ul>
+	</li>
+	<li>After we calibrated the saws, we asked the mill to take the saws out of the edger.&nbsp; To take the saws out, they have to use an arbor jack to keep the saw arbor up when they open the door.&nbsp; When they tried to use the jack, it did not work.
+	<ul>
+		<li>I checked the voltage at the junction box and their was 120vac for arbor jack up and down.</li>
+		<li>It turns out the arbor jack and feedworks chain tensioner don&#39;t use the main HPU, but they use a small hydraulic pump that needs to be turned on when operating either functions.&nbsp; Sam updated the PLC code to turn the small pump on when either function is engaged.</li>
+	</ul>
+	</li>
+	<li>I measured the index line to the center of each pin and entered those values into the optimizer&#39;s machine.mp file (under the heading [PHOTO POSITIONS]&nbsp;PHOTO_CELL).</li>
+</ul>

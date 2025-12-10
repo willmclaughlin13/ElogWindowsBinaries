@@ -1,0 +1,28 @@
+$@MID@$: 92
+Date: Fri, 03 Jun 2022 08:18:34 -0700
+Technician: Chris
+Mill: DR Johnson Headrig
+Job: 200708
+System: RS1
+Contact: Ted - 5416438908
+Issue: Hardware
+Hardware: Carriage Drive
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Carriage Drive not working. Parker SN N0121-12242. Gave information to Mitch Carroll, Tyrone/Corley rep.</p>
+$@MID@$: 93
+Date: Fri, 03 Jun 2022 14:21:08 -0700
+Technician: Brandon
+Mill: Delmarva #2 RH
+Job: 202103
+System: RS2.5
+Contact: Rickards 302-249-9600
+Issue: Software Installation
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Marv passed this on to me. The cant catcher and slab belt weren&#39;t working with delays. I remapped them correctly and it still wasn&#39;t working, so I made a software update for them. Found the issue in the code, the cant catcher delay doesn&#39;t get used in manual if the auto cant catch bit is on, even if auto is off. I fixed the code to eliminate this issue, and added a job switch to account for pulling up slab belt if down before the delay pulls the cant pins in. The slab belt was also backwards, so I moved it to spare 4 OFF so it would function correctly. I should probably update the other side as well, might do that when Marv is actually onsite next week though. They may need SQL updated. The sawyer info didn&#39;t pull from the database, which usually means it needs an update.</p>

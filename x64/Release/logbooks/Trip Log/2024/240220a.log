@@ -1,0 +1,86 @@
+$@MID@$: 80
+Date: Tue, 20 Feb 2024 08:31:10 -0800
+Technician: Daniel
+Mill: JC Hamer
+Job: 202302
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>Friday - Feb. 09, 2024</p>
+
+<ul>
+	<li>I observed the operation of the system and helped Sam &amp; Jon as needed.</li>
+	<li>I noticed that that the Optimizer wasn&rsquo;t identifying square edge flitches correctly.
+	<ul style="list-style-type:circle">
+		<li>I discovered that there was some code turned on in the Optimizer that only works with the GoCator heads.&nbsp; I updated the code to turn off that code if GoCator heads aren&rsquo;t being used.</li>
+	</ul>
+	</li>
+	<li>I also added Job Specific code to send the PLC the number 4 for saws used if the piece is square edged.&nbsp; This allows the PLC to automatically drop out a square edge board.</li>
+	<li>I also added code to send the PLC the number 4 for saws used if a piece is determined to be a drop out pieced.</li>
+</ul>
+
+<p>Saturday &ndash; Feb. 10, 2024</p>
+
+<ul>
+	<li>Observed their system run and helped Sam &amp; Jon as needed.</li>
+	<li>I was still noticing that the Optimizer was not choosing square edged flitches correctly.&nbsp; I updated their software to turn on the code for Random Width Parallel Edge code.&nbsp; I worked with the Parallel Edge Tolerance and got the system picking square boards correctly.</li>
+	<li>Adjusted flitch parameters as needed.</li>
+</ul>
+
+<p>Sunday &ndash; Feb. 11, 2024</p>
+
+<ul>
+	<li>No work at the mill</li>
+	<li>Worked on fixing a display issue on the Flitch Viewer.&nbsp; The drawing of the pins was not touching the drawn flitch.
+	<ul style="list-style-type:circle">
+		<li>Fixed the issue and the drawn pins are now touching the edge of the flitch.</li>
+	</ul>
+	</li>
+</ul>
+
+<p>Monday &ndash; Feb. 12, 2024</p>
+
+<ul>
+	<li>When we got there in the morning, the system would not process a flitch correctly.&nbsp; I started to look at the code, but then decided to try cycling the PLC from Run to Program and then Program back to Run.&nbsp; That fixed that issue.</li>
+	<li>The optimizer was choosing Pin 4 when there wasn&rsquo;t enough wood to correctly position the flitch.&nbsp; I updated the Optimizer code to require a minimum of about 9&rdquo; of wood past the end of the pin to choose that pin.&nbsp; However, that did not fix the issue.
+	<ul style="list-style-type:circle">
+		<li>After shift, I measured the distances from Pin to Pin and they were off.&nbsp; I decided to not update the pin positions until the next day.</li>
+	</ul>
+	</li>
+	<li>The operator wanted the Infeed Reverse Push Button to be momentary.&nbsp; I modified the PLC program and made the Infeed Reverse Push Button momentary.</li>
+	<li>I noticed that the pre-positioning pins would not move until the until the flitch being sawn had cleared the infeed photo-eye.&nbsp; I modified the PLC program to allow the pre-positioning pins to move for prepositioning when the pins have dropped after positioning a flitch at the infeed table.</li>
+	<li>The Grade/Taper Override buttons were still not working correctly.&nbsp; I discovered that PLC was looking for the PLC Flitch ID from the optimizer and the optimizer was supplying the last scanned PLC Flitch ID.&nbsp; I modified both the PLC and Optimizer&rsquo;s Override packet from the PLC to PC to include the PLC Flitch ID.&nbsp; I then updated the Optimizer code to use this PLC Flitch ID from the Override packet for any Override Solutions sent to the PLC.&nbsp; This fixed the issue with the Grade/Taper Override buttons.</li>
+	<li>
+	<ul style="list-style-type:circle">
+	</ul>
+	Put the covers on the wire ways in the PLC cabinet.</li>
+	<li>Adjusted flitch parameters as needed.</li>
+</ul>
+
+<p>Tuesday &ndash; Feb. 13, 2024</p>
+
+<ul>
+	<li>When I got to the mill, I had them stop so I could update their Pin positions in the Optimizer.&nbsp; It took less than 5 minutes to make the changes.&nbsp; That fixed the issue with the Optimizer picking the wrong pin for positioning.</li>
+	<li>Continued adjusting flitch parameters as needed.</li>
+	<li>I knew that the Edger Pressrolls were not coming down when they manually fed a piece into the edger.&nbsp; Also, when they manually fed a piece, the saws and pickers did not move to where they had pre-spotted the piece.&nbsp; I started working modifying the PLC code to allow them to add a flitch to pre-spot to fix this issue.
+	<ul style="list-style-type:circle">
+		<li>I wasn&rsquo;t planning on implementing this fix as it was the last day on-site and I didn&rsquo;t want to make any major changes to PLC.&nbsp; However, after talking with the Mill, they requested that I make the changes to fix the issue with the pressroll not coming down when a piece is manually fed into the edger.</li>
+		<li>I finished the modifications to allow a piece to be added to the pre-spot.&nbsp; If the pre-spot is in state 2, they can press the 2<sup>nd</sup> button from the right on the right handle and it will add a flitch to the pre-spot.&nbsp; The allows them to pre-spot any piece that the PLC does not have a solution from the Optimizer for.</li>
+	</ul>
+	</li>
+	<li>I modified the PLC code to ensure that the pressrolls go down when any piece goes into the edger.
+	<ul style="list-style-type:circle">
+		<li>The first test seemed to work, but later we sent a piece manually and the pressrolls did not come down.</li>
+		<li>I relooked at the PLC code and found I had missed a couple of things.&nbsp; I corrected the PLC code to incorporate the things I missed.&nbsp; We tested it and it works.</li>
+		<li>The pressrolls now come down any time a piece enters the edger.</li>
+	</ul>
+	</li>
+	<li>After making the change to the PLC for the pressroll issue, the Edger state would get stuck state 4.&nbsp; Updated the PLC code to reset the Edger state when they press Infeed Reset HMI button.&nbsp; I also updated the PLC code in State 4 to fix the issue.
+	<ul style="list-style-type:circle">
+		<li>I&rsquo;m not sure if my fixes are correct.&nbsp; State 4 is for moving the pickers.</li>
+	</ul>
+	</li>
+	<li>They sent a 12/4 pieces through the Edger and it got stuck.&nbsp; Pressroll 3 came down too soon.&nbsp; I adjusted the pressroll Cyl. Down values from 0.37 seconds to 0.20 seconds.&nbsp; Later they ran a 9/4 piece through the machine without any issues.</li>
+</ul>

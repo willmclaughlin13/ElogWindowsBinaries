@@ -1,0 +1,76 @@
+$@MID@$: 69
+Date: Thu, 26 May 2022 09:21:44 -0700
+Technician: Basil
+Mill: Parker Lumber
+Job: 202124
+System: RS2.5
+Contact: Tristin 828 318-5466
+Issue: Hardware
+Hardware: Cabling
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>David out sick with covid, Tristin called the office, cant kicker not working. David told him to check the fuse in our remote cabinet and it was blown. Last time it was the cinch-backs with a blown fuse where a wire in the junction box fell out and shorted against the ground. Talked o Tristin and gave him the wire numbers to look for in the junction box</li>
+</ul>
+$@MID@$: 70
+Date: Thu, 26 May 2022 10:20:50 -0700
+Reply to: 71
+Technician: Chris
+Mill: Rustic Wood Products
+Job: 2022-03
+System: RS2.5
+Contact: Kurt
+Issue: Configuration
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Web Reports are not working. Comes up with &quot;Service Unavailable&quot;. Brandon and Will are looking into it.</p>
+$@MID@$: 71
+Date: Thu, 26 May 2022 11:38:15 -0700
+In reply to: 70
+Technician: Basil
+Mill: Rustic Wood Products
+Job: 2022-03
+System: RS2.5
+Contact: Kurt 5735171294
+Issue: Configuration
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Logged on to check out their web reports not working. Quickly discovered they are infected with ransomware. Called Kurt who assured me the system is isolated on its own network, but still connected to the internet, so we&rsquo;re confident other computers aren&rsquo;t infected too. I hope he&rsquo;s right. They will swap the brick as soon as they can. When the PC is returned to us, it&rsquo;s imperative that we don&rsquo;t power it on. The hard drive needs to be removed and wiped or better: destroyed.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Web Reports are not working. Comes up with &quot;Service Unavailable&quot;. Brandon and Will are looking into it.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 72
+Date: Thu, 26 May 2022 14:01:07 -0700
+Reply to: 74
+Technician: Chris
+Mill: Canfor Hermanville RH
+Job: 201222
+System: RS2
+Contact: ?
+Issue: Hydraulic
+Hardware: Servo Valve
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Knee 1 is lagging behind other knees. Lube the crap out of the kneeway, then swap valves. Call back with results.</p>

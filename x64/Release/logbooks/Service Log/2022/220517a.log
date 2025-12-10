@@ -1,0 +1,209 @@
+$@MID@$: 34
+Date: Tue, 17 May 2022 07:40:59 -0700
+Reply to: 35
+In reply to: 30
+Technician: Daniel
+Mill: Missouri-Pacific
+Job: 202007
+System: RS2
+Contact: Ryan
+Issue: Hydraulic
+Hardware: Temposonic Probe
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Tim called this morning saying that the issue was back on K4.&nbsp; He said that K4 was jittering even when disabled.&nbsp; He also said that he discovered that on the analog board, the lights on K4 were dim and if they pressed on the connector, it would brighten up.&nbsp; He said they don&#39;t have a spare and wanted to know if he could swap the boards between the Remote IO and the Setworks cabinet.&nbsp; I told yes, but he would have to change the address dial on each of the boards.&nbsp; He requested that we ship them a new analog board overnight.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Ryan swapped Tempos on K3 and K4. Problem moved. Bad Tempo. Sending back for eval.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 35
+Date: Tue, 17 May 2022 08:23:27 -0700
+In reply to: 34
+Technician: Daniel
+Mill: Missouri-Pacific
+Job: 202007
+System: RS2
+Contact: Tim
+Issue: Hydraulic
+Hardware: Temposonic Probe
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Tim called again, K4 has no voltage.&nbsp; I had them press limit override and the voltage screen showed voltage, however the knee would not move.&nbsp; I had them use the job box on K4 and they still could not get it to move.&nbsp; I had them plug K3 SV cable into the job box while the jog box was connected to K4 and they were able to move K4.&nbsp; I had them move the K4 cable in the Remote IO cabinet to K3 and tested it again with the jog box.&nbsp; It would not move again.&nbsp; I told them they have a bad cable.&nbsp; They requested 2 SV and 2 Temp. cables be sent overnight along with the analog board from earlier.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Tim called this morning saying that the issue was back on K4.&nbsp; He said that K4 was jittering even when disabled.&nbsp; He also said that he discovered that on the analog board, the lights on K4 were dim and if they pressed on the connector, it would brighten up.&nbsp; He said they don&#39;t have a spare and wanted to know if he could swap the boards between the Remote IO and the Setworks cabinet.&nbsp; I told yes, but he would have to change the address dial on each of the boards.&nbsp; He requested that we ship them a new analog board overnight.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Ryan swapped Tempos on K3 and K4. Problem moved. Bad Tempo. Sending back for eval.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 36
+Date: Tue, 17 May 2022 08:26:03 -0700
+Technician: Chris
+Mill: The Timbermen
+Job: 201525A
+System: RS2
+Contact: JR
+Issue: Hardware
+Hardware: Photo Sensor
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Needs two Turk Magnetic Prox Switches for Scragg.</p>
+$@MID@$: 37
+Date: Tue, 17 May 2022 08:39:38 -0700
+Technician: Juwan
+Mill: Oakridge
+Job: 201116
+System: RS2
+Contact: Brandon
+Issue: Configuration
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Was getting codebase errors, solved by deleting the Database folder and restarting.</p>
+$@MID@$: 38
+Date: Tue, 17 May 2022 08:41:36 -0700
+Reply to: 39
+Technician: Juwan
+Mill: Clark Hardwoods
+Job: 201910
+System: RS2
+Contact: Keath
+Issue: 
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Reference errors, likely caused by bad load end prox switch. Handed over to Chris</p>
+$@MID@$: 39
+Date: Tue, 17 May 2022 08:55:37 -0700
+Reply to: 44
+In reply to: 38
+Technician: Chris
+Mill: Clark Hardwoods
+Job: 201910
+System: RS2
+Contact: Keith
+Issue: Hardware
+Hardware: Encoder
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Per Daniel, told Heath to shut system completely down, replace BEI Encoder with Avatron, and then power on to properly inititalize encoder and then try to reference/scan.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Reference errors, likely caused by bad load end prox switch. Handed over to Chris</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 40
+Date: Tue, 17 May 2022 09:39:57 -0700
+Technician: Juwan
+Mill: Post Hardwoods
+Job: 201619
+System: RS2
+Contact: Eric
+Issue: 
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Requested a new laser head, handed off to Karen because they are out of warrenty</p>
+$@MID@$: 41
+Date: Tue, 17 May 2022 09:46:51 -0700
+Reply to: 45
+Technician: Basil
+Mill: Post Hardwoods
+Job: 201619
+System: RS2 Lumber Pro
+Contact: Erik
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>More trouble with their scanners. Scan head two came on and the rest of them were off and wouldn&rsquo;t come on. Rebooted the cabinet which fixed the issue. Also, their scan abort delay error was popping up. I increased it from 1.5 to 2.5. Copiah&rsquo;s Lumber Pro delay was 10 seconds</li>
+</ul>
+$@MID@$: 42
+Date: Tue, 17 May 2022 10:46:17 -0700
+Technician: Chris
+Mill: Kendrick FP
+Job: 201809
+System: RS2
+Contact: Morgan
+Issue: Other
+Hardware: Network Connection
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Morgan cannot remotely access Reports through web.Machine does not look to be online. Told to check that first, call back if she still cannot access.</p>
+$@MID@$: 43
+Date: Tue, 17 May 2022 11:30:48 -0700
+Technician: Chris
+Mill: Robert S Coleman
+Job: 2013-09
+System: RS2
+Contact: Lucas
+Issue: Hardware
+Hardware: Cabling
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Found broken/fray cable over pant arm. Ordered Stock Set of Servo/Tempo Cables</p>

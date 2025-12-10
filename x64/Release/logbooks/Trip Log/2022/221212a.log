@@ -1,0 +1,21 @@
+$@MID@$: 58
+Date: Mon, 12 Dec 2022 09:34:54 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>I observed the optimization of the flitches.&nbsp; The mill was sending a fare amount of boards back to the edger to be re-edged.&nbsp; I tweaked the wane parameters to evaluate the number of boards that need to be re-edged.
+	<ul>
+		<li>The best results before our lunch were when I had taken the wane parameters down to 10 for face wane, edge wane, and length (0 outside edge wane).</li>
+		<li>One of the issues that I noticed was that the system was not calling wane on the flitch wane.&nbsp; After lunch, I started looking at the code to see if I had missed something in the software.&nbsp; I found some variables in the code that I adjusted that made the edge wane more distinct between grades.&nbsp; As I was looking at the code, it dawned on me that the issue could be the under/over thickness tolerances and it was.&nbsp; I had 4/4 under/over tolerance set to 0.5&quot; and for 6/4-12/4 they were set to 0.25&quot;.&nbsp; I set them all to 0.1&quot; and the helped a lot.&nbsp; I ended the day with them running with 25 for face wane, edge wane, and length wane and 10 for outside edge wane.</li>
+	</ul>
+	</li>
+	<li>Roy &amp; Eric asked me about the machines capabilities to get 8 boards a minute.&nbsp; I told them the best they can expect is 6 boards a minute.</li>
+	<li>Marv called and asked if we could test running the system without board lifts.&nbsp; I pulled the fuse for the board lifts and we ran for about an hour like that.&nbsp; I took video with the GoPro of it running without the board lifts.</li>
+	<li>After shift we modified and tested&nbsp;the edger speed 6 so it is running at&nbsp;325 ft/minute.&nbsp; We also tested and adjusted speed 5 to be 300 ft/minute.</li>
+</ul>

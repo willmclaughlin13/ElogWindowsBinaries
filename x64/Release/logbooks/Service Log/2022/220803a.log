@@ -1,0 +1,83 @@
+$@MID@$: 220
+Date: Wed, 03 Aug 2022 07:48:49 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Other
+Hardware: None
+Resolution: Other
+Attachment: 
+Encoding: HTML
+========================================
+<p>Worked with Scott on centering the solution by adjusting their positioner offsets for yoke 1 up/down.&nbsp; Also worked with Scott on adjusting the shift solution right and up to help with the issue.&nbsp; I told Scott, that what really needs to happen is to set the shift right and up to zero and calibrate the system to the center of the dogs.&nbsp; I told him that Chris will need to do this when he is there on-site.</p>
+$@MID@$: 221
+Date: Wed, 03 Aug 2022 09:24:19 -0700
+Technician: Sam
+Mill: Fritch
+Job: 201627A
+System: RS2
+Contact: Jeff
+Phone: 
+Issue: Software
+Hardware: None
+Resolution: Other
+Attachment: 
+Encoding: HTML
+========================================
+<p>Called Jeff.</p>
+
+<p>Removed Toggle from PLC (placed in during install for manual movement monday may 4th)</p>
+
+<p>Remapped Left Joystick handle to Spare 1 aka EGDER IN.&nbsp; This is used by the custom optimizer code.&nbsp;</p>
+
+<p>Back to normal.</p>
+$@MID@$: 222
+Date: Wed, 03 Aug 2022 10:02:47 -0700
+Technician: Chris
+Mill: Lumbra Hardwoods
+Job: 201442
+System: RS2
+Contact: Kenny
+Phone: 2079437415
+Issue: Power Issue
+Hardware: Console
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Control Power tripping out. Check L1-2 incoming power.</p>
+$@MID@$: 223
+Date: Wed, 03 Aug 2022 10:07:08 -0700
+Technician: Chris
+Mill: Wagler & Son
+Job: 2013-26
+System: RS2
+Contact: Mervin
+Phone: 7313361299
+Issue: PLC FAULT
+Hardware: PLC
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>1400 PLC Faulted and lost program. They had a 1400 CPU Base here to be reprogrammed. Programmed and shipped next day</p>
+
+<p>&nbsp;</p>
+$@MID@$: 224
+Date: Wed, 03 Aug 2022 12:40:31 -0700
+Technician: Juwan
+Mill: WLS
+Job: 202123
+System: RS2
+Contact: Robert
+Phone: 
+Issue: Scanner Calibration
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Had sudden shutdown this morning, their slab attached button was no longer pressed after shutdown so slabs werent coming off attached to first package. Had them press that button and it fixed their issue. They also had me remove the bell on jog after solution.</p>

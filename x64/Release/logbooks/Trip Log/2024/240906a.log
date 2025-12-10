@@ -1,0 +1,127 @@
+$@MID@$: 98
+Date: Fri, 06 Sep 2024 17:40:56 -0700
+Technician: Daniel
+Mill: Bruggeman
+Job: 202126
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Installed the laser heads and routed cables to each head.
+	<ul>
+		<li>I initially mounted the heads backwards, so I had to mount each head twice.</li>
+		<li>I set the spacing between the right heads (laser to laser - 48&quot;)</li>
+		<li>I alligned the left heads with the right heads.</li>
+	</ul>
+	</li>
+	<li>While mounting the scan heads, the head electrician inquired if we could add another start/stop to our system to start 2-3 additional motors.&nbsp; He requested that the inputs/outputs come from the remote PLC in the MCC cabinet.
+	<ul>
+		<li>I emailed Chris to request the parts I needed to make it happen.</li>
+		<li>We had a remote laser start/stop box that I robbed the start/stop switch and installed it into the console.
+		<ul>
+			<li>Still need to wire in the start/stop switch</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>I tried to test the left &amp; right deck hook stops, but there is some PLC logic that needs to be addressed to make it work correctly.</li>
+	<li>We got the lost package with the cables I need to finish wiring in the overhead positioning sensor.
+	<ul>
+		<li>I finished wiring the finial sensor.</li>
+		<li>I ran the cable from the PLC to overhead positioning sensor junction box and terminated in both the junction box and the PLC cabinet.</li>
+		<li>I tested the sensors, and they didn&#39;t work.
+		<ul>
+			<li>I remembered that the PLC needed the signal wire to go to both the V+ &amp; the I+ for each sensor.&nbsp; When I went to correct this, I found that the SL1 was wired into V1+, SL2 was wired into I1+, SR1 was wired into V2+, and SR2 was wired into I2+.&nbsp; I fixed it and it still did not work.</li>
+			<li>I double checked the sensor manual and found I had used the wrong signal wire.&nbsp; I fixed that and SL2, SR1, &amp; SR2 worked, however SL1 was not working.</li>
+			<li>I checked the wiring in the junction box for SL1 and it looked good.&nbsp; We had a spare sensor, so I tested the cable with the spare sensor, and it worked with the spare.&nbsp; Switch back to the original sensor and it still did not work.&nbsp; I replaced the sensor with the spare to fix the issue.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+$@MID@$: 99
+Date: Fri, 06 Sep 2024 18:29:49 -0700
+In reply to: 96
+Technician: Basil
+Mill: Dr. Johnson
+Job: 202401
+System: RS3
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Figured out the problem with the array. When reading in the knee spacing from the PLC, I failed to convert from thousandths of an inch to tenths, so instead of 86.5&quot;, it was actually 86500&quot;. This would make our backSlice[face] value as large as 8000, which we later use as an iterator in array that are only of size 600 (MAXSCANPOINTS).</li>
+	<li>Fixed default set not reading on startup from the PLC to the optimizer</li>
+	<li>Found a bug where if we don&#39;t get the final solution for whatever reason, it won&#39;t allow setting or backsetting. I changed it so once we take a cut, you can set or backset again</li>
+	<li>Cut a handful of logs today, the last few without any major issues</li>
+	<li>The optimizer did not crash once today</li>
+	<li>Sam is returning Monday for one more day of test, then we expect to run RS3&#39;s first day of production next Tuesday.</li>
+</ul>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>Struggling with the optimizer crashing sometimes when solutioning. I think we&#39;re writing outside of an array and clobbering all the proceeding memory until it goes outside of the allowed memory and faults. It&#39;s sporadic and hard to reproduce. Even more difficult to find the problem since it tends to fault far away from the actual problem.</li>
+				<li>Slab attached is now working sometimes. We found the PLC&#39;s max slab attached was set to 0&quot;. I&#39;m going to add some menus to show read-only values to help prevent this in the future. The optimizer could change these values in the future.</li>
+				<li>Spent a lot of time trying to scan and solution an already-cut log after the optimizer crashed. This is something RS2 struggles with, so no surprise RS3 has a hard time as well.</li>
+				<li>The slabber&#39;s position from the PC is weird. Need to look into that and figure out why it&#39;s not going to the correct position</li>
+			</ul>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<ul>
+							<li>Improved the carriage reference error getting it under 2&quot; each time (Sam changed how the PLC reads from the RMC)</li>
+							<li>Fixed AC output wiring</li>
+							<li>Swapped TM 8 and TM 4 in the hot swap box. I will reland these wires so the labels match</li>
+							<li>Swapped the probe on the ASG to the R-series. Sam tried the auto-cal but didn&#39;t have much luck</li>
+							<li>Calibrated the scanners</li>
+							<li>Scanned and cut a log. Opening face was way too small. Hard to tell if it&#39;s the slabber or the optimizer. Tomorrow we&#39;ll try opening withouth the slabber hopefully, otherwise we could measure that first board</li>
+						</ul>
+
+						<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+							<tbody>
+								<tr>
+									<td style="background-color:#486090">Quote:</td>
+								</tr>
+								<tr>
+									<td style="background-color:#FFFFB0">
+									<ul>
+										<li>Switched over all inputs and outputs to RS3</li>
+										<li>Fixed a few minor wiring issues</li>
+										<li>Installed Firesync 2410</li>
+										<li>Got the lasers on</li>
+										<li>Calibrated encoder scale and tested carriage reference. Noticing lots of large errors at any carriage speed. Double checked calibration, sped up PLC reading from RMC, no change. Sometimes slow moves result in large errors, other times it&#39;s the fast ones. More work to do here</li>
+										<li>Unfortunately we didn&#39;t get the calibration cant on the carriage like we were expecting, so no testing of scanning / calibrating</li>
+										<li>Tomorrow we&#39;ll cut up a new cal. cant and run the scan cal.</li>
+									</ul>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p>&nbsp;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

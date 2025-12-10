@@ -1,0 +1,39 @@
+$@MID@$: 79
+Date: Mon, 22 Jan 2024 08:55:08 -0800
+Technician: Sam
+Mill: Kennebec Grantham Service Trip
+Job: 201917
+System: RS2
+Trip Type: Service
+Attachment: 
+Encoding: HTML
+========================================
+<p>- Added additional routing to the RS2</p>
+
+<p>* System now can handle backcut BOARD into CANT drop without KICKERS (use kickers or knee movement or anything)</p>
+
+<p>- Added Back Kerf to software</p>
+
+<p>- Change Debarker HMI layout</p>
+
+<p>- Added the ability for the infeed / debarker feed drive to start back up automatically</p>
+
+<p>- Showed Chris where the network cable gets plugged into the mGuard</p>
+
+<p>&nbsp;</p>
+
+<p>Travel: Jan 17th + 20th</p>
+
+<p>Onsite: Jan 18-19th</p>
+
+<p>Total days: 4</p>
+
+<p>(Travel issues)</p>
+
+<p>- Flight cancelled from JFK to Boston.&nbsp; Changed to VT later that night.&nbsp;&nbsp;</p>
+
+<p>- Flight changed from Friday Morning to Saturday Morning late Thursday (after 8pm)</p>
+
+<p>Most things should now be running smoothly.&nbsp; Potential issues in the future would be dropping of block routes as the final piece (currently have to toggle manual mode and select GANG).&nbsp; They will also most likely want to add PEC to the debarker for piece tracking. The goal here would be to prevent lumber from stopping inside the debarker.</p>
+
+<p>Ended up staying for Friday to make sure the routing was working properly after changes late Thursday changed the main PLC causing the shifting rollcase to act incorrectly.&nbsp; This issue was fixed by mapping the I/O back to how it was configured.</p>

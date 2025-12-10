@@ -1,0 +1,58 @@
+$@MID@$: 31
+Date: Tue, 19 Jul 2022 04:17:14 -0700
+Technician: Kaitlin
+Mill: Scott Bros
+Job: 202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>7/18</p>
+
+<ul>
+	<li>Watching the sawyers cut logs</li>
+	<li>Daniel working on routing - added strobing, debugging
+	<ul>
+		<li>He had to change the location of non-edger or slab or cant pieces from trimmer to special/trash and enable the delay timer when any face was cut</li>
+	</ul>
+	</li>
+	<li>Added auto slab belt to the program</li>
+	<li>Removed manual slab attached from the operator tracking section in pant_sub() since it is not working and is no longer used</li>
+	<li>Listened to Daniel explain the system to the sawyer to learn more about the system and how to explain it better</li>
+</ul>
+$@MID@$: 32
+Date: Tue, 19 Jul 2022 17:13:56 -0700
+Technician: Daniel
+Mill: Scott Brothers
+Job: J202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>When we got there, I noticed Pvalues wasn&#39;t running.&nbsp; I restarted the system, and it was working fine after words.</li>
+	<li>We received the&nbsp;buttons from the shop and installed them (Dispatch Auto, Slab Drop Auto, Trimmer).</li>
+	<li>I noticed an issue with the dispatch.&nbsp; I saw a flitch that was supposed to go to the edger go out to the green chain and the following flitch went to the edger.&nbsp; I think with the 5/1000 second delay for the route waiting transfer, the next route snuck in.&nbsp; I modified the PLC to prevent this from happening.</li>
+	<li>I updated their spare PLC CPU with the changes I made to the PLC program.</li>
+	<li>Kaitlin and I measured the opening faces on several flitches, and they were good.</li>
+</ul>
+$@MID@$: 33
+Date: Tue, 19 Jul 2022 17:51:16 -0700
+Technician: Kaitlin
+Mill: Scott Bros
+Job: 202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>7/19</p>
+
+<ul>
+	<li>Missing sticker with the after hours number</li>
+	<li>PValues crashed at some point in the morning before we arrived and the first 100 or so logs weren&#39;t tracked</li>
+	<li>Measured flitches to check if the opening face was accurate</li>
+	<li>Daniel put in the new buttons and fixed the bug in the PLC program that was causing routing issues</li>
+</ul>

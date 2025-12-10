@@ -1,0 +1,32 @@
+$@MID@$: 84
+Date: Thu, 27 Jun 2024 20:59:57 -0700
+Technician: Daniel
+Mill: D.R. Johnson
+Job: 202401
+System: RS2
+Trip Type: Upgrade
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>I terminated the carriage AC wires in the Quick Swap cabinet.
+	<ul>
+		<li>The load end prox switch is on the carriage and it is AC.&nbsp; I recycled the relay from the RS1 for it and wired it in.</li>
+		<li>Their carriage has a hydraulic pressure switch, and it is AC.&nbsp;&nbsp;&nbsp; I recycled the relay from the RS1 for it and wired it in.</li>
+	</ul>
+	</li>
+	<li>I removed the panavise from the pedestal and installed it in the cab for them.</li>
+	<li>I terminated the Slabber tempo &amp; servo wires in the Quick Swap cabinet.</li>
+	<li>I terminated LES1, LSS, LSWL, &amp; SEN in the Quick Swap cabinet.&nbsp;</li>
+	<li>I terminated the wires in the Laser Remote 1.</li>
+	<li>I showed Justin how to put up the first scan head and he finished putting up the rest.</li>
+	<li>Justin terminated the wires in the Scanner IF box.</li>
+	<li>Justin terminated the console cable in the RS2 cabinet.</li>
+	<li>I terminated circuit 2 in the RS2 cabinet.</li>
+	<li>I powered on the RS2 and verified the Scanner IF box had power.</li>
+	<li>Justin &amp; I plugged in the scan heads.</li>
+	<li>I entered the scan head serial numbers into the optimizer and powered on the lasers.</li>
+	<li>Turned on control power and the console is communicating with the Optimizer.</li>
+	<li>When testing the tempos I discovered that the adapters for the tempos were wired incorrectly.&nbsp; This was due to the fact I had used the Female pin order on the drawing for the adapter instead of the pin order for the male adapter.&nbsp; I sent an email requesting 5 new adapters (6 would be great (1 extra for a spare)).</li>
+	<li>Also worth note is that the tempo cables for the knees, have some sort of feedback that is making the Positioner board think there is a tempo plugged in when it is not.</li>
+</ul>

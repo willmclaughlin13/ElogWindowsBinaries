@@ -1,0 +1,16 @@
+$@MID@$: 55
+Date: Fri, 09 Dec 2022 15:41:48 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>When we got there, we scanned and cut some flitches.&nbsp; It became clear quickly that we had a problem.&nbsp; About half the boards were going into the chipper shoot when they came out of the edger.&nbsp; I used to the GoPro to record the boards coming out of the edger.&nbsp; After much deliberation we felt that one of the issues is that the saw center was not on the center of the board side of the edger.&nbsp; The mill put a string down the center of the board side and aligned the center of the saws to it.&nbsp; At that point the mill was done for the day, so they will align the positioning lasers to the saws tomorrow.</li>
+	<li>During this week I realized the feature to save the raw flitch data automatically was missing from the software.&nbsp; I updated the optimizer software to fix the missing feature.</li>
+	<li>Sam was trying to use the solution packet data to find the length of the flitch so he can have the infeed pressroll come up before it comes of the end of the flitch.&nbsp; The value he thought was the length of the flitch was the beginning position of the flitch.&nbsp; I showed him how to calculate the length of the flitch from the solution data.</li>
+	<li>I worked on marking up our set of drawings with the changes we have made.</li>
+</ul>

@@ -1,0 +1,18 @@
+$@MID@$: 85
+Date: Fri, 28 Jun 2024 20:32:49 -0700
+Technician: Daniel
+Mill: D.R. Johnson
+Job: 202401
+System: RS2
+Trip Type: Upgrade
+Attachment: 240628_212815_20240628_144819.jpg,240628_212838_20240628_144822.jpg,240628_212854_20240628_145417.jpg
+Encoding: HTML
+========================================
+<ul>
+	<li>Modified one of the temp adapters to test the new pin order.&nbsp; I tried it on slabber and got a reasonable reading from the tempo.</li>
+	<li>Tested all the tempos and found knee 1 had a bad tempo.&nbsp; The mill provided me with an new tempo.&nbsp; I put it in and could not get a reading from the temp.&nbsp; I looked on the back of the temp and the indicator lights had both green &amp; red lights on.&nbsp; I had a programing tool with me, so I removed the new&nbsp;tempo and tested it in the break room.&nbsp; When I plugged it into the programming tool, it still had both green &amp; red lights on.&nbsp; However, when I would initiate a magnet read, the red light would go out and stay out until unplugged and plugged back in.&nbsp; I checked with the mill, and they had another tempo.&nbsp; I tested that tempo prior to installing it and it read a reasonable value.&nbsp; After installing it, I tested it, and it still was given a reasonable value.</li>
+	<li>Spaced the scan heads to avoid the holding arms.&nbsp; The sawyer said that they can be in the way of the scan at times.</li>
+	<li>Finished terminating the wires in the Quick Swap cabinet (slabber hsv, saw guide up &amp; down, back cut rolls (spare 3), log loader, &amp; LES2).</li>
+	<li>Cleaned up the cabinets.</li>
+	<li>Installed the door on the Quick Swap cabinet.</li>
+</ul>

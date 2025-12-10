@@ -1,0 +1,52 @@
+$@MID@$: 174
+Date: Thu, 07 Jul 2022 11:59:24 -0700
+In reply to: 173
+Technician: Basil
+Mill: Post Hardwoods
+Job: 201619
+System: RS2 Lumber Pro
+Contact: Jeff
+Phone: 
+Issue: Hardware
+Hardware: Console
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>After many hours of through troubleshooting all over the place, we finally realized it was the IP address of the PLC reset to default 10.10.10.10</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>Control power won&rsquo;t turn on after they installed some new hardware. Fuse D was blown, they are working on replacing that. I told them that wouldn&rsquo;t be related to the control power. Somehow that fuse D did fix their control power issue</li>
+				<li>Next issue was their starter motor controls not working. Jeff the electrician was difficult to work with. I had him chase down 24V power because he told me no power in the starter console on 24A or 24D, but turns out he put one lead on 24A and another on 24D. Eventually I figured that out and he blamed me for not being clear about what to test. Confirmed the Wago was on and blinking and the output cards were lit up. Power all seemed okay in there. PLC didn&#39;t appear to get the motor start input although Sam assured me monitoring for inputs isn&#39;t a good way to troubleshoot. PLC had many remote group errors throughout the day, but we cleared all the faults and saw output lights come on the output cards. From here I think it&#39;s PLC network but Jeff had to go home. He&#39;s going to wake me up in the middle of the night.</li>
+				<li>Initial cause of the issue was Jeff replacing some wires that went out to the saw. He doesn&#39;t even know what the wires do and didn&#39;t explain clearly why he was replacing them in the first place. He was frustrated with the mill folks there and it made troubleshooting with him very difficult. <strong>The issue is 100% hardware / wiring related. Nothing in the PLC or software would have caused this type of failure.</strong></li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 175
+Date: Thu, 07 Jul 2022 13:53:19 -0700
+Technician: Basil
+Mill: Parker Lumber
+Job: 202124
+System: RS2.5
+Contact: David Horton
+Phone: 
+Issue: Configuration
+Hardware: Cabling
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>David is working on adding his oiler. I showed him where to land the hot and neutral as well as how to set it up in the setworks menus.</li>
+</ul>

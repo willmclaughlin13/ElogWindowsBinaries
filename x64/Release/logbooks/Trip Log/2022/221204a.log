@@ -1,0 +1,26 @@
+$@MID@$: 50
+Date: Sun, 04 Dec 2022 18:52:01 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>The Optimizer software had a bug in it that would cause it to not start properly after restarting the computer.&nbsp; I update the optimizer software to cause the optimizer programs to try connecting to pvalues every second for 10 tries, before it fails and tries to launch pvalues from the program that failed to connect to pvalues.&nbsp; This fixed the issue.</li>
+	<li>Calibrated the scanners
+	<ul>
+		<li>During the calibration process, it did not calibrate on laser position 49 &amp; 50.&nbsp; I clicked on the button to estimate the unaccepted lasers, but it crashed the program.
+		<ul>
+			<li>Need to investigate.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Retaught the left board/cant sensors to see a window because the scan frame was triggering the auto cant side routines.</li>
+	<li>The left joystick is very hard to move.&nbsp; I adjusted it, but it is still stiffer than the right joystick.</li>
+	<li>Helped Sam as needed.</li>
+	<li>Note: Mac worked with the mill to get their edger press rolls working.&nbsp; Apparently the 2 outfeed edger press rolls have not worked for about 20 years.&nbsp; Mac went to Corley and got 2 hydraulic valves.&nbsp; They installed the new valves, but then another valve broke.&nbsp; Mac is going to Corley on Monday to get more parts.</li>
+</ul>

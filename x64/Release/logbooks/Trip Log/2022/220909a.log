@@ -1,0 +1,20 @@
+$@MID@$: 40
+Date: Fri, 09 Sep 2022 12:50:25 -0700
+Technician: Kaitlin
+Mill: Gates Milling
+Job: 202116
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Brandon told mill to move the tempo/servo/AC wires so that 1) the AC and DC wires were separate and 2) the wires wouldn&#39;t be rubbing up as the arm moved</li>
+	<li>Log loader, saw guide up/down, cant catcher need to be wired through external PLC</li>
+	<li>Prox switches need to be wired</li>
+	<li>Turner out needs to be split on knees 2-4</li>
+	<li>Need to wire in all the dispatches</li>
+	<li>Otherwise, wiring looks great</li>
+	<li>Brandon and I talked to Mark Tuck and his family about how to configure the system and got a list of board sizes/overage/kerfs, and answered their questions about the system&#39;s functions</li>
+	<li>Need to wait for electrical work in the mill to be finished, so we&#39;re powering on tomorrow</li>
+</ul>

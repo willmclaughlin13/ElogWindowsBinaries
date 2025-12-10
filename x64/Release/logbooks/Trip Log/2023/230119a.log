@@ -1,0 +1,27 @@
+$@MID@$: 63
+Date: Thu, 19 Jan 2023 12:35:18 -0800
+In reply to: 62
+Technician: Basil
+Mill: Canfor Wynnwood
+Job: 201708
+System: RS2
+Trip Type: Upgrade
+Attachment: 230119_124810_IMG_1135.jpg
+Encoding: HTML
+========================================
+<p>Last day of the install (yesterday), I finally did all my work.</p>
+
+<ul>
+	<li>First when connected the tempos, I noticed the ones we shipped in the cylinders were used, likely meant for test. We owe them 3 new tempos. They want to just buy the 3 we accidentally sent.</li>
+	<li>Knee 1 was jittering violently, so we swapped the tempo which made it jitter much less</li>
+	<li>Knee 1 and three mild jittering was fixed by lowering the inside gains and reducing the knee movement speeds from 16 in/sec to 14.</li>
+	<li>Going to startup, we had a lot of mechaincal failures that I got to watch</li>
+	<li>Calibrated all the knees</li>
+	<li>Calibrated the encoder</li>
+	<li>Mill decided not to install their pant switch, so I set it up virtually on the encoder</li>
+	<li>Calibrated scanners, they look great</li>
+	<li>Sawyers loved their new cant kickers</li>
+	<li>Made sure everything was working well as they cut 50+ logs before I left</li>
+</ul>
+
+<p>&nbsp;</p>

@@ -1,0 +1,15 @@
+$@MID@$: 61
+Date: Sun, 15 Jan 2023 13:53:58 -0800
+Reply to: 62
+Technician: Basil
+Mill: Canfor Wynnwood
+Job: 201708
+System: RS2
+Trip Type: Upgrade
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Measured the new carriage (ended up being the same knee distances)</li>
+	<li>They wanted a button on the console to adjust the speed of their new Corley electric log turner. They landed the wire on our IO board on 49, which was some random output. I suggested we land it on an unused spare, but Mike didn&#39;t like that idea. Since there was already a wire in those unused spares, he wasn&#39;t confident they weren&#39;t being used already. I moved it to spare 9 (previously only 8) so we&#39;re both happy. They had to swap the wires they brought over since our board outputs the common. Those two wires go to the corley cabinet. I marked our drawings</li>
+</ul>

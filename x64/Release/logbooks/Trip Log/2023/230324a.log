@@ -1,0 +1,51 @@
+$@MID@$: 66
+Date: Fri, 24 Mar 2023 16:48:06 -0700
+Technician: Kaitlin
+Mill: Parker
+Job: 202301
+System: RS2
+Trip Type: Upgrade
+Attachment: 
+Encoding: HTML
+========================================
+<p>Fri, Mar 10, 2023.<br />
+- HDMI cable sent to mill was the wrong length: sent 20 ft, needed to be 50 ft or more.<br />
+- The existence of the scanner cabinet was not communicated well to Parker before installation.<br />
+- Old log deck spares no longer being used in system. Tied to foot pedal in sawyer&#39;s cab.<br />
+- Old back panel was removed.<br />
+- Mill putting up scanner cable housing and IF cabinet.<br />
+- Left logs on rail to cut for testing later.</p>
+
+<p>Sat, Mar 11, 2023.<br />
+- Wiring in new backpanel.<br />
+- Missing saw guide temposonic: found it and wired it back in.<br />
+- Ethernet ports on PC were backwards again.<br />
+- Laser switches needed to be rewired and changed in drawings. The outside switch was removed entirely.<br />
+- Basil had to add turner up to the PLC program since it was missing.<br />
+- Rewired the spare outputs going from the PLC out to the junction box.<br />
+- Installed help files.</p>
+
+<p>Sun, Mar 12, 2023.<br />
+- Power board went bad and needed to be replaced.<br />
+- Moved heads because the log loader prongs blocked the lasers.<br />
+- Face plates extended whenever the system started. Basil made an adjustment for that.<br />
+- Saw deviation sensors were not showing up - wires were pulled out by accident.<br />
+- Needed to redo system values because console mapping caused crashes.</p>
+
+<p>Mon, Mar 13, 2023.<br />
+- Log loader input wasn&#39;t in console mapping and needed to be reset.<br />
+- Found that the saw deviation sensors needed to be reset.<br />
+- Adjusted the slab drop encoder values.<br />
+- Found timber bind was on by accident, removed it from software.<br />
+- Redid the scanner calibration.<br />
+- Turned on prepositioning to move back a foot before going back past the saw.<br />
+- Cleaned up cabinet since there weren&#39;t any changes left to make.<br />
+- Set delays to the minimum to undog faster, as requested.<br />
+- Fixed the label on the knee calibration button on the console.<br />
+- Had the position of the saw deviation sensors adjusted so they would give better readings.</p>
+
+<p>Tue, Mar 14, 2023.<br />
+- Set prespot to only work on mill end and tested the change.<br />
+- There seems to be an issue with the scan set disable area being inconsistent.<br />
+- Also, lengths seem to be inconsistently measured by the scanners. Missing inches from measurement.<br />
+&nbsp;</p>

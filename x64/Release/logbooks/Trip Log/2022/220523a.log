@@ -1,0 +1,32 @@
+$@MID@$: 4
+Date: Mon, 23 May 2022 17:26:16 -0700
+Technician: Daniel
+Mill: Rustic Wood Products
+Job: 202203
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Added Slab Drop Config to Setworks and set it up&nbsp;</li>
+	<li>Adjusted the cant pan delay
+	<ul>
+		<li>It was still not the way the operator wanted it.&nbsp; I looked code and found their old Job # had a line of code to toggle off the cant pins on New Log.&nbsp; I replaced their old job number with their new and recompiled the software.&nbsp; After installing the new software and changing the cant pins back to just a spare, it work the way the operator wanted it to.</li>
+	</ul>
+	</li>
+	<li>We measured and verifed opening faces.</li>
+	<li>I programed the spare PLC CPU and made the one that shipped in the cabinet thier spare.</li>
+	<li>I updated Web Reports on their spare brick.</li>
+	<li>Juwan updated the labels on the console.</li>
+	<li>I put up the laser warning stickers</li>
+	<li>I adjuste the optimizer adjustments to below:
+	<ul>
+		<li>Cant face insurance - 1in</li>
+		<li>Cant face violation - 0.5in</li>
+		<li>Board face violation Width - 1in</li>
+		<li>Board face violation Length - 1ft</li>
+	</ul>
+	</li>
+	<li>Juwan setup them up for emailing their reports to them at the end of the day.</li>
+</ul>

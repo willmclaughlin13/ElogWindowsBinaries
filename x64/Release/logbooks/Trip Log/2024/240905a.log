@@ -1,0 +1,157 @@
+$@MID@$: 95
+Date: Thu, 05 Sep 2024 07:45:11 -0700
+Reply to: 96
+In reply to: 93
+Technician: Basil
+Mill: Dr. Johnson
+Job: 202401
+System: RS3
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Improved the carriage reference error getting it under 2&quot; each time (Sam changed how the PLC reads from the RMC)</li>
+	<li>Fixed AC output wiring</li>
+	<li>Swapped TM 8 and TM 4 in the hot swap box. I will reland these wires so the labels match</li>
+	<li>Swapped the probe on the ASG to the R-series. Sam tried the auto-cal but didn&#39;t have much luck</li>
+	<li>Calibrated the scanners</li>
+	<li>Scanned and cut a log. Opening face was way too small. Hard to tell if it&#39;s the slabber or the optimizer. Tomorrow we&#39;ll try opening withouth the slabber hopefully, otherwise we could measure that first board</li>
+</ul>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>Switched over all inputs and outputs to RS3</li>
+				<li>Fixed a few minor wiring issues</li>
+				<li>Installed Firesync 2410</li>
+				<li>Got the lasers on</li>
+				<li>Calibrated encoder scale and tested carriage reference. Noticing lots of large errors at any carriage speed. Double checked calibration, sped up PLC reading from RMC, no change. Sometimes slow moves result in large errors, other times it&#39;s the fast ones. More work to do here</li>
+				<li>Unfortunately we didn&#39;t get the calibration cant on the carriage like we were expecting, so no testing of scanning / calibrating</li>
+				<li>Tomorrow we&#39;ll cut up a new cal. cant and run the scan cal.</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 96
+Date: Thu, 05 Sep 2024 17:07:40 -0700
+Reply to: 99
+In reply to: 95
+Technician: Basil
+Mill: Dr. Johnson
+Job: 202401
+System: RS3
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Struggling with the optimizer crashing sometimes when solutioning. I think we&#39;re writing outside of an array and clobbering all the proceeding memory until it goes outside of the allowed memory and faults. It&#39;s sporadic and hard to reproduce. Even more difficult to find the problem since it tends to fault far away from the actual problem.</li>
+	<li>Slab attached is now working sometimes. We found the PLC&#39;s max slab attached was set to 0&quot;. I&#39;m going to add some menus to show read-only values to help prevent this in the future. The optimizer could change these values in the future.</li>
+	<li>Spent a lot of time trying to scan and solution an already-cut log after the optimizer crashed. This is something RS2 struggles with, so no surprise RS3 has a hard time as well.</li>
+	<li>The slabber&#39;s position from the PC is weird. Need to look into that and figure out why it&#39;s not going to the correct position</li>
+</ul>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>Improved the carriage reference error getting it under 2&quot; each time (Sam changed how the PLC reads from the RMC)</li>
+				<li>Fixed AC output wiring</li>
+				<li>Swapped TM 8 and TM 4 in the hot swap box. I will reland these wires so the labels match</li>
+				<li>Swapped the probe on the ASG to the R-series. Sam tried the auto-cal but didn&#39;t have much luck</li>
+				<li>Calibrated the scanners</li>
+				<li>Scanned and cut a log. Opening face was way too small. Hard to tell if it&#39;s the slabber or the optimizer. Tomorrow we&#39;ll try opening withouth the slabber hopefully, otherwise we could measure that first board</li>
+			</ul>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<ul>
+							<li>Switched over all inputs and outputs to RS3</li>
+							<li>Fixed a few minor wiring issues</li>
+							<li>Installed Firesync 2410</li>
+							<li>Got the lasers on</li>
+							<li>Calibrated encoder scale and tested carriage reference. Noticing lots of large errors at any carriage speed. Double checked calibration, sped up PLC reading from RMC, no change. Sometimes slow moves result in large errors, other times it&#39;s the fast ones. More work to do here</li>
+							<li>Unfortunately we didn&#39;t get the calibration cant on the carriage like we were expecting, so no testing of scanning / calibrating</li>
+							<li>Tomorrow we&#39;ll cut up a new cal. cant and run the scan cal.</li>
+						</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 97
+Date: Thu, 05 Sep 2024 17:56:04 -0700
+Technician: Daniel
+Mill: Bruggeman
+Job: 202126
+System: Edger
+Trip Type: Installation
+Attachment: 240905_182230_Screenshot_2024-09-05_152746.png
+Encoding: HTML
+========================================
+<ul>
+	<li>Overhead Positioning sensors
+	<ul>
+		<li>Ran and terminated&nbsp;the cables from sensors (SR1, SR2, &amp; SL1) to the junction box.&nbsp; Waiting for the parts ordered from Lewis to arrive (UPS did not deliver them today).</li>
+	</ul>
+	</li>
+	<li>Verified that the AC &amp; DC power was not shorted out prior turning the system on (continuity checks).</li>
+	<li>Powered on the system.
+	<ul>
+		<li>The PC took several minutes to start up on first power on.</li>
+		<li>The system powered on without any issues.</li>
+	</ul>
+	</li>
+	<li>Save a copy of the PLC, RMC, &amp; Cmore as powered on.</li>
+	<li>Installed the new PLC, RMC, &amp; Cmore programs that Jon had given me.
+	<ul>
+		<li>The analog card in the Remote PLC rack was a different model than was in the PLC configuration and was causing the PLC to fault out.&nbsp; I updated the PLC configuration in the program to fix the issue.</li>
+		<li>Used Jon&#39;s instructions and updated the HMI parameters with the values from the system as it had shipped from Corley.</li>
+	</ul>
+	</li>
+	<li>Tested the Skew chains, Infeed rolls, Edger Feed rolls, Left Deck, Right Deck, Scanners, Saw Shift, &amp; the Edger Transfer Chains.
+	<ul>
+		<li>Left &amp; Right decks were running backwards, so the electricians corrected it and now they move in the correct direction.</li>
+		<li>The scan frame was hard to move.&nbsp; There was a lot of rust on the rails and chains.&nbsp; I had to free it up by hand to get it to work.</li>
+		<li>The saw shift would not move more than a couple of inches.&nbsp; Raymond had to beat on the collars to break them free of the rust.&nbsp; He then cleaned the arbor and now they move freely.</li>
+	</ul>
+	</li>
+	<li>I tested the Saw Lasers, and they would not turn on.
+	<ul>
+		<li>I found that the PLC code had them landed on output 606 when it should be 609.&nbsp; Moved it from 606 to 609 in the PLC code and that fixed the issue.</li>
+	</ul>
+	</li>
+	<li>We went to test the air&nbsp;solenoids valves and found one of the values had an issue.&nbsp; By the time they got it fixed, I was working on tuning the scan frame movement.</li>
+	<li>I tuned the scan frame movement in the RMC.&nbsp; I was able to get a 49&quot; movement down to about 1.75 seconds.
+	<ul>
+		<li>I had Raymond spray the rails &amp; chains with lube to help free them from the rust.</li>
+	</ul>
+	</li>
+	<li>I tuned the skew chains in the RMC.&nbsp; I was able to tune them to move 12&quot; in about 0.75 seconds.</li>
+	<li>I went to close the MCC cabinet door and the disconnect shaft was out of alignment with the disconnect handle (not fabbed correctly at the shop) and it broke the handle.&nbsp; I sent a text to Paul and told him we would need a new handle.</li>
+</ul>

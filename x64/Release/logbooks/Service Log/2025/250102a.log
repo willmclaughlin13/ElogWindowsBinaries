@@ -1,0 +1,135 @@
+$@MID@$: 2063
+Date: Thu, 02 Jan 2025 10:17:46 -0800
+Reply to: 2064
+Technician: Sam
+Mill: Fly Tie
+Job: 202407
+System: RS2.5
+Contact: Fluffy
+Phone: 
+Issue: Other
+Hardware: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Lot&#39;s of entries - I&#39;ll toss this weeks into this one post</p>
+
+<p>12/30:&nbsp; &nbsp;</p>
+
+<p>* Routing issue where the pullback rollcase wouldnt proc fast enough.&nbsp; &nbsp;We adjusted the pulse time a great deal, but never really liked what was happening.&nbsp; For context, the pullback route couldnt activate until the board was clear (which was the flapper clearing).&nbsp; &nbsp;I redid the board / square board routes to unlock the waste route the second the flapper (edger) was pressed.&nbsp; This still took too long on short boards.&nbsp; We trried a few different solutions here, but nothing was quite right.</p>
+
+<p>12/31:&nbsp; &nbsp;</p>
+
+<p>* Added a better solution for the waste routing after trying timers on the flappers (didnt like this).&nbsp; I removed waste from routing and now make it occur instantly off of the optimizer signal.&nbsp; When the pullback opens, the rolls stop (so if a backcut board was transfering it will stay on the rolls and transfer out when the pullback closes).</p>
+
+<p>1/2:</p>
+
+<p>The above changes stopped the virutal kicker signal from working as intended.&nbsp; I&#39;m not exactly sure how, but after the signal occurs&nbsp;the pullback rollcase chains would remain stuck up.&nbsp; I added a few safety checks to disable watching for this signal if the feature is turned off (accessable through the HMI) and added a fail safe jump chains down call.&nbsp; When the signal comes in a timer activates, at the end we bring it down.&nbsp; If the chains are still not down after this entire routine, a second jump chains down signal is sent.&nbsp; This new solution has been running for about 2 hours now without any mishaps.&nbsp;&nbsp;</p>
+
+<p>The routing is looking to be in a good state.&nbsp; They have requested an Auto Stop all Motors and a quick release on the Big Gate lock out (timbers lock the big gate from dropping until the timber hits the end of the 2nd belt).&nbsp; I&#39;m adding in the auto stop and big gate change (it will not release the lock once the timber clears the first flapper), this Friday but we might wait until their lunch time Monday to bring the changes over.</p>
+
+<p>&nbsp;</p>
+$@MID@$: 2064
+Date: Thu, 02 Jan 2025 16:19:00 -0800
+In reply to: 2063
+Technician: Basil
+Mill: Fly Tie
+Job: 202407
+System: RS2.5
+Contact: Fluffy
+Phone: 
+Issue: Other
+Hardware: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Replying to Sam&#39;s report because I&#39;m LAZY.</p>
+
+<p>Fixed a problem with their undog protection not allowing limit override to work and not checking for pant closed.</p>
+
+<p>Made it so their virtual kicker only works on the unload end (they gave up on dropping cants on the load end belt)</p>
+
+<p>Fixed an issue with the auto saw guide wiping out it&#39;s gains on startup. The first few moves included the ASG offset as a coast, which is like a 48&quot; coast, averaged with 9 zeros. It was bad. I rewrote the CalcCoasts function entirely so on startup it does not calculate the positioner&#39;s offset as a coast and it also uses double ended queues instead of int arrays. On startup, the deques are initialized with the stored value of the up and down coast repectively, then every coast after that is added to the queue (popping the oldest value off), then the average is recalculated.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Lot&#39;s of entries - I&#39;ll toss this weeks into this one post</p>
+
+			<p>12/30:&nbsp; &nbsp;</p>
+
+			<p>* Routing issue where the pullback rollcase wouldnt proc fast enough.&nbsp; &nbsp;We adjusted the pulse time a great deal, but never really liked what was happening.&nbsp; For context, the pullback route couldnt activate until the board was clear (which was the flapper clearing).&nbsp; &nbsp;I redid the board / square board routes to unlock the waste route the second the flapper (edger) was pressed.&nbsp; This still took too long on short boards.&nbsp; We trried a few different solutions here, but nothing was quite right.</p>
+
+			<p>12/31:&nbsp; &nbsp;</p>
+
+			<p>* Added a better solution for the waste routing after trying timers on the flappers (didnt like this).&nbsp; I removed waste from routing and now make it occur instantly off of the optimizer signal.&nbsp; When the pullback opens, the rolls stop (so if a backcut board was transfering it will stay on the rolls and transfer out when the pullback closes).</p>
+
+			<p>1/2:</p>
+
+			<p>The above changes stopped the virutal kicker signal from working as intended.&nbsp; I&#39;m not exactly sure how, but after the signal occurs&nbsp;the pullback rollcase chains would remain stuck up.&nbsp; I added a few safety checks to disable watching for this signal if the feature is turned off (accessable through the HMI) and added a fail safe jump chains down call.&nbsp; When the signal comes in a timer activates, at the end we bring it down.&nbsp; If the chains are still not down after this entire routine, a second jump chains down signal is sent.&nbsp; This new solution has been running for about 2 hours now without any mishaps.&nbsp;&nbsp;</p>
+
+			<p>The routing is looking to be in a good state.&nbsp; They have requested an Auto Stop all Motors and a quick release on the Big Gate lock out (timbers lock the big gate from dropping until the timber hits the end of the 2nd belt).&nbsp; I&#39;m adding in the auto stop and big gate change (it will not release the lock once the timber clears the first flapper), this Friday but we might wait until their lunch time Monday to bring the changes over.</p>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 2065
+Date: Thu, 02 Jan 2025 16:22:11 -0800
+Reply to: 2070
+Technician: Basil
+Mill: Stoltzfus
+Job: 201828
+System: RS2
+Contact: Benuel
+Phone: 
+Issue: 
+Hardware: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Two issues:</p>
+
+<ol>
+	<li>Sometimes the slab is really heavy and it seems like the scan was aborted. He&#39;s not sure if it double-beeped or not</li>
+	<li>Opening face is bad on logs with a lot of sweep. He thinks they can recover a board out of that thick slab</li>
+</ol>
+
+<p>I will spend some time watching them saw tomorrow morning.</p>
+$@MID@$: 2066
+Date: Thu, 02 Jan 2025 16:24:00 -0800
+Technician: Basil
+Mill: Baillie Owego
+Job: 201429
+System: RS2
+Contact: Nate Eck
+Phone: Email
+Issue: Reports
+Hardware: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Reports were generating as all zeros from setworks, working in web reports. I used Notepad++ to quickly find all in their system values folder for &quot;name=&quot; where I found species015.spc had a blank string for the species name. I deleted that species which fixed the problem.</p>
+$@MID@$: 2067
+Date: Thu, 02 Jan 2025 16:26:39 -0800
+Technician: Basil
+Mill: Jackson Hardwoods
+Job: 202309
+System: RS2.5
+Contact: Arnie
+Phone: Email
+Issue: Reports
+Hardware: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Arnie showed me the SubShiftStastics doesn&#39;t combine data for multiple shifts on the same day. I confirmed it myself, the report appears to be designed specifically for only one day of data. I suspect it was originally created to show live data (log count, line count, lines / min, downtime) on the main dashboard, then crammed into all the other reports like Shift Summary. This works fine if you only have one shift per day, but not if you have more than that.</p>
+
+<p>I told Arnie I would add it to our list of things to do, and showed him where he could find the correct data in other reports.</p>

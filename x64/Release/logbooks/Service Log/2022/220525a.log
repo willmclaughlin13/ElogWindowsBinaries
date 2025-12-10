@@ -1,0 +1,60 @@
+$@MID@$: 66
+Date: Wed, 25 May 2022 08:04:37 -0700
+Technician: Chris
+Mill: Bryant and Young
+Job: 201618
+System: RS2
+Contact: Richard
+Issue: Hardware
+Hardware: Cabling
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>All three knees run away when dogs raised to kick can&#39;t on drop end. Told to check cabling for shorts or pinches.</p>
+$@MID@$: 67
+Date: Wed, 25 May 2022 11:11:54 -0700
+In reply to: 65
+Technician: Basil
+Mill: Kennebec Greenfield
+Job: 201615
+System: RS2
+Contact: Bill Bishop
+Issue: Hydraulic
+Hardware: Knees
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Chris - Bill called and let me log in right after the knees took off on him. Looks like a stuck button or membrane issue where multiple buttons are registering at the same time. Bill will replace the handle with the jog buttons.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>All three knees are moving behind the saw sometimes. First time it happened was yesterday. When the operator returns after a front cut to take another front cut, he changes direction and the band mill offset jumps all the knees back 0.075&rdquo;. He continues down the track and just before he clears the saw, the knees sometimes jump forward several inches. Says he nearly hit the saw with a cant before he manually jogged the knees backwards. Encoder errors look good, so set disable should be working well. No errors or anything, maybe we are within the 4&rdquo; mark. I asked Bill to call me tomorrow when if it happens again and to reboot the cabinet after shift today.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 68
+Date: Wed, 25 May 2022 12:12:56 -0700
+Technician: Basil
+Mill: Clark Hardwoods
+Job: 201910
+System: RS2.5
+Contact: Heath
+Issue: Software
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Heath called. His setworks menu and sawyer display crashed. I closed and restarted them</li>
+</ul>

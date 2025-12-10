@@ -1,0 +1,180 @@
+$@MID@$: 49
+Date: Thu, 19 May 2022 08:35:57 -0700
+In reply to: 44
+Technician: Basil
+Mill: Clark Hardwoods
+Job: 201910
+System: RS2
+Contact: Keith
+Issue: Hardware
+Hardware: Encoder
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Heath called with his new encoder. Wasn&rsquo;t using the power adapter at first. The pantograph switch was disabled. Got everything dialed in and calibrated, big -99&rdquo; and +99&rdquo; errors as well as perfect references. Daniel helped me figure out it was referencing multiple times. I had him watch the prox. Switch and he was able to see it flicker when the sensor passed between the carriage and the encoder wheel. I suggested he cover that gap and never heard back from him. Checked encoder errors this morning and it&rsquo;s looking great now</li>
+</ul>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>We discovered that the Avatron encoders don&#39;t work with the 5vdc power supplies on longer cable runs.&nbsp; We tested a BEI encoder and it work just fine with the 5vdc power supplies on longer cable runs (150&#39;).&nbsp; Chris told the custmer we would ship them a new encoder and 5vdc power supply adpter cable overnight on 05/17.&nbsp; However, after discovering the issue with the Avtron encoders not working with the 5vdc power supplies on longer cable runs, we only shipped them the BEI endcoder overnight.&nbsp; They should get the encoder on 05/18.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Per Daniel, told Heath to shut system completely down, replace BEI Encoder with Avatron, and then power on to properly inititalize encoder and then try to reference/scan.</p>
+
+						<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+							<tbody>
+								<tr>
+									<td style="background-color:#486090">Quote:</td>
+								</tr>
+								<tr>
+									<td style="background-color:#FFFFB0">
+									<p>Reference errors, likely caused by bad load end prox switch. Handed over to Chris</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p>&nbsp;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 50
+Date: Thu, 19 May 2022 08:37:45 -0700
+Reply to: 52, 55
+In reply to: 46
+Technician: Basil
+Mill: Kennebec Solon
+Job: 201318
+System: RS2
+Contact: Alex
+Issue: Hardware
+Hardware: PLC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Emergency call Thursday morning, they swapped their PLC CPU and it doesn&rsquo;t have the latest program on it. I backed up their existing program yesterday and uploaded it to their spare PLC.</li>
+	<li>They will run with it for a week before sending us their other CPU to make sure that was the problem.</li>
+	<li>Error came back.</li>
+</ul>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>Called to tell me their PLC has been faulting regularly. I suggested we swap the CPU which we scheduled for tomorrow. Sam recommended I have them reseat all the modules, then wait with the current CPU until it faults and we can see the error message. I don&rsquo;t have Alex&rsquo;s info to contact, will have to wait until tomorrow</li>
+			</ul>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 51
+Date: Thu, 19 May 2022 11:47:32 -0700
+Technician: Basil
+Mill: Cameron Lumber
+Job: ???
+System: RS2
+Contact: Ed 8038232275
+Issue: Configuration
+Hardware: Knees
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ed asking me to increase their band mill offset beyond what we allow. I bumped it up to 300 thousandths</p>
+$@MID@$: 52
+Date: Thu, 19 May 2022 12:32:24 -0700
+In reply to: 50
+Technician: Basil
+Mill: Kennebec Solon
+Job: 201318
+System: RS2
+Contact: Alex
+Issue: Hardware
+Hardware: PLC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Got some more info from the mill, it&#39;s not faulting, just the roll case stops working. Sam helped me look through the PLC and we&#39;re not seeing the photo eyes for the roll case coming on. Alex is working on tracing back the rollcase inputs to see what&#39;s going on. Sam warned us there may be some unusual relays for these inputs.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>Emergency call Thursday morning, they swapped their PLC CPU and it doesn&rsquo;t have the latest program on it. I backed up their existing program yesterday and uploaded it to their spare PLC.</li>
+				<li>They will run with it for a week before sending us their other CPU to make sure that was the problem.</li>
+				<li>Error came back.</li>
+			</ul>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<ul>
+							<li>Called to tell me their PLC has been faulting regularly. I suggested we swap the CPU which we scheduled for tomorrow. Sam recommended I have them reseat all the modules, then wait with the current CPU until it faults and we can see the error message. I don&rsquo;t have Alex&rsquo;s info to contact, will have to wait until tomorrow</li>
+						</ul>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 53
+Date: Thu, 19 May 2022 15:29:38 -0700
+Technician: Basil
+Mill: Canfor Darlington
+Job: 201730
+System: RS2
+Contact: Joe
+Issue: Hydraulic
+Hardware: Knees
+Resolution: Problem Fixed?
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Hydraulic oil low, added oil and then knee 2 wouldn&rsquo;t move at all. They had their mill right fix that issue, but then knee 2 wouldn&rsquo;t get on set. It seemed to be overshooting, falling behind the log. I turned on timber bind just to see what would happen and that improved knee 2, but pushed the log away from knee 3 which Joe said was an issue in the past. I tried adjusting the delays to allow the outside dogs to come down before knee 2 came back, but Joe didn&rsquo;t want to risk it. Disabled timber bind and somehow their issue seemed to be fixed entirely. I bet he&rsquo;ll call again.</li>
+</ul>

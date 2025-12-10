@@ -1,0 +1,17 @@
+$@MID@$: 39
+Date: Wed, 07 Sep 2022 13:31:50 -0700
+Technician: Basil
+Mill: DR Johnson
+Job: Headrig
+System: RS1
+Trip Type: Service
+Attachment: 
+Encoding: HTML
+========================================
+<p>On site to troubleshoot knee 3 running away. We find it&#39;s actually getting stuck at the reverse limit. The mill would go out with a jog box, jog the knee back inside the bounds of a runaway, then plug the servo back in and get back running. We found just cycling control power had the same effect.</p>
+
+<p>Added gradients since they changed tempos and moved the knees after, then calibrated the knees.</p>
+
+<p>Another major issue was the speed was very low. The carriage didn&#39;t have a pressure gauge, so we don&#39;t know where it&#39;s at. They charged the accumulator but who knows how much they charged it if at all. I suspect the bladder may be bad. Sawyer said the knees used to be much faster.</p>
+
+<p>We unded up lowering the reverse limit from 59.25 to 55 inches and couldn&#39;t reproduce the problem after that. We suspect the issue is some kind of mechanical binding causes the valve to fault out and need to be reset.</p>

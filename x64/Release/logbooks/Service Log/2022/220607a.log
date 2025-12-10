@@ -1,0 +1,73 @@
+$@MID@$: 99
+Date: Tue, 07 Jun 2022 08:19:36 -0700
+Reply to: 101
+Technician: Chris
+Mill: Neff Lumber
+Job: 201310
+System: RS2
+Contact: Jeremy
+Issue: Hardware
+Hardware: Black Box PC
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>System &quot;slow&quot;. Rebooted and cleared DBs. Offered PC Upgrades.</p>
+$@MID@$: 100
+Date: Tue, 07 Jun 2022 08:49:35 -0700
+Technician: Chris
+Mill: Gutchess Vernon Center
+Job: 201513
+System: RS2
+Contact: Dean
+Issue: Software
+Hardware: Encoder
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Customer said that system would not reference, but encoder screen showed all data correctly (encoder counts, prox switches, etc.) just wouldn&#39;t reference. He zero&#39;ed reference errors on the troubleshooting screen, and then it started working (?). When I remoted on, it was working. Told to call back if the referencing locks up again.</p>
+$@MID@$: 101
+Date: Tue, 07 Jun 2022 09:36:26 -0700
+In reply to: 99
+Technician: Chris
+Mill: Neff Lumber
+Job: 201310
+System: RS2
+Contact: Jeremy
+Issue: Hardware
+Hardware: Black Box PC
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Sawyer&#39;s Display locked up. Reloaded software from a backup copy on desktop and started up. Told to call back if happens again.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>System &quot;slow&quot;. Rebooted and cleared DBs. Offered PC Upgrades.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 102
+Date: Tue, 07 Jun 2022 12:50:58 -0700
+Technician: Brandon
+Mill: Lumbra
+Job: 201442
+System: RS2
+Contact: N/A
+Issue: Hardware
+Hardware: Power Distribution Board
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>They weren&#39;t referencing. Ended up having a blown D fuse. Replaced it and they were good. I told them to check cable connections for a short if they have issues with that fuse blowing again.</p>

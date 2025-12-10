@@ -1,0 +1,65 @@
+$@MID@$: 188
+Date: Wed, 20 Jul 2022 11:52:31 -0700
+In reply to: 185
+Technician: Basil
+Mill: Canfor Moultrie (Beadles)
+Job: 201616
+System: RS2
+Contact: Joe
+Phone: 229 873 0463
+Issue: Hardware
+Hardware: Encoder
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Swapped the encoder with a third encoder off their shelf and the errors are much better. Calibration is still a little off, but otherwise it&rsquo;s in good shape. I offered to help recalibrate when they&rsquo;re down next</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Huge encoder reference error -140&rdquo; +- 30&rdquo;, always negative. Before they called, they replaced the cable, the encoder, the hillbilly wheel assembly, and the photo eye. I recalibrated them. Still big errors, encoder count is jumping wildly. Sending new encoder and power supply assembly next day while they are going to try one off their shelf</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 189
+Date: Wed, 20 Jul 2022 11:52:47 -0700
+Technician: Basil
+Mill: Clearlake Forest Products
+Job: 202129
+System: RS2.5
+Contact: Bill
+Phone: ???
+Issue: Hardware
+Hardware: Black Box PC
+Resolution: Problem Fixed?
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Optimizer PC shutdown randomly. It was able to start again just by pushing the power button. Any hardware failure wouldn&rsquo;t leave it in the shutdown state, it would just restart on its own, so we know it was a software triggered safe shutdown. I suspect it was either Windows update or the UPS glitching. I had him disconnect the USB cable from the UPS and I disabled Windows Updates</li>
+</ul>
+$@MID@$: 190
+Date: Wed, 20 Jul 2022 11:53:47 -0700
+Technician: Basil
+Mill: JD Irving
+Job: ???
+System: RS2
+Contact: Dana / Mohammad
+Phone: 207 357 1285
+Issue: Software Corruption
+Hardware: 
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>SQL reports appear not to be working. I went back in forth with a lot of employees and found they have been working correctly for the last two shifts. I&rsquo;m thinking the issue may have resolved itself. I&rsquo;ll check back in on them tomorrow morning</li>
+</ul>

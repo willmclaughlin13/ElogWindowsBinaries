@@ -1,0 +1,63 @@
+$@MID@$: 34
+Date: Wed, 20 Jul 2022 16:22:13 -0700
+Technician: Daniel
+Mill: Cardin
+Job: J202208
+System: Edger
+Trip Type: Pre-Engineering
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Sensors
+	<ul>
+		<li>Infeed Press Rolls
+		<ul>
+			<li>Part Number: Q45BB6DQ5 + cables</li>
+			<li>Quantities: 2 each per press roll</li>
+		</ul>
+		</li>
+		<li>Edger Infeed &amp; Outfeed photo curtain
+		<ul>
+			<li>Part Number: LX3EQ, LX3RQ, + cables</li>
+			<li>Quantities: 2 pair</li>
+		</ul>
+		</li>
+		<li>Deck switches
+		<ul>
+			<li>Part Number: 802T-AP
+			<ul>
+				<li>6 Hook Stops - 3 each</li>
+				<li>1 at the top of the unscrambler</li>
+				<li>2 on the landing deck.</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+		<li>Over Thickness Sensor
+		<ul>
+			<li>No Part Number available - See Corley Drawings</li>
+		</ul>
+		</li>
+		<li>High Speed Encoder&nbsp;
+		<ul>
+			<li>No Part Number available - See Corley Drawings</li>
+		</ul>
+		</li>
+		<li>Don&#39;t incorporate retract sensor</li>
+		<li>Don&#39;t incorporate the pan down sensor</li>
+	</ul>
+	</li>
+	<li>Reuse PLC cabinet - Provide new back panel - Check with Jared
+	<ul>
+		<li>We will supply new Optimizer cabinet (with stand)</li>
+	</ul>
+	</li>
+	<li>Check with Jared about remote sawyers screen and&nbsp;remote HMI screen, but as of right now not planning on adding any&nbsp;remote sawyers screen or remote HMI screen.</li>
+	<li>They are currently only sawing 1 board solutions and they have one of the picker servo cables unplugged.</li>
+	<li>Still Needed
+	<ul>
+		<li>Cable lengths for the tempos, servos, and consoles.</li>
+	</ul>
+	</li>
+</ul>

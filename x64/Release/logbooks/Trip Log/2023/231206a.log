@@ -1,0 +1,29 @@
+$@MID@$: 75
+Date: Wed, 06 Dec 2023 20:47:12 -0800
+Technician: Daniel
+Mill: Kennebec Grantham
+Job: 201917 & 202221
+System: RS2.5
+Trip Type: Installation
+Attachment: 231207_180830_20231207_133510.jpg
+Encoding: HTML
+========================================
+<ul>
+	<li>Carriage
+	<ul>
+		<li>Added job specific code to the optimizer to prevent undogging if the pantograph is closed and the shifting rollcase is open.&nbsp; The code will also alert the operator with an audio and a sawyer&#39;s message.</li>
+		<li>I added job specific code to the optimizer to display error messages if the Edger Deck is full, if the&nbsp;Block Deck full, or if the Waste System is off.&nbsp; Updated the PLC to out from the P2-16TR we are adding to the PLC.</li>
+		<li>I updated the Optimizer code to emulate single cut newlog for double cut system with respect to strobing for piece destination.</li>
+		<li>Chris (Mill Manager) came in and started listing all their complaints about the operation of the machine.&nbsp; At the point he came in, we had only sawn around 24 logs and the head saw was stopped for downstream equipment.&nbsp; I got defensive and was arguing with him and not listening. I got slightly calmed down and was able to listen and work with them on the issues.
+		<ul>
+			<li>Stop-N-Loader load arms were not getting fully down when they load a log.&nbsp; They requested a delay from lowering the load arms to activating the stop-n-loader.&nbsp; I updated the Optimizer PLC to add a 1 second delay between lowering the load arms and activating the stop-n-loader.</li>
+			<li>Boards with slab attached need to go to Resaw in Auto.&nbsp; The issue with this was not in our system, the mill did not install the Shifting Rollcase to detect when the a slab attached piece was ready to transfer to the Resaw.&nbsp; They are going to cut a bigger hole in the rail so they can angle it to see thinner pieces.</li>
+			<li>Sliding Roll case should tie in with scanner &amp; sets.&nbsp; In other words, they want the Auto Slab Belt.&nbsp; I scrapped the Trash routing state machine in the PLC and switched it to the Optimizer Auto Slab Belt.</li>
+			<li>Gate to Edger needs to be up by default unless routing to Gang.&nbsp; I updated the PLC to put the gate up on power on of the system and to only go down for a gang route and then to come back up at the end of the gang route.</li>
+			<li>Increase the speed of the B-Turners.&nbsp; The wanted less delay in the undogging process.&nbsp; Set all B-Turner delays to 0.01 seconds.</li>
+			<li>They want someone here next week.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>

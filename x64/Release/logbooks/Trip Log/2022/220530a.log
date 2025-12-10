@@ -1,0 +1,52 @@
+$@MID@$: 13
+Date: Mon, 30 May 2022 17:06:09 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>To test some of the edger outputs, we need the air compressor on.&nbsp; Since there was no mill personal there when I got there, when I got to the mill, I located the air compressor and turned it on.
+	<ul style="list-style-type:circle">
+		<li>I turned off the air compressor prior to leave the mill.</li>
+	</ul>
+	</li>
+	<li>When Sam arrived, he tested and tweed the PLC code for the stop pins up/down, positioning pins up/down, hooks 1-4 up/down, parking ramps up/down, catch pins ext/ret, kickback fingers up/down, dealer flip, and dealer pass.
+	<ul style="list-style-type:circle">
+		<li>When testing the stop pins up/down, pin 2 would not go up.
+		<ul>
+			<li>I traced the issue to a bad wire going between the setworks cabinet and the junction box.&nbsp; There was a spare wire in the junction box, so I replaced it with the spare wire, and it started working.</li>
+		</ul>
+		</li>
+		<li>When testing the positioning pins up/down, pin 1 would not go up.
+		<ul>
+			<li>I traced the issue to the wire going from the PLC to fuse terminal.&nbsp; When the wire was terminated into the fuse block, the wire was inserted too far and it was screwed down onto the jacket of the wire.&nbsp; I corrected the issue and it worked correctly.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Finished terminating and testing the network cables going to the scanner IF box and the remote sayer&#39;s screen cabinet.</li>
+	<li>I terminated the AC power wires in the Setworks cabinet for the scanner IF box and the remote sawyer&rsquo;s display cabinet.</li>
+	<li>Scan Heads
+	<ul style="list-style-type:circle">
+		<li>I plugged in the scan heads.</li>
+		<li>I entered the S/N of the scan heads into the Optimizer.</li>
+		<li>The Optimizer would not connect to the scan heads.
+		<ul>
+			<li>After some time, I discovered the issue was the Windows Firewall.</li>
+			<li>I added the GoScan.exe program to the &ldquo;Allow apps to communicate through Windows Defender Firewall&rdquo;.&nbsp; This corrected the issue.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>I used a saved flitch data from Rutland to send data to RMC to test the communication between the PLC and PC.
+	<ul style="list-style-type:circle">
+		<li>Worked with Sam on updating the PLC code to read and write to the correct RMC registers.</li>
+	</ul>
+	</li>
+	<li>I terminated SEN 17 in the Setworks cabinet.</li>
+	<li>Updated the MDT type for the all Axis 1-11 to be Start\Stop(Rising).</li>
+</ul>

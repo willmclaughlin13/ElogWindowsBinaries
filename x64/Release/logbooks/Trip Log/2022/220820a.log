@@ -1,0 +1,19 @@
+$@MID@$: 36
+Date: Sat, 20 Aug 2022 18:46:10 -0700
+Technician: Kaitlin
+Mill: Leibering
+Job: 202206
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>Finished installing cabinet and calibrated the system today</p>
+
+<ul>
+	<li>Needed velcro to attach the new keyboard, had to recyle some from the old. Please ship velcro with new keyboards.</li>
+	<li>Fuse blew out on door and power distribution board E: issues with the wiring of the door lights and the servos in the scanner cabinet.</li>
+	<li>PLC wiring: one of the purple wires turned out to be the slab dump instead of the saw guide and we had to move it.</li>
+	<li>Unsolved: PLC has been turning off suddenly at intermittant times, frequently. May be an issue with heat, but we don&#39;t know.</li>
+	<li>Missing custom code from original software for preventing the auto slab dump from activating on shims and making the stop gate work automatically. I am working on this tonight.</li>
+</ul>

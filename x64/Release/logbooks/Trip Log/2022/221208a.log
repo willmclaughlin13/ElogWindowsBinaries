@@ -1,0 +1,56 @@
+$@MID@$: 54
+Date: Thu, 08 Dec 2022 20:34:30 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>We tested the Left &amp; Right deck VFDs.
+	<ul>
+		<li>Adjusted the accel and decel.</li>
+		<li>Adjusted the speed of the decks.</li>
+	</ul>
+	</li>
+	<li>After testing the Left &amp; Right deck VFDs, we were unable to move the scanners.
+	<ul>
+		<li>&nbsp;The VFD lost its parameters.</li>
+		<li>We reset the parameters, but we Mac originally set the max hrz to 40 and it now will&nbsp;not let us set it below 60.</li>
+	</ul>
+	</li>
+	<li>Sam retuned the scanner motion in the RMC.</li>
+	<li>The left deck chains was hanging up on the key way of the pass shaft on the pass/turn.
+	<ul>
+		<li>The mill fabricated and welded a covers for the key way.</li>
+		<li>The covers did not work, so they came up with another solution and welded them onto the left deck.</li>
+	</ul>
+	</li>
+	<li>We also had the board side positioning chain 1 stopped working. The VFD showed the&nbsp;frequency of the drive, but it was not moving. We discovered the Run lamp on the VFD was&nbsp;flashing rapidly and it just need to be turned off and then back on.</li>
+	<li>I rough calibrated the saws so Sam could test them.</li>
+	<li>The mill put the saws onto the edger &amp; gang after Sam was done testing the saw movements.</li>
+	<li>During the saw testing, we discovered that the RMC was log of the command from the PLC did&nbsp;not match what the PLC actually sent. It would say the command position sent was off 0.005&quot;&nbsp;- 0.015&quot;. It would also do the same for the specified speed for the command move. I called&nbsp;Delta and they got back to me to let me know that we need to make a couple of changes. He&nbsp;told me to make a couple of changes in the modbus write and use the example in the help file&nbsp;under section for Productivity 3000.
+	<ul>
+		<li>Sam made the changes they specified while Mac and the mill were aligning the saw&nbsp;position laser with the saws.</li>
+		<li>After the mill finished the alignment of the saw position lasers, Sam tested scanning a&nbsp;board and it would not position. After some investigation, we found that the RMC was&nbsp;not getting the move commands for the chains for position the flitch.
+		<ul>
+			<li>It turns out that we missed 1 addition change in the modbus write. We made&nbsp;the change and the chains were setting to the commanded position.</li>
+		</ul>
+		</li>
+		<li>After scanning another flitch it positioned the flitch off the board sided positioning&nbsp;chains.
+		<ul>
+			<li>It turns out the Set Absolute command for the chain was not getting received&nbsp;correctly in the RMC. I set the PLC code for the modbus for the Set Absolute&nbsp;command for the chains back to what it was. After that, the flitches were&nbsp;positioning correctly.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>We calibrated the saw after they were put on.</li>
+	<li>The saw positioning lasers were not aligned with the saws, so Mac and the mill aligned them.</li>
+	<li>After the lasers were aligned with the saws, we used them to align the scan calibration bar&nbsp;with the saw center and then recalibrated the scanners.
+	<ul>
+		<li>Note &ndash; the center of centering arms are about 1&rdquo;-2&rdquo; off of saw center.</li>
+	</ul>
+	</li>
+</ul>

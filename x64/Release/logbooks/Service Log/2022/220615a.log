@@ -1,0 +1,30 @@
+$@MID@$: 121
+Date: Wed, 15 Jun 2022 09:09:37 -0700
+Technician: Chris
+Mill: Clear Lake
+Job: 202129
+System: RS2.5
+Contact: Bill
+Phone: 8146547156
+Issue: Configuration
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Bill says that he doesn&#39;t like having to change his roughness allowance every time he changes a species, plus when he does change it seems like the tally info isn;t going into the right buckets on the reports. Also is still having encoder/pro switch issues with the bandmill offset/backset.</p>
+$@MID@$: 122
+Date: Wed, 15 Jun 2022 10:38:13 -0700
+Technician: Kaitlin
+Mill: Associated Hardwoods
+Job: 201306
+System: RS2
+Contact: Notton
+Phone: 828 308 3313
+Issue: Hardware
+Hardware: Saw Guide
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Saw guide can go up but won&#39;t go down. Daniel told them to check their digital IO board and it seems to be working fine, getting&nbsp;115V when saw guide buttons are pressed. Possibly a mechanical issue with the saw guide.</p>

@@ -1,0 +1,30 @@
+$@MID@$: 42
+Date: Sun, 11 Sep 2022 16:01:25 -0700
+Technician: Kaitlin
+Mill: Gates Milling
+Job: 202116
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Will flew in with new brick, spare brick,&nbsp;and encoder</li>
+	<li>Will managed to fix the brick that was broken but is taking it back with him anyway</li>
+	<li>Kerfs, gradients, knee distances entered in</li>
+	<li>Load end prox switch calibrated</li>
+	<li>System time adjusted, screen calibration adjusted</li>
+	<li>Buttons relabeled with mill&#39;s standard sizes</li>
+	<li>3 knees on the carriage stopped moving almost immediately - huge hydraulics leak. Waiting for mechanics to come back tomorrow</li>
+	<li>Still need to:
+	<ul>
+		<li>Calibrate mill end prox</li>
+		<li>Space out scanners / fix the brackets on the scanners</li>
+		<li>Get scanner S/Ns</li>
+		<li>Set up saw guide</li>
+		<li>Check wifi on system</li>
+		<li>Get knee 1 to reference</li>
+		<li>Calibrate knees, scanners, encoder</li>
+	</ul>
+	</li>
+</ul>

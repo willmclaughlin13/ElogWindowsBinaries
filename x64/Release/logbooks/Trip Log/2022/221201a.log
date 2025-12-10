@@ -1,0 +1,28 @@
+$@MID@$: 47
+Date: Fri, 01 Dec 2022 22:00:05 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Added the additional DC Input module to the PLC for the Board\Cant detection sensors.
+	<ul>
+		<li>I forgot to get a P2-RTB-1 connector for the DC Input module, called Mac and Corley had P2-RTB connectors instock.&nbsp; Mac brought us one.</li>
+	</ul>
+	</li>
+	<li>Added 8 each terminal block and wired them into&nbsp;the new PLC DC Input module.</li>
+	<li>I pulled and terminated the AC and DC power wires between cabinets 100 &amp; 810.</li>
+	<li>I terminated the board and cant detection sensors in the PLC cabinet.</li>
+	<li>I terminated the board and cant infeed flapper switches in the PLC cabinet.</li>
+	<li>Sam &amp; me worked with the mill on how to transfer a piece from the headrig to the edger deck.
+	<ul>
+		<li>Add&nbsp;an input from flapper switch to the PLC.</li>
+		<li>Add an output to the airbag to raise the transfer chains.</li>
+		<li>Add an output to the stop gate on the rollcase from headrig for stoping pieces being tranfered to the edger deck.</li>
+	</ul>
+	</li>
+</ul>

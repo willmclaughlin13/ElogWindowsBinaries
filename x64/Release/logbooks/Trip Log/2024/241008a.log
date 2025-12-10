@@ -1,0 +1,21 @@
+$@MID@$: 103
+Date: Tue, 08 Oct 2024 17:01:37 -0700
+Technician: Daniel
+Mill: Bruggeman
+Job: 202126
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>The trimmer was still not ready.</li>
+	<li>Me &amp; Jon helped Berry @ Corley terminate wires in the trimmer MCC cabinet.</li>
+	<li>The electrician came and said that the vibrating conveyor for the edger was not starting at times.
+	<ul>
+		<li>After investigating, it was a mechanical problem.&nbsp; It would bind in the starting position.</li>
+		<li>While trouble shooting the issue, the motor starter overheated.&nbsp; The mill had a spare, so Berry replaced it.&nbsp; Then after that we blew to PLC output fuse for it and 2 other motor starters.&nbsp; Not sure what happened, but the other 2 motor starters appear to be fused in the open position.</li>
+	</ul>
+	</li>
+	<li>Installed the version of Productivity 2000 software that we are using for the PLC on the edger brick.</li>
+</ul>

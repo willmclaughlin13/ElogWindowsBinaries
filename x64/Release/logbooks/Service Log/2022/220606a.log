@@ -1,0 +1,111 @@
+$@MID@$: 94
+Date: Mon, 06 Jun 2022 07:45:59 -0700
+Reply to: 98
+Technician: Juwan
+Mill: Rustic Lumber
+Job: 202203
+System: RS2
+Contact: Kurt
+Issue: Software
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Reports coming up zeros, Screen blacks out, Taskbar on wrong side, screen sizing all messed up.</p>
+
+<p>(8:30) Fixed taskbar issue. Ran into issue with their keyboard, it appears that the keyboard&#39;s F1 key is being pressed when the tray is closed we will want to make the tray deeper to avoid this in the future.</p>
+$@MID@$: 95
+Date: Mon, 06 Jun 2022 09:04:32 -0700
+Technician: Chris
+Mill: Clear Lake
+Job: 202129
+System: RS2.5
+Contact: Bill
+Issue: Configuration
+Hardware: Knees
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Sawyer says that the Bandmill Offset does not work on the 1st and 2nd faces, but does work on 3rd and 4th. Will watch them saw for a while to determine what&#39;s happening.</p>
+$@MID@$: 96
+Date: Mon, 06 Jun 2022 10:15:58 -0700
+Technician: Chris
+Mill: BPM London
+Job: 201451
+System: RS2
+Contact: AJ
+Issue: Hardware
+Hardware: Encoder
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Encoder stopped working. Hose might have broke or come loose. AJ will fix.</p>
+$@MID@$: 97
+Date: Mon, 06 Jun 2022 11:11:40 -0700
+In reply to: 83
+Technician: Basil
+Mill: Canfor Wynnwood
+Job: 201708
+System: RS2
+Contact: Mike (250) 402-3675
+Issue: Hardware
+Hardware: Cinch backs
+Resolution: Troubleshooting
+Attachment: 220606_113314_Untitled.png
+Encoding: HTML
+========================================
+<p>Updated their software for the back cut kerf. Mike&rsquo;s going to run a bunch of boards with fancy calipers and calibrate the kerfs as a stop-gap while he waits for his new carriage in a couple months. Helped them recalibrate since it was out of tolerence after they tightened up their hardware over the weekend.</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Mike called to recalibrate his system. Still having issues with his front cuts and back cuts being off, but complimentary. E.g. 2.050&rdquo; on one and 1.950 on the second. Marv helped they realize their cinches weren&rsquo;t working and the log was coming forward off the backs of the knees, likely the cinchbacks not working. Mike checked the fuses and said they weren&#39;t blown but they were going to continue troubleshooting. Knee 1 cinch out was missing a wire, I suggested they may be bussed together in the junction box.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 98
+Date: Mon, 06 Jun 2022 11:12:35 -0700
+In reply to: 94
+Technician: Basil
+Mill: Rustic Lumber
+Job: 202203
+System: RS2
+Contact: Kurt
+Issue: Software
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Keyboard F1 key stuck, popping up a bunch of help webpages. Had Kurt unstick the key. Fixed their reports since they swapped their brick. Also changed their resolution</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Reports coming up zeros, Screen blacks out, Taskbar on wrong side, screen sizing all messed up.</p>
+
+			<p>(8:30) Fixed taskbar issue. Ran into issue with their keyboard, it appears that the keyboard&#39;s F1 key is being pressed when the tray is closed we will want to make the tray deeper to avoid this in the future.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

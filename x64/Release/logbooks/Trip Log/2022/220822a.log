@@ -1,0 +1,15 @@
+$@MID@$: 38
+Date: Mon, 22 Aug 2022 18:38:44 -0700
+Technician: Kaitlin
+Mill: Leibering
+Job: 202206
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>Our auto saw guide issue&nbsp;was coming from a bad temposonic board. We replaced it with the spare but it turned out to be bad too, affecting the encoder port. Since the encoder is more important we left them with the original. Juwan ordered two more for them for tomorrow, I brought the spare board back with me, and we&#39;re supposed to get the other board shipped back after they get their replacement.</p>
+
+<p>Juwan remapped and relabeled the package and resaw buttons on the console.</p>
+
+<p>The custom code for the auto stop gate has never worked since the original job and they are still manually undoing the stop gate.</p>

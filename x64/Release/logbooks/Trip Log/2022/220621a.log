@@ -1,0 +1,27 @@
+$@MID@$: 23
+Date: Tue, 21 Jun 2022 19:38:17 -0700
+Technician: Kaitlin
+Mill: Fly Tie and Lumber
+Job: 202128
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>6/21</p>
+
+<ul>
+	<li>Lefthand:
+	<ul>
+		<li>Waste route seemed to be broken but it was because someone left their phone on the slab attached button</li>
+		<li>Gains values changed. Inside breakpoint had been left at zero, Brandon fixed this</li>
+		<li>Need to check wires in cabinets and fix drawings tomorrow</li>
+	</ul>
+	</li>
+	<li>Righthand:
+	<ul>
+		<li>Major issues with scan data, dropping all but a few lines after a software update. Brandon working on this</li>
+		<li>Bug on the RH side where the auto saw guide drops to the lower limit on back cuts. Brandon and I were working on this - possibly solved, need to test tomorrow</li>
+	</ul>
+	</li>
+</ul>

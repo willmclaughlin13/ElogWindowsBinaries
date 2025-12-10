@@ -1,0 +1,51 @@
+$@MID@$: 181
+Date: Mon, 18 Jul 2022 10:40:59 -0700
+Technician: Basil
+Mill: Jones Lumber
+Job: ???
+System: RS2
+Contact: Randy
+Phone: 3344322916
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>New scanners weren&rsquo;t coming on. I had him put the serial numbers in again (somehow, they were lost). Restarted software fixed</li>
+</ul>
+$@MID@$: 182
+Date: Mon, 18 Jul 2022 10:52:06 -0700
+Reply to: 209
+Technician: Basil
+Mill: Parkside Lumber
+Job: ???
+System: RS1
+Contact: Ken
+Phone: ???
+Issue: Hardware
+Hardware: Black Box PC
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Troubleshot briefly and ultimately recommended he upgrade the system and refused service politely.</p>
+$@MID@$: 183
+Date: Mon, 18 Jul 2022 14:39:31 -0700
+Reply to: 250
+Technician: Basil
+Mill: Canfor Hermanville RH
+Job: 20122
+System: RS2
+Contact: ???
+Phone: ???
+Issue: Hydraulic
+Hardware: Linear cant pan
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Firstly, their job name in the jobs folder is Southern LH, which is confusing to say the least</p>
+
+<p>Secondly, linear cant pan chattering. They already swapped the tempo, servo, and cylinder before calling. I turned down their speed from 26&rdquo;/sec to 20&rdquo;/sec which seems to have fixed it</p>

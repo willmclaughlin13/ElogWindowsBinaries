@@ -1,0 +1,138 @@
+$@MID@$: 139
+Date: Wed, 22 Jun 2022 07:17:36 -0700
+Technician: Basil
+Mill: Rustic Hardwoods
+Job: 202203
+System: RS2.5
+Contact: Kurt
+Phone: 573 517-1294
+Issue: Hardware
+Hardware: Encoder
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Kurt called after hours saying they couldn&#39;t undog in the unload end to kick a cant. I notices 100+ red encoder errors, only about 5% of total referrences. Checked his drawings and had Kurt check the remote cabinet, no power supply adapter. I taught Kurt and the sawyer how to use limit override to get unstuck in the future. Kurt told me this was the first time it happened where they couldn&#39;t clear it by driving the carriage back and forth, so it&#39;s not a common issue for them. Asked Lewis to send an encoder adapter.</p>
+$@MID@$: 140
+Date: Wed, 22 Jun 2022 09:04:40 -0700
+Reply to: 141
+Technician: Basil
+Mill: Ray White Lumber
+Job: 202121
+System: RS2.5
+Contact: Mike
+Phone: 870-250-2008
+Issue: Scanning
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scans are very slow, taking up to 3 seconds. Offline on TeamViewer. I suggested they clean all their scanners thoroughly with a diluted alcohol solution. They&#39;re working on getting online for me too. Marv suggested I check knee speeds too in case it&#39;s just slow getting on set</p>
+$@MID@$: 141
+Date: Wed, 22 Jun 2022 09:42:59 -0700
+In reply to: 140
+Technician: Basil
+Mill: Ray White Lumber
+Job: 202121
+System: RS2.5
+Contact: Mike
+Phone: 870-250-2008
+Issue: Scanning
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Marv found the knees were set to 35&quot;/sec and see signs of a bad accumulator bladder. I asked if Mike had checked on the pressure in his accumulator and he said he hasn&#39;t but he will. Also recommended lubing the knee ways. He will call us back after taking all our advice if the slow scanning persists</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Scans are very slow, taking up to 3 seconds. Offline on TeamViewer. I suggested they clean all their scanners thoroughly with a diluted alcohol solution. They&#39;re working on getting online for me too. Marv suggested I check knee speeds too in case it&#39;s just slow getting on set</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 142
+Date: Wed, 22 Jun 2022 09:45:41 -0700
+Technician: Basil
+Mill: Travco
+Job: ???
+System: RS2
+Contact: Joey
+Phone: 740-596-5039
+Issue: Configuration
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Opening faces are too wide, they measure aroun 6&quot; when they should be 4-5&quot;. We set up their opening face parameters to what they should be, then adjusted their roughness allowence. Happy with their faces now. Next issue is computing after setting puts a shim in their good wood e.g. shim &gt; 4/4 &gt; 4/4 &gt; cant. Daniel and Marv advised nothing we can do about that, they just need to wait longer to compute. He was happy enough with the opening faces</p>
+$@MID@$: 143
+Date: Wed, 22 Jun 2022 11:26:03 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Other
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scott called and asked if I could get on their system to look at their carriage drive positioning.&nbsp; Per Scott, it was over shooting when it would come back to get the next log.&nbsp; I had them adjust the home position in the HMI and that did not help.&nbsp; I had them put the home position back to 12&quot;.&nbsp; I went into the optimizer Carriage Speed Setup and switch all their speeds to 2 except logs over 20&quot; which was set to 1.&nbsp; Scott was happy with the way the machine was running after those changes.</p>
+$@MID@$: 144
+Date: Wed, 22 Jun 2022 11:30:01 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: J202119
+System: Edger
+Contact: Phill
+Phone: 
+Issue: Other
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Phill called, they completely shut down the system and when they powered it back up it would not position a board onto the infeed table.&nbsp; I started looking into and before I could find the issue Sam had gotten online with the system.&nbsp; I told Phill to call Sam.&nbsp; Sam called later and told me that he got them fixed.</p>
+$@MID@$: 145
+Date: Wed, 22 Jun 2022 13:23:22 -0700
+In reply to: 138
+Technician: Daniel
+Mill: Timbermen
+Job: J201526
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Scanning
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scott called back this afternoon about this issue.&nbsp; After looking at the system online and talking with him, I determined it was a scanning issue.&nbsp; I worked with them and recalibrated their scanners and it fixed the issue for them.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Scott called and asked if I could get on their system to look at their yoke positioning.&nbsp; I told him I would call him back in a few minutes.&nbsp; I logged into their system and got connected to their PLC.&nbsp; I called and left a message for Scott to call me back at the office.&nbsp; I watched on Teamviewer and it looks like they are done for the day.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

@@ -1,0 +1,26 @@
+$@MID@$: 72
+Date: Sun, 03 Dec 2023 13:30:57 -0800
+Technician: Daniel
+Mill: Kennebec Grantham
+Job: 201917 & 202221
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>RS2.5
+	<ul>
+		<li>We set the laser angle and spacing.</li>
+		<li>We measured and entered the laser spacing.</li>
+		<li>We measured and entered the Knee1 to guide at reference.</li>
+		<li>We calibrated the encoder, but we were getting some high reference errors.&nbsp; We recalibrated the encoder and still had issues.&nbsp; We found that the mill forgot to tighten down the belt spindle on both the encoder shaft and the drum shaft.&nbsp; We recalibrated the encoder and that fixed the issue.</li>
+		<li>We calibrated the knees and then I realized we had not entered the gradients into the Setworks program.&nbsp; We entered the gradient values and recalibrated the knees.</li>
+		<li>We measured the knee spacing and entered them into Setworks.</li>
+		<li>We measured and entered the limits.</li>
+		<li>We calibrated the Auto Saw Guide and entered it&#39;s limits.</li>
+		<li>We calibrated the scanners.</li>
+		<li>While sawing the log for calibrating the scanners, I found I had forgot to map&nbsp;the dispatch outputs to the spare outputs.&nbsp; I updated the console mapping and was able to send dispatch the pieces.&nbsp; The PLC code needs some work to make it more functional.</li>
+	</ul>
+	</li>
+</ul>

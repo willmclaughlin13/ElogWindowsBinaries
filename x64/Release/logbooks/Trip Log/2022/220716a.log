@@ -1,0 +1,24 @@
+$@MID@$: 27
+Date: Sat, 16 Jul 2022 21:01:34 -0700
+Technician: Daniel
+Mill: Scott Brothers
+Job: J202202
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>The mill mounted the Setworks cabinet in the sawyers cab.</li>
+	<li>The mill finished installing the encoder.</li>
+	<li>Kaitlin terminated the laser warning light, laser remote switchs (both at the switches and in the cabinet), encoder, load end prox, the outfeed input and output, and console cables in the cabinets.</li>
+	<li>The mill installed the sawyers display and console.</li>
+	<li>The mill installed the scanner cables and I plug them into the Firesync master and the ethernet switch.</li>
+	<li>I spaced the scan heads (20ish&quot; apart (LTL)).</li>
+	<li>The end plate for the scanner duct came in and I installed it.</li>
+	<li>I installed the sawyers display HDMI cable.</li>
+	<li>I talked with the sawyer about the soft dogs and the cant pan.&nbsp; They want both of them to be manual.&nbsp; The sawyer has to turn them on.</li>
+	<li>I talked a little about set and compute with the sawyers.</li>
+	<li>We are setting up their software with Piece Destination, auto slab belt, and cant catcher.</li>
+	<li>I modified the PLC code for the Edger Transfer.</li>
+</ul>

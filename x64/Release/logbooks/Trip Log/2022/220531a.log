@@ -1,0 +1,72 @@
+$@MID@$: 14
+Date: Tue, 31 May 2022 21:46:42 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>It took Larry (electrician) almost all day to wire in the scan deck photo eyes.
+	<ul>
+		<li>I had to rewire 4 of the photo eyes on the scan deck because they were wired to the wrong cable.</li>
+	</ul>
+	</li>
+	<li>Terminated the control wires for the Feedworks VFD at the VFD.</li>
+	<li>The HPU did not start when we tried to start it.
+	<ul>
+		<li>I traced the wire that was supposed to be the HPU (from their old drawing) to a wire coiled up at the bottom of the MCC cabinet.</li>
+		<li>I asked Larry about it, and he said he will have to look for the correct wires for us.</li>
+	</ul>
+	</li>
+	<li>While Larry was working on wiring in the photo eyes, he shorted out 24B and blew its fuse.&nbsp; I only had a 10amp slow blow, so I used that to replace it with.</li>
+	<li>When the fuse for 24B blew, it shut down the PLC because the control power input into the PLC is fed from 24B.
+	<ul>
+		<li>I did some rewiring of the back panel to prevent this from happening again.
+		<ul>
+			<li>I basically made the MCR that powers 24B also supply power to 24B1, 24B2, and the control power PLC input.&nbsp; I used the 24B fuse input as the terminal block.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>I also noticed that all PLC IO uses L1-2B.&nbsp; To prevent a similar issue like 24B with the AC, we need to separate the power for sensors and PLC output.
+	<ul>
+		<li>I ordered the parts from Laurie to correct this issue.</li>
+	</ul>
+	</li>
+	<li>&nbsp;Tried to locate the wires for the WaterMizer (water and oiler for the saws) but was unable to located the wires.&nbsp; I asked Larry to locate them for me.</li>
+	<li>Traced and terminated the HPU low oil and high temp sensors in the Setworks cabinet.</li>
+	<li>We blew the fuse for L1-2B and I replaced it.</li>
+	<li>We started the Scan deck and could not stop it with the stop button.
+	<ul>
+		<li>Sam reworked the PLC code to fix it.</li>
+	</ul>
+	</li>
+	<li>Sam ran some tests with a board traveling from hook to hook.</li>
+	<li>Adjusted the positions of the photo eyes after a discussion with Sam.&nbsp; We moved them further away from the hooks.
+	<ul>
+		<li>After moving them, we realized we made a mistake.&nbsp; They need to be close enough to the hooks to sense the narrowest board allowed.
+		<ul>
+			<li>We ran out of time to adjust them that day.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>We could not get Hook 1 to go up.
+	<ul>
+		<li>I located the problem out at the junction box.&nbsp; The wire from the PLC had been pulled out of the terminal strip and was exposed.
+		<ul>
+			<li>I reconnected and it worked.</li>
+			<li>I think this what caused fuse for L1-2B to blow.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>We could not get Hook 3 to go up.
+	<ul>
+		<li>I determined that the wire going from the setworks cabinet to the junction box was faulty.&nbsp; They had 1 extra spare wire in the junction box that I replaced it with that spare wire and it worked.</li>
+	</ul>
+	</li>
+</ul>

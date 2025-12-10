@@ -1,0 +1,45 @@
+$@MID@$: 192
+Date: Fri, 22 Jul 2022 10:00:51 -0700
+Technician: Juwan
+Mill: WLS
+Job: 202123
+System: RS2
+Contact: Robert
+Phone: 
+Issue: Hardware
+Hardware: ELO Monitor
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>They had an issue with their ELO. They had backlight illumination but no display. Had them uplug and plug in the power cord for the display and that fixed the issue. Another issue was that their email reports weren&#39;t working. I had them get a new app password for the email and plug it in. Turns out that their shared.net file wasn&#39;t connecting. I looked at the carriage folder and for some reason the program was running off some older version of their software. I deleted the old folders and renamed the backup to be the new program folder. This fixed the issue and the problem with the scanner diagnostics not displaying data.</p>
+$@MID@$: 193
+Date: Fri, 22 Jul 2022 10:05:58 -0700
+Technician: Juwan
+Mill: BPM
+Job: 202209/10
+System: RS2
+Contact: Andy
+Phone: 6062605003
+Issue: Other
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Andy wanted the drawing ahead of time given the short time between the ship date and the startup. I sent him the engineering details and schematics for both conversions.</p>
+$@MID@$: 194
+Date: Fri, 22 Jul 2022 14:44:54 -0700
+Technician: Basil
+Mill: Copiah
+Job: 201439
+System: RS2 Lumber Pro
+Contact: Terry
+Phone: ???
+Issue: Hardware
+Hardware: Encoder
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Moving scan frame was hitting the hard stops quickly. We watched the encoder count while Terry manually moved the scan frame and didn&#39;t see anything update. Terry&#39;s going to replace the magnet, then the encoder and call us back if it still isn&#39;t working correctly.</p>

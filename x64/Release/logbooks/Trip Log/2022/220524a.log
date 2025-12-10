@@ -1,0 +1,34 @@
+$@MID@$: 5
+Date: Tue, 24 May 2022 20:06:59 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>The edger feedworks does not have a pulse encoder (high speed), but it has a shaft encoder.&nbsp; I called Laurie and requested the following be sent overnight.
+	<ul>
+		<li>Q4 modules for the RMC</li>
+		<li>150&#39; encoder cable</li>
+		<li>12&#39; of 18awg wires - 16 colors (call Chris and requested these)</li>
+		<li>12 each - CAT 5e cable connectors</li>
+	</ul>
+	</li>
+	<li>Sam removed the high speed encoder input module from the PLC.
+	<ul>
+		<li>Removing the module cause the Control Power PLC input to come on when MCR is off and turn off in the PLC when the MCR was on.
+		<ul>
+			<li>Found that when we removed the high speed encoder, we cause the DC ground for part of the back panel to not be connected to power supply DC ground.
+			<ul>
+				<li>We temporarly patch it to drain until we get the 12&#39; 18awg white wire from Lewis.</li>
+			</ul>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>Worked on updating RMC drawings</li>
+</ul>

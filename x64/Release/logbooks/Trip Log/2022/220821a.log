@@ -1,0 +1,21 @@
+$@MID@$: 37
+Date: Sun, 21 Aug 2022 09:06:13 -0700
+Technician: Kaitlin
+Mill: Leibering
+Job: 202206
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>Problems:</p>
+
+<ul>
+	<li>Auto saw guide is not allowing manual override. Juwan is going to ask Daniel or Will about this.</li>
+	<li>Stop gate has to be used manually - goes up and doesn&#39;t go back down.
+	<ul>
+		<li>There was another issue with its wiring/voltage that we fixed today - has to have a constantly outputting relay wired into it.</li>
+	</ul>
+	</li>
+	<li>Slab dump has to be used manually - drops down and won&#39;t come back up.</li>
+</ul>

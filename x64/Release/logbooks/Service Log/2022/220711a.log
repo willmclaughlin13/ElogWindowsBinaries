@@ -1,0 +1,32 @@
+$@MID@$: 176
+Date: Mon, 11 Jul 2022 11:28:42 -0700
+Technician: Chris
+Mill: Deer Creek
+Job: 201908
+System: RS2
+Contact: Chandler
+Phone: 
+Issue: Hardware
+Hardware: Encoder
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Has Avatron Encoder with adapter, he just put it on and it isn&#39;t working at all, as in it goes from negative to positive 20000+ immediately.</p>
+
+<p>Sending BEI encoder next day to try to solve issue, then we&#39;ll replace his avatrons.</p>
+$@MID@$: 177
+Date: Mon, 11 Jul 2022 12:40:12 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201525
+System: Enddogger
+Contact: Scott
+Phone: 706-466-2781
+Issue: Other
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Scott called again and the carriage would not offset the saws after completing the cut on axis 1.&nbsp; I had them adjust End Point Targert Talerance from 1&quot; to 15&quot;.&nbsp; I told him that on longer logs, they may need to adjust that value down to prevent the carriage from hitting the stop bumper.</p>

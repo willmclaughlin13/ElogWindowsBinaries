@@ -1,0 +1,52 @@
+$@MID@$: 92
+Date: Tue, 03 Sep 2024 17:08:25 -0700
+Technician: Daniel
+Mill: Bruggeman
+Job: 202126
+System: Edger
+Trip Type: Installation
+Attachment: 240903_173030_20240903_173501.jpg,240903_173048_20240903_173512.jpg,240903_173109_20240903_173551.jpg
+Encoding: HTML
+========================================
+<ul>
+	<li>The electrician had all the encoder cables run, however they labeled them encorrectly.&nbsp; I traced all the encoder cables and renamed them according to our drawings.</li>
+	<li>Terminated all the encoder cables in their respected cabinets.</li>
+	<li>They had only pulled 1 network cable between the PLC and MCC cabinets.&nbsp; I talked with the electrician and requested they pull another network cable between the two cabinets.</li>
+	<li>Treminated the tempo cable in the MCC cabinet.</li>
+	<li>Terminated the AC power from the PLC cabinet to the MCC in both cabinets.</li>
+	<li>Terminated the Arbor Soft Start in both the PLC cabinet and the customer&#39;s soft start cabinet.
+	<ul>
+		<li>I had to spend some time looking at the manual for the soft start to figure out where to landed the wires on the soft start.</li>
+	</ul>
+	</li>
+	<li>Terminated REF, ETL, OTL, LSS, Laser Warning Light, &amp; the AC power in the Scanner IF box.</li>
+	<li>Terminated LSS, Laser Warning Light, &amp; the AC Power for the Scanner IF box in the PLC cabinet.</li>
+	<li>I looked at the cables from the console to the PLC and determined they were too short.&nbsp; Called Chris and requested 100&#39; be shipped overnight.</li>
+</ul>
+
+<p>Notes:</p>
+
+<ul>
+	<li>The overhead piece detection sensors were not installed at Corley.&nbsp; Per Raymond, Corley shipped the pieces needed to install them with scanner calibration bar and it was delivered today.&nbsp; We have not opened it to see if everything is there yet.</li>
+	<li>The electricians ran most of the wires for the air valves.</li>
+</ul>
+$@MID@$: 93
+Date: Tue, 03 Sep 2024 17:48:43 -0700
+Reply to: 95
+Technician: Basil
+Mill: Dr. Johnson
+Job: 202401
+System: RS3
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Switched over all inputs and outputs to RS3</li>
+	<li>Fixed a few minor wiring issues</li>
+	<li>Installed Firesync 2410</li>
+	<li>Got the lasers on</li>
+	<li>Calibrated encoder scale and tested carriage reference. Noticing lots of large errors at any carriage speed. Double checked calibration, sped up PLC reading from RMC, no change. Sometimes slow moves result in large errors, other times it&#39;s the fast ones. More work to do here</li>
+	<li>Unfortunately we didn&#39;t get the calibration cant on the carriage like we were expecting, so no testing of scanning / calibrating</li>
+	<li>Tomorrow we&#39;ll cut up a new cal. cant and run the scan cal.</li>
+</ul>

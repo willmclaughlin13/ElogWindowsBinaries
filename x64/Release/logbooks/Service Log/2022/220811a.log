@@ -1,0 +1,133 @@
+$@MID@$: 241
+Date: Thu, 11 Aug 2022 11:37:04 -0700
+Reply to: 243
+In reply to: 239
+Technician: Basil
+Mill: Kendrick Forest
+Job: 201809
+System: RS2
+Contact: Morgan
+Phone: 
+Issue: Software
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>More questions about reports. She told me they interviewed a candidate recently who went through their system during the interview and changed their reports. Said he had previous experience with our system. Sounded like they didn&#39;t hire him anyways. Got what they needed I guess</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Questions about how to create new species files, how to modify, and how to get to reports options.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 242
+Date: Thu, 11 Aug 2022 12:03:14 -0700
+Technician: Sam
+Mill: Stanfill
+Job: NA
+System: Edger
+Contact: Phill
+Phone: 
+Issue: Other
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Wanted me to look into what could cause a wide board with a two board solution to use one picker.&nbsp; Phill said it was rare, but he notices it sometimes on his camera system.</p>
+
+<p>Scheduled an update to their system for Tuesday 8/16</p>
+
+<p>Update includes EW and GW buttons, HMI screen to change these values and a new placement for honing pins.</p>
+$@MID@$: 243
+Date: Thu, 11 Aug 2022 13:23:20 -0700
+In reply to: 241
+Technician: Basil
+Mill: Kendrick Forest
+Job: 201809
+System: RS2
+Contact: Morgan
+Phone: 
+Issue: Software
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>I changed one of their downtime reasons to &quot;15Not sawing&quot; per Morgan&#39;s request. Seems wild to me as all downtime is &quot;not sawing&quot; and idk why they have the preset number in the names there??</p>
+
+<p>&nbsp;</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>More questions about reports. She told me they interviewed a candidate recently who went through their system during the interview and changed their reports. Said he had previous experience with our system. Sounded like they didn&#39;t hire him anyways. Got what they needed I guess</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Questions about how to create new species files, how to modify, and how to get to reports options.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 244
+Date: Thu, 11 Aug 2022 15:11:27 -0700
+Technician: Daniel
+Mill: Timbermen
+Job: J201526
+System: Enddogger
+Contact: Norsie and Scott
+Phone: 
+Issue: Hydraulic
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Spent 2.75 hrs working&nbsp;with Norsie and Scott on their saw calibrations.&nbsp; I think their gradient values are messed up.&nbsp; I had Scott look for the gradient values and he could only find the left saw (Saw 1) and it was 9.1390.&nbsp; The PLC had the left saw as 9.1394 and the right saw as 9.1390.&nbsp; I swapped the gradient values in the PLC.&nbsp; We calibrated the saws.&nbsp; I&#39;m still not sure if the saws are calibrated correctly.&nbsp; The wanted me to help them calibrate Yoke 2 up/down.&nbsp; I told them I couldn&#39;t help at the moment, but they could call back tomorrow.</p>
+$@MID@$: 245
+Date: Thu, 11 Aug 2022 15:19:23 -0700
+Technician: Sam
+Mill: Oakcrest
+Job: 201116
+System: RS2
+Contact: Junior / Jason
+Phone: 
+Issue: Power Issue
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>They were told to buy a new PLC and called when it arrived to have it installed.&nbsp;&nbsp;</p>
+
+<p>The issue was an old input from the STOP GATE which was removed years ago coming into the system.&nbsp; This was a manual input, which when&nbsp;MADE causes the system to not allow the automatic routing to occur</p>
+
+<p>Removed stop gate input.&nbsp;</p>

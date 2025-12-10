@@ -1,0 +1,121 @@
+$@MID@$: 114
+Date: Tue, 14 Jun 2022 08:22:32 -0700
+Technician: Chris
+Mill: Williams Brothers
+Job: 9919
+System: MultiBus
+Contact: Ken
+Phone: 4347602951
+Issue: Hydraulic
+Hardware: Servo Valve
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Wanted to know what our default acceleration ramp was in positioner settings. 14 is default.</p>
+$@MID@$: 115
+Date: Tue, 14 Jun 2022 08:28:45 -0700
+Technician: Chris
+Mill: Associated Hardwood
+Job: 201306
+System: RS2
+Contact: Notton
+Phone: 8283083313
+Issue: Hydraulic
+Hardware: Servo Valve
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Notton needed to order a new Bosch Valve. Will send out today. Also reported that the ethernet patch cable between the Master and Netgear in the IF box was loose, plastic had degraded. Told him he could buy a replacement at Walmart or any other computer-ish store.</p>
+$@MID@$: 116
+Date: Tue, 14 Jun 2022 08:44:05 -0700
+Technician: Chris
+Mill: West Fraser Leola
+Job: 9907
+System: MultiBus
+Contact: Felicia
+Phone: Email
+Issue: Hardware
+Hardware: Multibus Card
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Emailed looking for availability of LMP11-2-B8 Card. Quoted and will fill when reply received.</p>
+$@MID@$: 117
+Date: Tue, 14 Jun 2022 08:52:49 -0700
+Technician: Chris
+Mill: Beaumont Lumber 
+Job: 201711
+System: RS2
+Contact: Steve
+Phone: 6184232323
+Issue: Software
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Steve says that once a week (not always on the same day) it will fail on the auto report print. Checked shift times, days, and auto print setup, everything looks good. Told him to call back on a day when it doesn&#39;t auto print so we can see what&#39;s going on.</p>
+$@MID@$: 118
+Date: Tue, 14 Jun 2022 09:34:39 -0700
+In reply to: 105
+Technician: Basil
+Mill: JC Hamer Webster Springs
+Job: ???
+System: RS1
+Contact: Corey?
+Phone: 
+Issue: Configuration
+Hardware: None
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Working on updating their TeamViewer and had some questions about Chris&rsquo; instructions. I gave him my advice without knowing what Chris&rsquo; instructions were.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Corey called, headrig #3 has shallow opening faces on fourth faces. Rs1 system&rsquo;s Bturner out isn&rsquo;t working. I saw on the drawings it was spare 4 for all knees for some reason. I suggested he map a button to spare 4 and try it. Both systems offline on Teamviewer, he&rsquo;s going to call back when he has one online.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 119
+Date: Tue, 14 Jun 2022 10:02:36 -0700
+Technician: Chris
+Mill: Canfor Hermanville
+Job: 201222
+System: RS2
+Contact: Willie
+Phone: 2514877120
+Issue: Hardware
+Hardware: Console
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Willie wans quote on replacement console buttons. Emailed quote.</p>
+$@MID@$: 120
+Date: Tue, 14 Jun 2022 13:26:24 -0700
+Technician: Chris
+Mill: Fly Tie & Timber
+Job: 2021-10
+System: RS2.5
+Contact: David
+Phone: 6624589348
+Issue: Hardware
+Hardware: Console
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Fluffy accidently put a log through the cab, taking out our console. Not sure about handles. Told David to rob console cable from 2nd sysem waiting to be installed to see if it even lights up. If yes, let me know what parts he needs to fix it, if not, send in immediately for repair and use 2nd system&#39;s console in meantime. Must get either 2nd console or loaner back to mill by this weekend to support install ot #2.</p>

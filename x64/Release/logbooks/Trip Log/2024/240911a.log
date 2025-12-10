@@ -1,0 +1,42 @@
+$@MID@$: 102
+Date: Thu, 11 Sep 2024 14:44:14 -0700
+Technician: Daniel
+Mill: Bruggeman
+Job: 202126
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Drilled a hole in the right side of the console for the right deck jog foot switch.</li>
+	<li>Jon terminated the foot switch in the console and got the foot switch working.</li>
+	<li>Jon trained the operators on how to use the machine and had them practice scanning a flitch.</li>
+	<li>We tried to start the arbor, but it would not come on.
+	<ul>
+		<li>We checked our out and we had voltage on our output to the arbor&#39;s soft start.&nbsp; What ended up being the problem was the phase sequence error on the drive.&nbsp; The electrician corrected that issue, and the motor started.</li>
+		<li>Once the arbor was running for a minute or two, it would kick off.&nbsp; The electrician made another adjustment on the soft start fix the issue.</li>
+	</ul>
+	</li>
+	<li>We ran a flitch through the machine and after the that the machine was making an awful noise.
+	<ul>
+		<li>I recorded the noise and send it to Marv &amp; Chuck to see if they thought it might be the saws or bearings.
+		<ul>
+			<li>Marv called me back.&nbsp; He said to let the machine run for 5 minutes, stop it, and then check the bearings to see they are hot.&nbsp; If you can place you hand and hold it on the bearings, then they are okay.&nbsp; If they are okay, open the edger and do the same thing for the bearing collars.&nbsp; I relayed the information to Vic.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>In the process of trying to figure out where the noise from the edger was coming from, we ran a second flitch through the edger.&nbsp; Vic &amp; Jon measured the widths of the flitches, and they were under by about an inch.
+	<ul>
+		<li>I asked Jon if the PLC was sending the flash&nbsp;command to the RMC after we calibrate the saws.&nbsp; He checked and found that it wasn&#39;t.&nbsp; He added logic to the PLC to fix the issue.&nbsp; Now after a saw calibration, the RMC gets a flash command.</li>
+	</ul>
+	</li>
+	<li>Talked with Vic, it highly unlikely we would get to run anymore flitches through the machine tomorrow.&nbsp;
+	<ul>
+		<li>I made the call that we would not be in tomorrow.</li>
+		<li>I pressed Vic when he needs us back out there.&nbsp; He thinks they will be ready for us to be onsite on Sept. 30.&nbsp;</li>
+		<li>I showed Marty (electrician) where to land the addition outfeed motor I/O.</li>
+	</ul>
+	</li>
+</ul>

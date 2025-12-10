@@ -1,0 +1,178 @@
+$@MID@$: 79
+Date: Wed, 01 Jun 2022 08:05:00 -0700
+Technician: Chris
+Mill: Algoma Lumber
+Job: 200904
+System: MultiBus
+Contact: Ken
+Issue: Hydraulic
+Hardware: Temposonic Probe
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Customer received probe that I had put connector on, programmed for Internal, and tested and it didn&#39;t work. Sending back for recheck.</p>
+$@MID@$: 80
+Date: Wed, 01 Jun 2022 08:08:46 -0700
+Technician: Chris
+Mill: Blue Triangle/AHI Everett
+Job: 201433
+System: Edger
+Contact: Tony Nash
+Issue: Hydraulic
+Hardware: Temposonic Probe
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>System blew seal on cylinder, they replaced with a spare cylinder, but now they cannot move flitches without holding limit override. Did not get which cylinder it was. Said they did not completely shut machine off to replace cylinder, told to shut everything down, uncluding PLC, and reboot in sequence. If that doesn&#39;t solve, will send Daniel and email for next steps.</p>
+$@MID@$: 81
+Date: Wed, 01 Jun 2022 08:19:21 -0700
+Reply to: 87
+Technician: Chris
+Mill: T & S Sawmill
+Job: 201605
+System: RS2
+Contact: Gary
+Issue: Hydraulic
+Hardware: Temposonic Probe
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Knee 3 Tempo Reading is fluctuating from positive to negative randomly. Either a bad probe or a bad cable. They are going to troubleshoot and let us know what they need.</p>
+$@MID@$: 82
+Date: Wed, 01 Jun 2022 11:00:03 -0700
+Technician: Chris
+Mill: Durham
+Job: 2008-16
+System: RS1
+Contact: Michael
+Issue: Hardware
+Hardware: Cabling
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ripped out K2 and K3 Servo Cables. Ordered replacements next day air</p>
+
+<p>&nbsp;</p>
+$@MID@$: 83
+Date: Wed, 01 Jun 2022 12:52:48 -0700
+Reply to: 97
+Technician: Basil
+Mill: Canfor Wynnwood
+Job: 201708
+System: RS2
+Contact: Mike (250) 402-3675
+Issue: Hardware
+Hardware: Cinch backs
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Mike called to recalibrate his system. Still having issues with his front cuts and back cuts being off, but complimentary. E.g. 2.050&rdquo; on one and 1.950 on the second. Marv helped they realize their cinches weren&rsquo;t working and the log was coming forward off the backs of the knees, likely the cinchbacks not working. Mike checked the fuses and said they weren&#39;t blown but they were going to continue troubleshooting. Knee 1 cinch out was missing a wire, I suggested they may be bussed together in the junction box.</p>
+$@MID@$: 84
+Date: Wed, 01 Jun 2022 12:55:48 -0700
+In reply to: 78
+Technician: Basil
+Mill: Wilson Bros.
+Job: ???
+System: RS2
+Contact: Lee
+Issue: Hardware
+Hardware: Network Connection
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>ELO touchscreen not working either, likely whole USB hub is not working. Lee won&rsquo;t even open the cabinet while they&rsquo;re sawing, so we&rsquo;ll wait for end of shift to find out. I suggested he directly connect all the USBs into the PC if there&rsquo;s room.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Lee called me back and showed me the network adapter he was trying to enable. It was our INtime setworks adapter. I asked him to leave that one alone. The issue will be with the USB adapter since it&#39;s not showing up in Windows. Probably just loose. Also I told him there&#39;s way too much saw dust in that cabinet</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Lee called said he was kind of IT. Said the setworks computer&rsquo;s mill network adapter kept going into a &ldquo;disabled state&rdquo;. I made sure he was looking at the right network adapter and suggested he move the usb on the usb adapter, then replace it. Check the network cable.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 85
+Date: Wed, 01 Jun 2022 14:04:00 -0700
+Technician: Chris
+Mill: Copiah
+Job: 2014-39
+System: RS2 Lumber Pro
+Contact: Terry
+Issue: Hardware
+Hardware: Cabling
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ordered Tempo Cable for Saw Guide</p>
+$@MID@$: 86
+Date: Wed, 01 Jun 2022 14:06:51 -0700
+Technician: Chris
+Mill: Copiah
+Job: 2012-23
+System: RS2
+Contact: Terry
+Issue: Hardware
+Hardware: Encoder
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Needs new encoder. Will testing Encoder/Adapter combination to ship.</p>
+$@MID@$: 87
+Date: Wed, 01 Jun 2022 14:08:12 -0700
+Reply to: 89
+In reply to: 81
+Technician: Chris
+Mill: T & S Sawmill
+Job: 201605
+System: RS2
+Contact: Greg - 8704031472
+Issue: Hydraulic
+Hardware: Temposonic Probe
+Resolution: Troubleshooting
+Attachment: 
+Encoding: HTML
+========================================
+<p>Found broken wire. Ordered 3 sets of Tempo/Servo cables. Shipped Next Day</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Knee 3 Tempo Reading is fluctuating from positive to negative randomly. Either a bad probe or a bad cable. They are going to troubleshoot and let us know what they need.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

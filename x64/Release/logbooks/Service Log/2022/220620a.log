@@ -1,0 +1,165 @@
+$@MID@$: 128
+Date: Mon, 20 Jun 2022 08:14:47 -0700
+Reply to: 129
+In reply to: 127
+Technician: Daniel
+Mill: Rutland
+Job: J201916
+System: Edger
+Contact: Tim
+Phone: 601-517-8016
+Issue: Other
+Hardware: Temposonic Probe
+Resolution: Troubleshooting
+Attachment: 220620_081537_Capture.JPG
+Encoding: HTML
+========================================
+<p>Tim sent me a text message that the edger was still acting up.&nbsp; After some trouble shooting, I found that the system was waiting for the piece to enter the edger.&nbsp; Per Tim when the problem happens, the board has not been position on the table, but the system thinks it had been.&nbsp; I got on their RMC and found that when the pins were moving to position the board, PIN 1 looses it&#39;s temposonic reading and stops the pins.&nbsp; Tim is going to look into it and will call back if he needs further assistance.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Nathan called back, he went back to the mill and fix the issue with the wire.&nbsp; He believes that it fixed the issue.&nbsp; He&#39;s going to readjust the photo eyes in the morning when its cooler outside.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Marv received the following text from Tim.</p>
+
+						<p>&quot;We still fitting the same issue with the edger can you get Daniel to look at the histor and see if he sees anything - nathan tried all evening to fix it we replaced the eyes into the saw - it will run a few boards then the pins will stop and And not pull the board over to the table&quot;</p>
+
+						<p>I called Tim and he asked if I could look at the history to see if I can see anything.&nbsp; I told him there is no history and we have to trouble shot it live.&nbsp; He called Nathan to see if he could come back to the mill.&nbsp; Tim said that Nathan found a wire that he thinks was causing the issue.&nbsp; Nathan is going back to the mill and will be their in about an 1.5 hours.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 129
+Date: Mon, 20 Jun 2022 08:42:27 -0700
+In reply to: 128
+Technician: Daniel
+Mill: Rutland
+Job: J201916
+System: Edger
+Contact: Tim
+Phone: 601-517-8016
+Issue: Other
+Hardware: Temposonic Probe
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Tim sent me a text stating that they changed the probe and it is working so far.</p>
+
+<p>I updated Pin 1&#39;s gradient value at the end of Day Shift.&nbsp; - Note: The HMI screen does not work for updating their gradient values.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Tim sent me a text message that the edger was still acting up.&nbsp; After some trouble shooting, I found that the system was waiting for the piece to enter the edger.&nbsp; Per Tim when the problem happens, the board has not been position on the table, but the system thinks it had been.&nbsp; I got on their RMC and found that when the pins were moving to position the board, PIN 1 looses it&#39;s temposonic reading and stops the pins.&nbsp; Tim is going to look into it and will call back if he needs further assistance.</p>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<p>Nathan called back, he went back to the mill and fix the issue with the wire.&nbsp; He believes that it fixed the issue.&nbsp; He&#39;s going to readjust the photo eyes in the morning when its cooler outside.</p>
+
+						<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+							<tbody>
+								<tr>
+									<td style="background-color:#486090">Quote:</td>
+								</tr>
+								<tr>
+									<td style="background-color:#FFFFB0">
+									<p>Marv received the following text from Tim.</p>
+
+									<p>&quot;We still fitting the same issue with the edger can you get Daniel to look at the histor and see if he sees anything - nathan tried all evening to fix it we replaced the eyes into the saw - it will run a few boards then the pins will stop and And not pull the board over to the table&quot;</p>
+
+									<p>I called Tim and he asked if I could look at the history to see if I can see anything.&nbsp; I told him there is no history and we have to trouble shot it live.&nbsp; He called Nathan to see if he could come back to the mill.&nbsp; Tim said that Nathan found a wire that he thinks was causing the issue.&nbsp; Nathan is going back to the mill and will be their in about an 1.5 hours.</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p>&nbsp;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 130
+Date: Mon, 20 Jun 2022 11:41:05 -0700
+Reply to: 131
+Technician: Daniel
+Mill: Wagner - Owego
+Job: J201431
+System: Edger
+Contact: Ryan Poreda
+Phone: 
+Issue: Scanner Calibration
+Hardware: None
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Received an email from Ryan asking if I was available this afternoon to help them with their edger calibration.&nbsp; I emailed him back and let him know I was available.</p>
+$@MID@$: 131
+Date: Mon, 20 Jun 2022 14:02:13 -0700
+In reply to: 130
+Technician: Daniel
+Mill: Wagner - Owego
+Job: J201431
+System: Edger
+Contact: Ryan Poreda
+Phone: 
+Issue: Scanner Calibration
+Hardware: None
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Worked with Ryan at the end of their shift and helped them calibrate their scanners.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Received an email from Ryan asking if I was available this afternoon to help them with their edger calibration.&nbsp; I emailed him back and let him know I was available.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

@@ -1,0 +1,30 @@
+$@MID@$: 170
+Date: Tue, 05 Jul 2022 09:07:55 -0700
+Technician: Chris
+Mill: Johnson Lumber
+Job: 200305
+System: RS1
+Contact: Scott
+Phone: 3023962381
+Issue: Hardware
+Hardware: Photo Sensor
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Needs Photo Interface Board for RS1 System. Non-stock item, sold and shipped.</p>
+$@MID@$: 171
+Date: Tue, 05 Jul 2022 11:47:53 -0700
+Technician: Basil
+Mill: Hancock Bethel
+Job: 201533
+System: RS2
+Contact: Jason Coolidge
+Phone: ???
+Issue: Configuration
+Hardware: Console
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Jason Coolidge saying his 2x multiple button wasn&rsquo;t working. It was mapped to cancel taper. I set it back to 2x and mapped his 4x too just in case</p>

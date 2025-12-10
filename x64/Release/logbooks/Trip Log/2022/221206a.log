@@ -1,0 +1,29 @@
+$@MID@$: 52
+Date: Tue, 06 Dec 2022 19:23:24 -0800
+Technician: Daniel
+Mill: JP Smith
+Job: 202107
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Worked on pressroll time.&nbsp; Used a GoPro to set the pressroll timing.
+	<ul>
+		<li>We discovered we could not get the Edger Pressroll #1 to get on the board before the board would enter the saws.&nbsp; The mill used to prevent the pressrolls going fully up.&nbsp; The mill made it so the edger pressrolls can only open up to about 3&quot;.&nbsp; This fixed the issue with the edger pressroll #1 not getting on the board before the board enters the saws.&nbsp;</li>
+	</ul>
+	</li>
+	<li>During the day, the board/cant detect sensors&nbsp;stopped outputting a signal&nbsp;again.&nbsp; I thought that it might be with an issue the sensors being in NPN mode.&nbsp; I switched them to PNP and modified the PLC wiring to make the last 8 inputs on module 2 and the first 8 inputs on module 4 PNP.&nbsp; I moved 206 &amp; 207 to 404 &amp; 405.
+	<ul>
+		<li>Sometime later after I made those changes, Sam said the left board detect was not working.&nbsp; The sensors said showed that it was working correctly.&nbsp; I thought that the problem might be an issue with the size of the power wires for the sensors from the PLC cabinet to the sensor junction box.&nbsp; I added another 24B and GND wire between the cabinet and the junction box.&nbsp; It did not fix the problem.&nbsp; After looking at the PLC again, I discovered that 208 (one of the left board detect sensor input) was still on an NPN PLC input.&nbsp; I moved 208 to 406 and it worked.</li>
+	</ul>
+	</li>
+	<li>The left and right transfer decks run too fast.&nbsp; After discussing it with Mac, the best solution is to replace the starters with VFDs.&nbsp; Mac ordered the VFDs from Laurie.</li>
+	<li>We got the joystick from Cyber-Tech.&nbsp; After we replaced left joystick, I took the&nbsp;malfunctioning joystick apart.&nbsp; It turns out that the issue with it being hard to move was that it need to be lubricated.&nbsp; The joysticks come with a set of tools, thread lock, and lubricant.&nbsp; We used the lubricant from the new joystick on the old one and it moved freely after that.&nbsp; We took the other joystick off and lubricated it as well.
+	<ul>
+		<li>I talked to Marv that evening and we are going to leave the new joystick for them as a spare.</li>
+	</ul>
+	</li>
+	<li>Note: the edger rolls and pressrolls are wore pretty bad on the edger.&nbsp; As the piece goes through the edger it snakes.</li>
+</ul>

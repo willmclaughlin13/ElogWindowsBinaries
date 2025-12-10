@@ -1,0 +1,41 @@
+$@MID@$: 18
+Date: Sat, 04 Jun 2022 20:50:29 -0700
+Technician: Daniel
+Mill: Stanfill Lumber
+Job: 202119
+System: Edger
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>I terminated the wires for the Watermizer in the Setworks cabinet.</li>
+	<li>I terminated the wires for the Headrig jump chain (PEC &amp; output wire).</li>
+	<li>I cleaned up the Setwork cabinet and put all the wire way covers on.</li>
+	<li>Helped Sam out as needed.
+	<ul>
+		<li>Sam was having issues with the tracking of a piece going through the edger.
+		<ul>
+			<li>After a lot of testing and reworking the PLC routine, Sam thinks he has a solution that will work.</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>When testing the edger press rolls, they would not come down.
+	<ul>
+		<li>I discovered the issue was caused by the person who was terminating the wires in the setworks cabinet (me).&nbsp; I assumed the order on their old drawings for the edger press rolls was in the same order as our drawings and they were not.&nbsp; I corrected the issue and the they worked.</li>
+	</ul>
+	</li>
+	<li>When the edger software starts after a reboot, it will load an &quot;Offline&quot; version of pvalues and the view program.
+	<ul>
+		<li>I tried several options in the code and none of them worked.</li>
+		<li>I ended up creating a batch file that launches the PLALUESD which will open&nbsp;&nbsp;MENU, GOSCAN, and&nbsp;SSTDHPLC.&nbsp; The it will delay 10 seconds and start the View program.</li>
+	</ul>
+	</li>
+	<li>While we were testing the system, an air hose blew off a cylinder.&nbsp; I reattached the air hose.</li>
+	<li>At the end of the day we noticed the solution on the optimizer the saw widths did not match width of the board.
+	<ul>
+		<li>I will have to look into this.</li>
+	</ul>
+	</li>
+</ul>

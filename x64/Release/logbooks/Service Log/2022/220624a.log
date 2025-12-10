@@ -1,0 +1,72 @@
+$@MID@$: 148
+Date: Fri, 24 Jun 2022 08:19:23 -0700
+Technician: Chris
+Mill: Parton Lumber
+Job: 2016-33
+System: RS2
+Contact: Ricky
+Phone: 8282896170
+Issue: Other
+Hardware: Cabling
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>Ricky wants to order a Bosch Jog Box and 3 25&#39; Bosch Cables with connectors. Next day air. Verbal Ricky</p>
+$@MID@$: 149
+Date: Fri, 24 Jun 2022 08:53:18 -0700
+Technician: Chris
+Mill: Turman Sawmill
+Job: 201817
+System: RS2
+Contact: Jason
+Phone: 2767333705
+Issue: Software Installation
+Hardware: None
+Resolution: Software Update
+Attachment: 
+Encoding: HTML
+========================================
+<p>Jason would like Email reports. Their program is from 2018 and doesn&#39;t have the function. Needs updated and configured.</p>
+$@MID@$: 150
+Date: Fri, 24 Jun 2022 09:48:18 -0700
+Technician: Basil
+Mill: Fly Tie LH
+Job: 202128
+System: RS2.5
+Contact: Fluffy
+Phone: 
+Issue: Configuration
+Hardware: Knees
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Sped up timber bind dog down</p>
+
+<p>Inside gains were 0, I put them back to 3. In-the-cut and out-of-the-cut were both high, I set them to match the RH side</p>
+
+<p>Also sped up jog speed from 15 to 16 in/sec</p>
+
+<p>Inside gain at 3 was overshooting and jittering. I brought it down to 1 and it&#39;s nice and smooth now.</p>
+$@MID@$: 151
+Date: Fri, 24 Jun 2022 11:17:09 -0700
+Technician: Basil
+Mill: Skeena
+Job: 202002
+System: RS2.5
+Contact: Travis
+Phone: 
+Issue: Scanning
+Hardware: Scan Head
+Resolution: Troubleshooting
+Attachment: 220624_112244_Instructions_for_changing_a_scan_head.docx
+Encoding: HTML
+========================================
+<p>After hours call. Unforuntately I forgot to write down why they called and can&#39;t remember. I sent Travis a detailed email on changing out a scan head as well as info on our loaner program, so it must have been about a bad scan head. I attached the instructions I sent to Travis and dopped them on the mess that is the migrate folder</p>
+
+<p>&nbsp;</p>
+
+<p>I learned the &quot;1 Disabled&quot; message on the sawyer&#39;s display shows up when a single laser is disabled, but I don&#39;t think this shows when it&#39;s just filtered in the log turner menu.</p>
+
+<p>&nbsp;</p>

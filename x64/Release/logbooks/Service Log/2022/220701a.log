@@ -1,0 +1,62 @@
+$@MID@$: 167
+Date: Fri, 01 Jul 2022 08:13:44 -0700
+Reply to: 168
+Technician: Daniel
+Mill: Asal Lumber
+Job: J201622
+System: Edger
+Contact: Samual
+Phone: 
+Issue: Scanning
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Samuel called and asked if I could help them calibrate their scanners because the edger was leave more wane on one side.&nbsp; I helped them calibrate the scanners and I changed&nbsp;their Board Position Offset from -0.300&quot; to 0.000.&nbsp; They cut a few flitches and they were happy with it.</p>
+$@MID@$: 168
+Date: Fri, 01 Jul 2022 09:16:01 -0700
+In reply to: 167
+Technician: Daniel
+Mill: Asal Lumber
+Job: J201622
+System: Edger
+Contact: Samual
+Phone: 
+Issue: Scanning
+Hardware: 
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Samuel called back.&nbsp; The widths of the cut boards don&#39;t match the widths shown in the optimizer.&nbsp; I helped them calibrate their saws, but they weren&#39;t they got out of calibration after the moved the saws.&nbsp; I had them find the gradient value of the saw tempo.&nbsp; I had to set the gradient value in the RMC because I did not find a screen to do that in the HMI for the saws.&nbsp; After setting the gradient value (8.9482), the saws stayed in calibration&nbsp;after a move.&nbsp; Samuel also asked me to take a look at why the edger would go into reverse on its own.&nbsp; When I looked at the PLC, I saw the right joystick input voltage fluctuating and that was what was causing it to go into reverse.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Samuel called and asked if I could help them calibrate their scanners because the edger was leave more wane on one side.&nbsp; I helped them calibrate the scanners and I changed&nbsp;their Board Position Offset from -0.300&quot; to 0.000.&nbsp; They cut a few flitches and they were happy with it.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+$@MID@$: 169
+Date: Fri, 01 Jul 2022 14:24:49 -0700
+Technician: Chris
+Mill: Stoltzfus Forest
+Job: 201828
+System: RS2
+Contact: Benual
+Phone: 
+Issue: Hardware
+Hardware: Network Switch
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Power cord to Netgear switch inside computer cabinet came out. Replugged in, fixed.</p>

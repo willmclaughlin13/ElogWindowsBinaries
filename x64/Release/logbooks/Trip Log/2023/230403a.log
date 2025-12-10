@@ -1,0 +1,45 @@
+$@MID@$: 67
+Date: Mon, 03 Apr 2023 08:19:55 -0700
+Technician: Chris
+Mill: North Fork Lumber
+Job: 200906A
+System: RS2
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<p>Trip Report - North Fork Lumber (2009-06A) PLC Upgrade/Install - March 2023</p>
+
+<p>3/29/23</p>
+
+<p>Left home at 900am drove to Blue Lake, CA checked into Hotel</p>
+
+<p>3/30/23</p>
+
+<p>Arrived at mill at 800am<br />
+Met with Ken Dunn, Zach (Head Elecrtician), and Crew<br />
+Removed old AB 1500 PLC<br />
+Installed new Automation Direct Productivity 2000 PLC<br />
+Finished all wiring changes<br />
+Reprogrammed spare PLC CPU, wasn&#39;t originally programmed correctly<br />
+Re-immaged Black Brick for networking changes to operate L400/LX Station<br />
+Loaded setworks program by Will, had problems.<br />
+Called Brandon and asked him to look at it, he made modifications that worked<br />
+Attempted to communicate with existing scanners and could not, no idea if they are functional<br />
+Talked with Zach about progress, they will have an operator in Friday morning to test PLC.<br />
+Returned to Hotel at 430pm</p>
+
+<p>3/31/23<br />
+Arrived at mill at 600am<br />
+Met with Operator and Zach and Mill Manager (not Ken)<br />
+Discovered that there&#39;s no reference prox switch installed on rub rail<br />
+Mill also never installed new Encoder Cable<br />
+Discussed with mill people, agreed to put scanner part on hold for now<br />
+Operator tested and confirmed all PLC functions work<br />
+Reverted setworks program to original non-scanning for now<br />
+Agreed to send mill new prox switch and cable for them to install<br />
+Mill will take down and box up all of their L400 scanners to send in for clean up and test<br />
+Left them the 4 100&#39; fiber optic cables I brought, will order and send two more<br />
+Also took their spare black brick PC because it had a problem re-imaging. Will fix in house and return asap<br />
+Left mill at 1000am<br />
+Drove Home.</p>

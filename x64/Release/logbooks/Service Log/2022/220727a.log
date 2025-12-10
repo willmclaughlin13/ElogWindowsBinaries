@@ -1,0 +1,95 @@
+$@MID@$: 203
+Date: Wed, 27 Jul 2022 08:06:45 -0700
+Technician: Juwan
+Mill: Oakcrest
+Job: 201116
+System: RS2
+Contact: Jason Adams
+Phone: 
+Issue: Other
+Hardware: 
+Resolution: Problem Fixed?
+Attachment: 
+Encoding: HTML
+========================================
+<p>They had a random setworks crash I believe. They said the screen and console went black and the knee jumped forward tossing the log onto the log loader.&nbsp;</p>
+
+<p>There event files aren&#39;t giving me any information so I would say it was a random crash on the setworks or something. They have a windows XP machine so it wouldn&#39;t be a bad idea to move them to a windows 7/10 especially if they have a RS2 cabinet.</p>
+$@MID@$: 204
+Date: Wed, 27 Jul 2022 09:08:18 -0700
+Reply to: 207
+Technician: Basil
+Mill: Nicolet Large Side
+Job: 200902
+System: RS2
+Contact: Steve
+Phone: 715 889 5082
+Issue: Software Corruption
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Called after their knee 2 launched past the hard stop and off the front of the carriage. No knee movement at all. Couldn&rsquo;t even move the target positions. Setworks history showed limit override on and jog knee held down, but the positions wouldn&rsquo;t change. Negative values for targets and positions. After a lot of troubleshooting, called Daniel who found the system values were corrupted. Knee offsets were 0, all kinds of major issues. Restored system values from 2020, set up new flash drive so this won&rsquo;t happen again. Knee 1 is broken and disabled, so we ignored it. Calibrated the rest of the knees, calibrated the encoder, measured K1 to closest saw tooth gullet, calibrated scanners.</p>
+$@MID@$: 205
+Date: Wed, 27 Jul 2022 09:27:58 -0700
+Technician: Juwan
+Mill: WLS
+Job: 202123
+System: RS2
+Contact: Robert
+Phone: 
+Issue: Hardware
+Hardware: ELO Monitor
+Resolution: Parts Ordered
+Attachment: 
+Encoding: HTML
+========================================
+<p>A follow-up from last week. This time they rebooted the system and the screen completely died and won&#39;t turn back on. We are sending a new ELO and having them send their old one back for investigation.</p>
+$@MID@$: 206
+Date: Wed, 27 Jul 2022 10:50:16 -0700
+Technician: Juwan
+Mill: WLS
+Job: 202123
+System: RS2
+Contact: Rober
+Phone: 
+Issue: Software
+Hardware: 
+Resolution: 
+Attachment: 
+Encoding: HTML
+========================================
+<p>Console was receiving communication from setworks, fixed by moving DLL files from bin folder to DLL folder. Forgot to put them back after testing on my laptop.</p>
+$@MID@$: 207
+Date: Wed, 27 Jul 2022 13:08:49 -0700
+Reply to: 216
+In reply to: 204
+Technician: Basil
+Mill: Nicolet Large Side
+Job: 200902
+System: RS2
+Contact: Steve
+Phone: 715 889 5082
+Issue: Software Corruption
+Hardware: None
+Resolution: Problem Fixed
+Attachment: 
+Encoding: HTML
+========================================
+<p>Bandmill offset wasn&#39;t working correctly. Old system values had a negative K1 to guide. Confirmed the carriage references beyond the saw. Explains why when we calibrated encoder counts per foot off the front of the saw it referenced. Had to mess with some numbers but negative K1 to guide is much better.</p>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<p>Called after their knee 2 launched past the hard stop and off the front of the carriage. No knee movement at all. Couldn&rsquo;t even move the target positions. Setworks history showed limit override on and jog knee held down, but the positions wouldn&rsquo;t change. Negative values for targets and positions. After a lot of troubleshooting, called Daniel who found the system values were corrupted. Knee offsets were 0, all kinds of major issues. Restored system values from 2020, set up new flash drive so this won&rsquo;t happen again. Knee 1 is broken and disabled, so we ignored it. Calibrated the rest of the knees, calibrated the encoder, measured K1 to closest saw tooth gullet, calibrated scanners.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

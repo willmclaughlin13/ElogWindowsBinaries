@@ -1,0 +1,120 @@
+$@MID@$: 91
+Date: Tue, 20 Aug 2024 09:31:03 -0700
+In reply to: 90
+Technician: Basil
+Mill: McGee Lumber Co.
+Job: 202403
+System: RS2.5
+Trip Type: Installation
+Attachment: 
+Encoding: HTML
+========================================
+<ul>
+	<li>Changed number of boards to 5 and cants to 10</li>
+	<li>Measured opening face, dead on</li>
+	<li>Measured board sizes, 16th over with a worn saw, they&#39;re happy with that</li>
+	<li>Added ASG button from spares (found one single button in the bag)</li>
+	<li>Taught the sawyer Eric how to setup a new species from creating it to configuring the fill mask and everything in between. I&#39;ll do the same with Dustin McGee later today.</li>
+	<li>New carriage reference configuration was rock solid all day long until around lunch when the eye wouldn&#39;t open anymore. The issue is the dust from Ash is like a very fine powder that floats and settles on everything. We&#39;re going to first try moving the eye back so it&#39;s less exposed, then they have some ideas to blow air on it all the time. Eric is confident when they stop cutting Ash, it won&#39;t be a problem. Just a few more days of Ash, then he said they may not cut it again for a year.</li>
+	<li>Bought a new thumbdrive and replaced the existing drive.</li>
+	<li>Set up species by diameter which will allow the sawyer to turn down big logs 90-degrees without manually changing the face</li>
+	<li>Enabled fill with last board so they can build solutions with 5/4 without switching species.</li>
+	<li>Spent some time showing the McGee men how to change species options and reports.</li>
+	<li>Mill was unable to get internet to their cabinet.</li>
+</ul>
+
+<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+	<tbody>
+		<tr>
+			<td style="background-color:#486090">Quote:</td>
+		</tr>
+		<tr>
+			<td style="background-color:#FFFFB0">
+			<ul>
+				<li>The problem with the cant kickers was the kicker limit at 11&quot; meant nothing under 11&quot; allowed. I thought it was the other way around. Lowered the limit to 6&quot; and they work as expected. I added a setworks history message that will clearly state why the kickers aren&#39;t working.</li>
+				<li>Saw guide had an average down coast of 6.5&quot; which would cause it to drop right in front of the log. The mill folks were quickly losing hope. Our setworks calculates the average coast when it detects we&#39;ve completely missed the target. It takes the last 10 coasts (position where we stopped driving it vs position where it actually stopped moving), then when setting the target, it subtracts this coast hoping the guide will land somewhere near our calculated target. Likely works well if the coast is small, but in our case it was missing wildly. I set it up so instead of just not controlling the guide and letting it coast away, it reverses the direction when going down only for 25ms, which results in a dead stop most of the time. Sometimes the guide&#39;s inertia overpowers it but it&#39;s good enough to restore confidence.</li>
+				<li>Learned from Daniel and taught the sawyer how to grade saw on our system. The idea is to set on opening faces and whenever they expect to cut boards that make grade, in this case, 5/4. Once they saw down to the non-grade boards (4/4) they can compute, take the shim, then cut down to the cant. They are getting used to the two-button design.</li>
+				<li>Setup reports for when they get their internet installed.</li>
+				<li>The carriage reference was failing every 3 hours or so once the target filled with saw dust. The idea to point the eye downwards onto a flag was not good. We could have improved it by adding a brush on the carriage or blowing air on it, but I wanted it to work more like every other system. Since the eye was still on the carriage, we wanted to keep it there. I had them punch a 2&quot; into the frame of the carriage and point the eye at the rub rail. We referenced ~20 times and all were under an inch of error.</li>
+			</ul>
+
+			<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+				<tbody>
+					<tr>
+						<td style="background-color:#486090">Quote:</td>
+					</tr>
+					<tr>
+						<td style="background-color:#FFFFB0">
+						<ul>
+							<li>Fixed bug with the reports causing it to fail to connect to the database when it should have succeeded.</li>
+							<li>Moved cant kickers back where they should have been and they are magically working correctly. Spare 2 wasn&#39;t working because it was in use by the slab belt in the setworks cabinet. I was confused by the drawings for the spare 2 output in the remote cabinet showing nothing connected.</li>
+							<li>Cleaned up the cabinets</li>
+							<li>Applied our stickers to their saw cab</li>
+							<li>Measured the cants from yesterday which had mixed results. I&#39;ll measure again when we run tomorrow.</li>
+							<li>As I&#39;m writing this I notice I&#39;m missing the raceway cover over the PC. I&#39;ll put that on tomorrow.</li>
+						</ul>
+
+						<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+							<tbody>
+								<tr>
+									<td style="background-color:#486090">Quote:</td>
+								</tr>
+								<tr>
+									<td style="background-color:#FFFFB0">
+									<ul>
+										<li>Gave up on getting the cant kickers moving and made it a spare output. Spare 2 didn&#39;t seem to work either, so I put it on spare 4</li>
+										<li>Calibrated the scanners</li>
+										<li>Setup the shifts and species settings</li>
+										<li>Calibrated the auto saw guide</li>
+										<li>Set virtual pantograph</li>
+										<li>Set slab drop open and close</li>
+										<li>Ran 3 logs and started training Eric the sawyer who&#39;s picking it up quickly</li>
+										<li>The auto saw guide has an unusual problem: on new logs, it drops all the way down, then goes back up to target, and overshoots, causing it to oscillate back and forth in big 6&quot; sweeps. I increased the tolerance from 1&quot; to 1.5&quot; which improved it. I might increase it more, but it&#39;s certainly bizarre. These old sawyers have enough trouble trusting auto features without this kind of behavior</li>
+									</ul>
+
+									<table align="center" cellspacing="1" style="border:1px solid #486090; width:98%">
+										<tbody>
+											<tr>
+												<td style="background-color:#486090">Quote:</td>
+											</tr>
+											<tr>
+												<td style="background-color:#FFFFB0">
+												<ul>
+													<li>Advised millwrights on where to mount the photo eye. My suggestion which they went with was to point the photoeye that&#39;s mounted on the carriage straight down looking for a 12&quot; flag they made bolted to the floor next to the carriage rail. Initially the eye couldn&#39;t see the flag since it was black steel. They painted it red which worked well</li>
+													<li>Finished wiring both the setworks and remote cabinet (which were mounted side-by-side in the cab)</li>
+													<li>Spaced out the scan heads according to the revised drawings</li>
+													<li>Plugged in all scan heads</li>
+													<li>Powered on cabinets</li>
+													<li>Tested carriage AC. All working well except the cant kicker. Not sure what was wrong, but got it fixed after trying a lot of things. I think updating to the latest master did the trick??</li>
+													<li>Struggled with the saw guide for a little while before Daniel helped me realize we don&#39;t allow the saw guide to move beyond limits without any error message. ASG was not connected to a tempo yet</li>
+													<li>Tested encoder, had to change direction</li>
+													<li>Tested reference, working properly</li>
+													<li>Knees wouldn&#39;t move at all. I had Eric the sawyer hold down limit override (active runaways) while I went out to check on the carriage. 30 seconds later all knees suddenly jumped. They&#39;d been down for a long time, maybe they were seized up? After that everything was fine with knees.</li>
+													<li>Calibrated knees</li>
+													<li>Measured carriage and lasers and carriage reference position</li>
+													<li>Replaced console lables</li>
+												</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+									<p>&nbsp;</p>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<p>&nbsp;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
