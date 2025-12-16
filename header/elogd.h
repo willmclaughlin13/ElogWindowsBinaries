@@ -348,3 +348,6 @@ int auth_verify_password(LOGBOOK *lbs, const char *user, const char *password, c
 int auth_change_password(LOGBOOK *lbs, const char *user, const char *old_pwd, const char *new_pwd, char *error_str, int error_size);
 int auth_verify_password_krb5(LOGBOOK *lbs, const char *user, const char *password, char *error_str, int error_size);
 int auth_change_password_krb5(LOGBOOK *lbs, const char *user, const char *old_pwd, const char *new_pwd, char *error, int error_size);
+#ifdef OS_WINNT
+BOOL Is_WinXP_SP2_or_Later();
+#endif

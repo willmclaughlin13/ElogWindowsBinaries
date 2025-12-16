@@ -1,6 +1,10 @@
 Welcome to the ELOG package
 ===========================
 
+This is the Windows Installer for the Electronic Logbook (ELOG) software. 
+To install ELOG, download and run "eloglatest.exe". For support with Windows
+installation, please contact <willmclaughlin13@gmail.com>.
+
 For general documentation, see the file "index.html" in the "doc" subdirectory,
 for installation instructions, see "adminguide.html" in the same directory,
 or consult the web page http://elog.psi.ch/elog

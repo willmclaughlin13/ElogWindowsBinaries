@@ -1,6 +1,6 @@
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\auth.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\ELOGD\x64\Debug\auth.obj
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\ELOGD\x64\Debug\crypt.obj
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\ELOGD\x64\Debug\elogd.obj
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\ELOGD\x64\Debug\mxml.obj
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c;C:\Users\willm\source\repos\ElogWindowsBinaries\ELOGD\x64\Debug\regex.obj
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\strlcpy.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\ELOGD\x64\Debug\strlcpy.obj
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\auth.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\elogd\x64\Debug\auth.obj
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\crypt.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\elogd\x64\Debug\crypt.obj
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elogd.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\elogd\x64\Debug\elogd.obj
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\mxml.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\elogd\x64\Debug\mxml.obj
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\regex.c;C:\Users\willm\source\repos\ElogWindowsBinaries\elogd\x64\Debug\regex.obj
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\strlcpy.cxx;C:\Users\willm\source\repos\ElogWindowsBinaries\elogd\x64\Debug\strlcpy.obj

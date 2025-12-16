@@ -1,10 +1,10 @@
 ﻿  elconv.cxx
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(773,47): warning C4267: '=': conversion from 'size_t' to 'INT', possible loss of data
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(781,31): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(782,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(783,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(1012,28): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(1023,34): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(1035,34): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(1045,32): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(769,47): warning C4267: '=': conversion from 'size_t' to 'INT', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(777,31): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(778,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(779,29): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(1008,28): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(1019,34): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(1031,34): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\willm\source\repos\ElogWindowsBinaries\src\elconv.cxx(1041,32): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
   ELCONV.vcxproj -> C:\Users\willm\source\repos\ElogWindowsBinaries\x64\Debug\elconv.exe

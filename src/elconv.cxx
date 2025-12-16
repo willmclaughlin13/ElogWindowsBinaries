@@ -40,10 +40,6 @@
 #ifdef _MSC_VER
 #define OS_WINNT
 
-#define _CRT_NONSTDC_NO_DEPRECATE
-#define _CRT_SECURE_NO_WARNINGS
-#define _CRT_SECURE_NO_DEPRECATE 
-
 #define DIR_SEPARATOR '\\'
 #define DIR_SEPARATOR_STR "\\"
 

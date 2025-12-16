@@ -10,7 +10,7 @@
 
    MIDAS XML Library is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
-   the Free Software Foundation, either version 2 of the License, or
+   the Free Software Foundation, either version 3 of the License, or
    (at your option) any later version.
 
    MIDAS XML Library is distributed in the hope that it will be useful,
@@ -46,8 +46,6 @@ extern "C" {
 #ifndef STRLCPY_DEFINED
 size_t EXPRT strlcpy(char *dst, const char *src, size_t size);
 size_t EXPRT strlcat(char *dst, const char *src, size_t size);
-#else
-size_t EXPRT strlcpy_dummy(void);
 #endif
 
 #ifdef __cplusplus

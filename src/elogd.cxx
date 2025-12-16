@@ -34,6 +34,7 @@
    Contents:     Web server program for Electronic Logbook ELOG
 
 \********************************************************************/
+#pragma comment(lib, "Shlwapi.lib")
 
 #include "elogd.h"
 #include "git-revision.h"
@@ -45,7 +46,7 @@ int elog_tcp_port;              /* Server's TCP port            */
 
 static void (*printf_handler)(const char *);   /* Handler to printf for logging */
 static void (*fputs_handler)(const char *);    /* Handler to fputs for logging  */
-static FILE *current_output_stream = NULL;      /* Currently used output stream  */
+static FILE *current_output_stream = NULL;     /* Currently used output stream  */
 
 char *return_buffer;
 int return_buffer_size;
@@ -2820,7 +2821,7 @@ int parse_config_file(char *file_name)
 /* parse whole config file and store options in sorted list */
 {
    char *str, *buffer, *p, *pstr;
-   int index, i, j, fh, length;
+   int i, j, fh, length;
 
    str = (char *)xmalloc(20000);
 
@@ -2841,7 +2842,6 @@ int parse_config_file(char *file_name)
 
    /* search group */
    p = buffer;
-   index = 0;
    do {
       if (*p == '#' || *p == ';') {
          /* skip comment */
@@ -2923,7 +2923,6 @@ int parse_config_file(char *file_name)
          //      param_compare);
 
          n_lb_config++;
-         index++;
       }
 
       /* search for next line beginning */
@@ -4448,7 +4447,7 @@ int el_retrieve(LOGBOOK *lbs, int message_id, char *date, char attr_list[MAX_N_A
       el_decode(message, "Encoding: ", encoding, 80);
 
    if (attachment) {
-      /* break apart attachements */
+      /* break apart attachments */
       for (i = 0; i < MAX_ATTACHMENTS; i++)
          if (attachment[i] != NULL)
             attachment[i][0] = 0;
@@ -4544,9 +4543,9 @@ int el_submit_attachment(LOGBOOK *lbs, const char *afilename, const char *buffer
                  tms.tm_mday, tms.tm_hour, tms.tm_min, tms.tm_sec, file_name);
       }
 
-      strlcpy(path_name, lbs->data_dir, sizeof(str));
+      strlcpy(path_name, lbs->data_dir, sizeof(path_name));
       generate_subdir_name(ext_file_name, subdir, sizeof(subdir));
-      strlcat(path_name, subdir, sizeof(str));
+      strlcat(path_name, subdir, sizeof(path_name));
       if (strlen(path_name) > 0 && path_name[strlen(path_name) - 1] == DIR_SEPARATOR)
          path_name[strlen(path_name) - 1] = 0;
 
@@ -4562,7 +4561,7 @@ int el_submit_attachment(LOGBOOK *lbs, const char *afilename, const char *buffer
       /* test if file exists */
       do {
          strlcpy(str, path_name, sizeof(str));
-         strlcat(str, ext_file_name, sizeof(path_name));
+         strlcat(str, ext_file_name, sizeof(str));
 
          fh = open(str, O_RDONLY, 0644);
          if (fh > 0) {
@@ -4581,7 +4580,7 @@ int el_submit_attachment(LOGBOOK *lbs, const char *afilename, const char *buffer
          strlcpy(full_name, ext_file_name, MAX_PATH_LENGTH);
 
       strlcpy(str, path_name, sizeof(str));
-      strlcat(str, ext_file_name, sizeof(path_name));
+      strlcat(str, ext_file_name, sizeof(str));
 
       /* save attachment */
       fh = open(str, O_CREAT | O_RDWR | O_BINARY, 0644);
@@ -4890,7 +4889,7 @@ int el_submit(LOGBOOK *lbs, int message_id, BOOL bedit, const char *date, char a
       snprintf(file_name, sizeof(file_name), "%c%c%02d%c%ca.log", date1[14], date1[15], i + 1, date1[5], date1[6]);
 
       generate_subdir_name(file_name, subdir, sizeof(subdir));
-      sprintf(str, "%s%s", dir, subdir);
+      snprintf(str, sizeof(str), "%s%s", dir, subdir);
       if (strlen(str) > 0 && str[strlen(str) - 1] == DIR_SEPARATOR)
          str[strlen(str) - 1] = 0;
 
@@ -4900,7 +4899,7 @@ int el_submit(LOGBOOK *lbs, int message_id, BOOL bedit, const char *date, char a
       mkdir(str, 0755);
 #endif
 
-      sprintf(str, "%s%s%s", dir, subdir, file_name);
+      snprintf(str, sizeof(str), "%s%s%s", dir, subdir, file_name);
       fh = open(str, O_CREAT | O_RDWR | O_BINARY, 0644);
       if (fh < 0) {
          xfree(message);
@@ -4950,35 +4949,35 @@ int el_submit(LOGBOOK *lbs, int message_id, BOOL bedit, const char *date, char a
 
    /* compose message */
 
-   sprintf(message, "$@MID@$: %d\n", message_id);
-   sprintf(message + strlen(message), "Date: %s\n", date1);
+   snprintf(message, TEXT_SIZE, "$@MID@$: %d\n", message_id);
+   snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "Date: %s\n", date1);
 
    if (reply_to1[0])
-      sprintf(message + strlen(message), "Reply to: %s\n", reply_to1);
+      snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "Reply to: %s\n", reply_to1);
 
    if (in_reply_to1[0])
-      sprintf(message + strlen(message), "In reply to: %s\n", in_reply_to1);
+      snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "In reply to: %s\n", in_reply_to1);
 
    for (i = 0; i < n_attr; i++)
-      sprintf(message + strlen(message), "%s: %s\n", attr_name[i], attrib[i]);
+      snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "%s: %s\n", attr_name[i], attrib[i]);
 
-   sprintf(message + strlen(message), "Attachment: ");
+   snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "Attachment: ");
 
    if (afilename) {
-      sprintf(message + strlen(message), "%s", afilename[0]);
+      snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "%s", afilename[0]);
       for (i = 1; i < MAX_ATTACHMENTS; i++)
          if (afilename[i][0])
-            sprintf(message + strlen(message), ",%s", afilename[i]);
+            snprintf(message + strlen(message), TEXT_SIZE - strlen(message), ",%s", afilename[i]);
    }
-   sprintf(message + strlen(message), "\n");
+   snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "\n");
 
-   sprintf(message + strlen(message), "Encoding: %s\n", encoding1);
+   snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "Encoding: %s\n", encoding1);
    if (locked_by1[0])
-      sprintf(message + strlen(message), "Locked by: %s\n", locked_by1);
+      snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "Locked by: %s\n", locked_by1);
    if (draft && draft[0])
-      sprintf(message + strlen(message), "Draft: %s\n", draft);
+      snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "Draft: %s\n", draft);
 
-   sprintf(message + strlen(message), "========================================\n");
+   snprintf(message + strlen(message), TEXT_SIZE - strlen(message), "========================================\n");
 
    if (strieq(text, "<keep>") && old_text)
       strlcat(message, old_text, TEXT_SIZE + 100);
@@ -5037,7 +5036,7 @@ int el_submit(LOGBOOK *lbs, int message_id, BOOL bedit, const char *date, char a
 
       if (reply_to[0])
          strcat(reply_to, ", ");
-      sprintf(reply_to + strlen(reply_to), "%d", message_id);
+      snprintf(reply_to + strlen(reply_to), MAX_REPLY_TO * 10 - strlen(reply_to), "%d", message_id);
 
       /* write modified message */
       el_submit(lbs, reply_id, TRUE, date, attr_list, attr, n_attr, message, in_reply_to, reply_to, enc, att,
@@ -5149,7 +5148,7 @@ int el_delete_message(LOGBOOK *lbs, int message_id, BOOL delete_attachments,
    }
 
    if (_logging_level > 1) {
-      sprintf(str, "DELETE entry #%d", message_id);
+      snprintf(str, sizeof(str), "DELETE entry #%d", message_id);
       write_logfile(lbs, str);
    }
 
@@ -6174,9 +6173,9 @@ PATTERN_LIST pattern_list[] = {
 
         /* quote */
         {"[quote=",
-                         "<br /><table class=\"quotetable\"><thead class=\"quotetitle\"><th cellpadding=\"3px\">%s:</th></thead><tr class=\"quote\"><td>"},
+                         "<br /><table class=\"quotetable\" align=\"center\" cellspacing=\"1\"><tr><td class=\"quotetitle\">%s:</td></tr><tr><td class=\"quote\">"},
         {"[quote]",
-                         "<br /><table class=\"quotetable\"><thead class=\"quotetitle\"><th cellpadding=\"3px\">%s:</th></thead><tr class=\"quote\"><td>"},
+                         "<br /><table class=\"quotetable\" align=\"center\" cellspacing=\"1\"><tr><td class=\"quotetitle\">%s:</td></tr><tr><td class=\"quote\">"},
         {"[/quote]\r",   "</td></tr></table><br />\r\n"},
         {"[/quote]",     "</td></tr></table>\r\n"},
 
@@ -6198,7 +6197,7 @@ PATTERN_LIST pattern_list[] = {
 
 const char
         *email_quote_table =
-        "<table width=100%% border=1 align=\"left\" cellpadding=\"3\" class=\"quotetable\"><tr  class=\"quotetitle\"><td><font color=white>%s:</font></td></tr><tr  class=\"quote\"><td>";
+        "<table width=100%% border=1 align=\"left\" cellpadding=\"3\"><tr><td bgcolor=#486090><font color=white>%s:</font></td></tr><tr><td bgcolor=#FFFFB0>";
 
 void rsputs_elcode(LOGBOOK *lbs, BOOL email_notify, const char *str) {
    int i, j, k, l, m, elcode_disabled, elcode_disabled1, ordered_list, substituted, inside_table,
@@ -7430,9 +7429,14 @@ int scan_attributes(char *logbook)
 
 /*------------------------------------------------------------------*/
 
-void show_http_header(LOGBOOK *lbs, BOOL expires, const char *cookie) {
+void show_http_header(LOGBOOK *lbs, BOOL expires, const char *cookie, int code) {
    char str[256];
 
+   if (code == 401)
+      rsprintf("HTTP/1.1 401 Unauthorized\r\n");
+   else if (code == 404)
+      rsprintf("HTTP/1.1 404 Not Found\r\n");
+   else
    rsprintf("HTTP/1.1 200 Document follows\r\n");
    rsprintf("Server: ELOG HTTP %s-%s\r\n", VERSION, git_revision());
 
@@ -7476,13 +7480,13 @@ void show_plain_header(int size, const char *file_name) {
    rsprintf("\r\n");
 }
 
-void show_html_header(LOGBOOK *lbs, BOOL expires, const char *title, BOOL close_head, BOOL rss_feed, const char *cookie,
-                      int embed_css, int refresh) {
+void show_html_header(LOGBOOK *lbs, BOOL expires, const char *title, BOOL close_head,
+                      BOOL rss_feed, const char *cookie, int embed_css, int refresh, int code) {
    int i, n;
    char css[1000], str[1000], media[1000], file_name[256];
    char css_list[MAX_N_LIST][NAME_LENGTH];
 
-   show_http_header(lbs, expires, cookie);
+   show_http_header(lbs, expires, cookie, code);
 
    /* DOCTYPE */
    rsprintf("<!DOCTYPE html>\n");
@@ -7590,7 +7594,7 @@ void show_browser(char *br) {
 void show_standard_header(LOGBOOK *lbs, BOOL expires, const char *title, const char *path, BOOL rss_feed, const char *cookie,
                           const char *script, int refresh) {
    if (script) {
-      show_html_header(lbs, expires, title, FALSE, rss_feed, cookie, FALSE, refresh);
+      show_html_header(lbs, expires, title, FALSE, rss_feed, cookie, FALSE, refresh, 200);
 
       rsprintf("<script type=\"text/javascript\">\n");
       rsprintf("<!--\n");
@@ -7602,7 +7606,7 @@ void show_standard_header(LOGBOOK *lbs, BOOL expires, const char *title, const c
       rsprintf("<script type=\"text/javascript\" src=\"../elcode.js\"></script>\n\n");
       rsprintf("</head>\n");
    } else
-      show_html_header(lbs, expires, title, TRUE, rss_feed, cookie, FALSE, refresh);
+      show_html_header(lbs, expires, title, TRUE, rss_feed, cookie, FALSE, refresh, 200);
 
    if (script)
       rsprintf("<body %s>\n", script);
@@ -7622,7 +7626,7 @@ void show_standard_header(LOGBOOK *lbs, BOOL expires, const char *title, const c
 void show_upgrade_page(LOGBOOK *lbs) {
    char str[1000];
 
-   show_html_header(lbs, FALSE, "ELOG Upgrade Information", TRUE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, FALSE, "ELOG Upgrade Information", TRUE, FALSE, NULL, FALSE, 0, 200);
 
    rsprintf("<body>\n");
 
@@ -8346,7 +8350,7 @@ int exist_file(char *file_name) {
 
 /*------------------------------------------------------------------*/
 
-void send_file_direct(char *file_name) {
+void send_file_direct(char *file_name, bool allow_html) {
    int fh, i, length, delta;
    char str[MAX_PATH_LENGTH], dir[MAX_PATH_LENGTH], charset[80];
 
@@ -8387,20 +8391,24 @@ void send_file_direct(char *file_name) {
          strcpy(charset, DEFAULT_HTTP_CHARSET);
 
       if (filetype[i].ext[0]) {
+         if (!allow_html && strcmp(filetype[i].type, "text/html") == 0) {
+            rsprintf("Content-Type: text/plain;charset=%s\r\n", charset);
+         } else {
          if (strncmp(filetype[i].type, "text", 4) == 0)
             rsprintf("Content-Type: %s;charset=%s\r\n", filetype[i].type, charset);
          else if (strcmp(filetype[i].ext, ".SVG") == 0) {
             rsprintf("Content-Type: %s\r\n", filetype[i].type);
             if (strrchr(file_name, '/'))
-               strlcpy(str, strrchr(file_name, '/')+1, sizeof(str));
+                  strlcpy(str, strrchr(file_name, '/') + 1, sizeof(str));
             else
                strlcpy(str, file_name, sizeof(str));
             if (str[6] == '_' && str[13] == '_')
-               rsprintf("Content-Disposition: attachment; filename=\"%s\"\r\n", str+14);
+                  rsprintf("Content-Disposition: attachment; filename=\"%s\"\r\n", str + 14);
             else
                rsprintf("Content-Disposition: attachment; filename=\"%s\"\r\n", str);
          } else
             rsprintf("Content-Type: %s\r\n", filetype[i].type);
+         }
       } else if (is_ascii(file_name))
          rsprintf("Content-Type: text/plain;charset=%s\r\n", charset);
       else
@@ -8423,10 +8431,10 @@ void send_file_direct(char *file_name) {
       close(fh);
    } else {
       char encodedname[256], str[256];
-      show_html_header(NULL, FALSE, "404 Not Found", TRUE, FALSE, NULL, FALSE, 0);
+      show_html_header(NULL, FALSE, "404 Not Found", TRUE, FALSE, NULL, FALSE, 0, 404);
 
-      rsprintf("<body><h1>404 Not Found</h1>\r\n");
-      rsprintf("The requested file <b>");
+      rsprintf("<body><h1>&nbsp;&nbsp;404 Not Found</h1>\r\n");
+      rsprintf("&nbsp;&nbsp;&nbsp;&nbsp;The requested file <b>");
       strencode2(encodedname, file_name, sizeof(encodedname));
       if (strrchr(encodedname, DIR_SEPARATOR))
          rsprintf("%s", strrchr(encodedname, DIR_SEPARATOR)+1, sizeof(str));
@@ -8813,7 +8821,7 @@ void show_change_pwd_page(LOGBOOK *lbs) {
    if (old_pwd[0] || new_pwd[0]) {
       if (user[0]) {
 
-         if (stristr(auth, "Kerberos") || stristr(auth, "Webserver") || stristr(auth, "PAM")) {
+         if (stristr(auth, "Webserver") || stristr(auth, "PAM")) {
             if (strcmp(new_pwd, new_pwd2) != 0)
                wrong_pwd = 2;
          } else {
@@ -9524,7 +9532,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
          strlcpy(file_name, logbook_dir, sizeof(file_name));
          strlcat(file_name, str, sizeof(file_name));
       }
-      send_file_direct(str);
+      send_file_direct(str, true);
       return;
    }
 
@@ -9537,7 +9545,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
          strlcpy(file_name, logbook_dir, sizeof(file_name));
          strlcat(file_name, str, sizeof(file_name));
       }
-      send_file_direct(str);
+      send_file_direct(str, true);
       return;
    }
 
@@ -9673,7 +9681,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
          }
       }
 
-      sprintf(str, "Preset on first reply %s", attr_list[index]);
+      snprintf(str, sizeof(str), "Preset on first reply %s", attr_list[index]);
       if ((i = getcfg(lbs->name, str, preset, sizeof(preset))) > 0 && breply) {
          if (orig_tag[0] == 0) {
             if (!breedit || (breedit && i == 2)) {      /* subst on reedit only if preset is under condition */
@@ -9694,7 +9702,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
          }
       }
 
-      sprintf(str, "Preset on reply %s", attr_list[index]);
+      snprintf(str, sizeof(str), "Preset on reply %s", attr_list[index]);
       if ((i = getcfg(lbs->name, str, preset, sizeof(preset))) > 0 && breply) {
 
          if (!breedit || (breedit && i == 2)) { /* subst on reedit only if preset is under condition */
@@ -9714,7 +9722,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
          }
       }
 
-      sprintf(str, "Preset on edit %s", attr_list[index]);
+      snprintf(str, sizeof(str), "Preset on edit %s", attr_list[index]);
       if ((i = getcfg(lbs->name, str, preset, sizeof(preset))) > 0 && bedit) {
 
          if (!breedit || (breedit && i == 2)) { /* subst on reedit only if preset is under condition */
@@ -9734,7 +9742,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
          }
       }
 
-      sprintf(str, "Preset on duplicate %s", attr_list[index]);
+      snprintf(str, sizeof(str), "Preset on duplicate %s", attr_list[index]);
       if ((i = getcfg(lbs->name, str, preset, sizeof(preset))) > 0 && bduplicate) {
 
          if (!breedit || (breedit && i == 2)) { /* subst on reedit only if preset is under condition */
@@ -9755,7 +9763,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
       }
 
       /* check for p<attribute> */
-      sprintf(str, "p%s", attr_list[index]);
+      snprintf(str, sizeof(str), "p%s", attr_list[index]);
       if (isparam(str))
          strlcpy(attrib[index], getparam(str), NAME_LENGTH);
    }
@@ -9773,7 +9781,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
       for (index = 0; index < lbs->n_attr; index++) {
 
          /* check for preset string */
-         sprintf(str, "Preset %s", attr_list[index]);
+         snprintf(str, sizeof(str), "Preset %s", attr_list[index]);
          if ((i = getcfg(lbs->name, str, preset, sizeof(preset))) > 0) {
 
             if ((!bedit && !breply && !bduplicate) ||   /* don't subst on edit or reply */
@@ -9794,7 +9802,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
             }
          }
 
-         sprintf(str, "Preset on reply %s", attr_list[index]);
+         snprintf(str, sizeof(str), "Preset on reply %s", attr_list[index]);
          if ((i = getcfg(lbs->name, str, preset, sizeof(preset))) > 0 && breply) {
 
             if (!breedit || (breedit && i == 2)) {      /* subst on reedit only if preset is under condition */
@@ -9814,7 +9822,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
             }
          }
 
-         sprintf(str, "Preset on duplicate %s", attr_list[index]);
+         snprintf(str, sizeof(str), "Preset on duplicate %s", attr_list[index]);
          if ((i = getcfg(lbs->name, str, preset, sizeof(preset))) > 0 && bduplicate) {
 
             if (!breedit || (breedit && i == 2)) {      /* subst on reedit only if preset is under condition */
@@ -9849,7 +9857,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
       }
 
       if (i >= MAX_REPLY_TO) {
-         sprintf(str, loc("Maximum number of replies (%d) exceeded"), MAX_REPLY_TO);
+         snprintf(str, sizeof(str), loc("Maximum number of replies (%d) exceeded"), MAX_REPLY_TO);
          show_error(str);
          xfree(text);
          return;
@@ -9869,7 +9877,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
    if (bedit && getcfg(lbs->name, "Restrict edit", str, sizeof(str)) && atoi(str) == 1) {
       if (!is_author(lbs, attrib, owner)) {
          strencode2(str2, owner, sizeof(str2));
-         sprintf(str, loc("Only user <b>%s</b> can edit this entry"), str2);
+         snprintf(str, sizeof(str), loc("Only user <b>%s</b> can edit this entry"), str2);
          show_error(str);
          xfree(text);
          return;
@@ -9880,7 +9888,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
    if (bedit) {
       if (isparam("nsel")) {
          for (i = n = 0; i < atoi(getparam("nsel")); i++) {
-            sprintf(str, "s%d", i);
+            snprintf(str, sizeof(str), "s%d", i);
             if (isparam(str)) {
                status = check_edit_time(lbs, atoi(getparam(str)));
                if (!status) {
@@ -9934,9 +9942,9 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
                     (char (*)[NAME_LENGTH]) svalue, i);
       strip_html(page_title);
    } else
-      sprintf(page_title, "ELOG %s", lbs->name);
+      snprintf(page_title, sizeof(page_title), "ELOG %s", lbs->name);
 
-   show_html_header(lbs, FALSE, page_title, FALSE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, FALSE, page_title, FALSE, FALSE, NULL, FALSE, 0, 200);
 
    /* java script for checking required attributes and to check for cancelled edits */
    rsprintf("<script type=\"text/javascript\">\n");
@@ -11088,6 +11096,11 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
                      if (getcfg(lbs->name, str, comment, sizeof(comment)))
                         sprintf(tooltip, " title=\"%s\"", comment);
 
+                     sprintf(str, "Tooltip %s %s", attr_list[index], attr_options[index][i]);
+                     tooltip[0] = 0;
+                     if (getcfg(lbs->name, str, comment, sizeof(comment)))
+                        sprintf(tooltip, " title=\"%s\"", comment);
+
                      rsprintf("<span%s style=\"white-space:nowrap;\">\n", tooltip);
 
                      strencode2(str, attr_options[index][i], sizeof(str));
@@ -11104,7 +11117,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
                                 ("<input type=radio id=\"%s\" name=\"%s\" value=\"%s\" onChange=\"mod();\">\n",
                                  str, ua, str);
 
-                     rsprintf("<label for=\"%s\">%s</label>\n", str, str);
+                     rsprintf("<label for=\"%s\"%s>%s</label>\n", str, tooltip, str);
 
                      rsprintf("</span>\n");
 
@@ -11536,10 +11549,12 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
                   } else if (enc_selected == 2) {
 
                      rsprintf("<p>\n");
-                     rsprintf("<table class=\"quotetable\">\n");
+                     rsprintf
+                             ("<table width=\"98%%\" align=\"center\" cellspacing=\"1\" style=\"border:1px solid #486090;\">\n");
                      rsprintf("<tbody>\n");
-                     rsprintf("<thead class=\"quotetitle\">\n");
-                     rsprintf("<th cellpadding=\"3px\">");
+                     rsprintf("<tr>\n");
+                     rsprintf
+                             ("<td cellpadding=\"3px\" style=\"background-color:#486090; font-weidht:bold; color:white;\">");
 
                      /* check for author */
                      if (orig_author[0]) {
@@ -11549,7 +11564,7 @@ void show_edit_form(LOGBOOK *lbs, int message_id, BOOL breply, BOOL bedit, BOOL 
                      }
                      rsprintf(":</td></tr>\n");
                      rsprintf("<tr>\n");
-                     rsprintf("<td cellpadding=\"10px\">");
+                     rsprintf("<td cellpadding=\"10px\" style=\"background-color:#FFFFB0;\">");
                      rsputs3(text);
                      rsprintf("</td>\n");
                      rsprintf("</tr>\n");
@@ -12602,7 +12617,7 @@ void show_admin_page(LOGBOOK *lbs, const char *top_group) {
    /*---- header ----*/
 
    sprintf(str, "ELOG %s", loc("Admin"));
-   show_html_header(lbs, FALSE, str, TRUE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, FALSE, str, TRUE, FALSE, NULL, FALSE, 0, 200);
 
    rsprintf("<body><form method=\"POST\" action=\"./\" enctype=\"multipart/form-data\">\n");
 
@@ -12742,7 +12757,7 @@ void adjust_crlf(char *buffer, int bufsize) {
    }
 #else
 
-                                                                                                                           char *tmpbuf;
+   char *tmpbuf;
 
    assert(bufsize);
    tmpbuf = (char *) xmalloc(bufsize);
@@ -13881,7 +13896,7 @@ void show_config_page(LOGBOOK *lbs) {
    getcfg(lbs->name, "Authentication", auth, sizeof(auth));
 
    strencode2(str, user, sizeof(str));
-   if (stristr(auth, "Kerberos") || stristr(auth, "Webserver") || stristr(auth, "PAM"))
+   if (stristr(auth, "Webserver") || stristr(auth, "PAM"))
       rsprintf("<td><input type=text size=40 name=new_user_name value=\"%s\" readonly></td></tr>\n", str);
    else
       rsprintf("<td><input type=text size=40 name=new_user_name value=\"%s\"></td></tr>\n", str);
@@ -14207,7 +14222,7 @@ void show_forgot_pwd_page(LOGBOOK *lbs) {
       /*---- header ----*/
 
       getcfg(lbs->name, "Authentication", str, sizeof(str));
-      if (stristr(str, "Kerberos") || stristr(str, "Webserver") || stristr(str, "PAM")) {
+      if (stristr(str, "Webserver") || stristr(str, "PAM")) {
          show_error
                  ("This installation of ELOG uses site authentication\nwhere password recovery is not possible");
          return;
@@ -14240,7 +14255,7 @@ void show_new_user_page(LOGBOOK *lbs, char *user) {
 
    /*---- header ----*/
 
-   show_html_header(lbs, TRUE, loc("ELOG new user"), TRUE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, TRUE, loc("ELOG new user"), TRUE, FALSE, NULL, FALSE, 0, 200);
    rsprintf("<body><center><br><br>\n");
    show_top_text(lbs);
    rsprintf("<form name=\"form1\" id=\"form1\" method=\"GET\" action=\".\">\n\n");
@@ -14275,7 +14290,7 @@ void show_new_user_page(LOGBOOK *lbs, char *user) {
    rsprintf("<tr><td nowrap>Email:</td>\n");
    rsprintf("<td colspan=2><input type=text size=40 name=new_user_email></tr>\n");
    getcfg(lbs->name, "Authentication", str, sizeof(str));
-   if (!stristr(str, "Kerberos") && !stristr(str, "Webserver") && !stristr(str, "PAM")) {
+   if (!stristr(str, "Webserver") && !stristr(str, "PAM")) {
       rsprintf("<tr><td nowrap>%s:</td>\n", loc("Password"));
       rsprintf("<td colspan=2><input type=password size=40 name=newpwd>\n");
 
@@ -14787,7 +14802,7 @@ void show_import_page_csv(LOGBOOK *lbs) {
 
    /*---- header ----*/
 
-   show_html_header(lbs, FALSE, loc("ELOG CSV import"), TRUE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, FALSE, loc("ELOG CSV import"), TRUE, FALSE, NULL, FALSE, 0, 200);
 
    rsprintf("<body><form method=\"POST\" action=\"./\" enctype=\"multipart/form-data\">\n");
 
@@ -14887,7 +14902,7 @@ void show_import_page_csv(LOGBOOK *lbs) {
 void show_import_page_xml(LOGBOOK *lbs) {
    /*---- header ----*/
 
-   show_html_header(lbs, FALSE, loc("ELOG XML import"), TRUE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, FALSE, loc("ELOG XML import"), TRUE, FALSE, NULL, FALSE, 0, 200);
 
    rsprintf("<body><form method=\"POST\" action=\"./\" enctype=\"multipart/form-data\">\n");
 
@@ -17497,7 +17512,7 @@ void synchronize(LOGBOOK *lbs, int mode) {
    char str[256], pwd[256];
 
    if (mode == SYNC_HTML) {
-      show_html_header(NULL, FALSE, loc("Synchronization"), TRUE, FALSE, NULL, FALSE, 0);
+      show_html_header(NULL, FALSE, loc("Synchronization"), TRUE, FALSE, NULL, FALSE, 0, 200);
       rsprintf("<body>\n");
    }
 
@@ -17551,7 +17566,7 @@ void display_line(LOGBOOK *lbs, int message_id, int number, const char *mode, in
            file_name[MAX_PATH_LENGTH], *slist, *svalue, comment[256], param[80], subdir[256], attr[NAME_LENGTH];
    const char *nowrap;
    char display[NAME_LENGTH], attr_icon[80];
-   int i, j, n, i_line, index, colspan, n_attachments, line_len, thumb_status, max_line_len, n_lines,
+   int i, j, n, i_line, index, colspan, line_len, thumb_status, max_line_len, n_lines,
            max_n_lines;
    BOOL skip_comma;
    FILE *f;
@@ -18216,21 +18231,6 @@ void display_line(LOGBOOK *lbs, int message_id, int number, const char *mode, in
             rsputs(text);
 
          rsprintf("</td></tr>\n");
-      }
-
-      /* count number of attachments */
-      n_attachments = 0;
-      if (show_attachments) {
-         for (index = 0; index < MAX_ATTACHMENTS; index++) {
-            if (attachment[index][0]) {
-               /* check if attachment is inlined */
-               sprintf(str, "[img]elog:/%d[/img]", index + 1);
-               if (strieq(encoding, "ELCode") && stristr(text, str))
-                  continue;
-
-               n_attachments++;
-            }
-         }
       }
 
       for (index = 0; index < MAX_ATTACHMENTS; index++) {
@@ -23420,7 +23420,7 @@ void submit_elog(LOGBOOK *lbs) {
       }
 
       if (bdraft) {
-         show_http_header(lbs, FALSE, NULL);
+         show_http_header(lbs, FALSE, NULL, 200);
          rsprintf("OK %d\n", message_id);
          return;
       }
@@ -23686,7 +23686,7 @@ void submit_elog(LOGBOOK *lbs) {
          strlcpy(file_name, logbook_dir, sizeof(file_name));
          strlcat(file_name, str, sizeof(file_name));
       }
-      send_file_direct(file_name);
+      send_file_direct(file_name, true);
       return;
    }
 
@@ -23776,7 +23776,7 @@ void submit_elog_mirror(LOGBOOK *lbs) {
 /*------------------------------------------------------------------*/
 
 void copy_to(LOGBOOK *lbs, int src_id, const char *dest_logbook, int move, int orig_id) {
-   int size, i, j, n, n_done, n_done_reply, n_reply, index, status, fh, source_id, message_id,
+   int size, i, j, n, n_reply, index, status, fh, source_id, message_id,
            thumb_status, next_id = 0;
    char str[2048], str2[1024], file_name[MAX_PATH_LENGTH], thumb_name[MAX_PATH_LENGTH],
            *attrib, date[80], *text, msg_str[32], in_reply_to[80], subdir[256],
@@ -23802,7 +23802,7 @@ void copy_to(LOGBOOK *lbs, int src_id, const char *dest_logbook, int move, int o
    else
       n = isparam("nsel") ? atoi(getparam("nsel")) : 0;
 
-   n_done = n_done_reply = source_id = status = next_id = 0;
+   source_id = status = next_id = 0;
    for (index = 0; index < n; index++) {
       if (src_id)
          source_id = src_id;
@@ -23999,15 +23999,11 @@ void copy_to(LOGBOOK *lbs, int src_id, const char *dest_logbook, int move, int o
          return;
       }
 
-      n_done++;
-
       /* submit all replies */
       n_reply = strbreak(reply_to, (char (*)[1500]) list, MAX_N_ATTR, ",", FALSE);
       for (i = 0; i < n_reply; i++) {
          copy_to(lbs, atoi(list + i * NAME_LENGTH), dest_logbook, move, message_id);
       }
-
-      n_done_reply += n_reply;
 
       /* delete original message for move */
       next_id = source_id;
@@ -24237,7 +24233,7 @@ void call_image_magick(LOGBOOK *lbs) {
       } else
          cur_rot = 0;
    } else {
-      show_http_header(NULL, FALSE, NULL);
+      show_http_header(NULL, FALSE, NULL, 200);
       rsputs(str);
       return;
    }
@@ -24287,7 +24283,7 @@ void call_image_magick(LOGBOOK *lbs) {
             cmd[i] = '\"';
 #endif
       my_shell(cmd, str, sizeof(str));
-      show_http_header(NULL, TRUE, NULL);
+      show_http_header(NULL, TRUE, NULL, 200);
       rsputs(str);
    }
    return;
@@ -24329,7 +24325,7 @@ void show_elog_entry(LOGBOOK *lbs, char *dec_path, char *command) {
          strlcpy(file_name, logbook_dir, sizeof(file_name));
          strlcat(file_name, str, sizeof(file_name));
       }
-      send_file_direct(str);
+      send_file_direct(str, true);
       return;
    }
 
@@ -24505,7 +24501,7 @@ void show_elog_entry(LOGBOOK *lbs, char *dec_path, char *command) {
 
       if (email) {
          /* embed CSS */
-         show_html_header(lbs, FALSE, str, TRUE, FALSE, NULL, TRUE, 0);
+         show_html_header(lbs, FALSE, str, TRUE, FALSE, NULL, TRUE, 0, 200);
          rsprintf("<body>\n");
       } else {
          sprintf(ref, "%d", message_id);
@@ -25680,7 +25676,7 @@ int load_password_files() {
 
 LOGBOOK *get_first_lbs_with_global_passwd() {
    int i;
-   LOGBOOK *lbs = {};
+   LOGBOOK *lbs = nullptr;
    char str[256], global[256], orig_topgroup[256];
 
    orig_topgroup[0] = 0;
@@ -26195,7 +26191,7 @@ void show_login_page(LOGBOOK *lbs, const char *redir, int fail) {
    }
 
    sprintf(str, "ELOG %s", loc("Login"));
-   show_html_header(lbs, TRUE, str, TRUE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, TRUE, str, TRUE, FALSE, NULL, FALSE, 0, 200);
 
    /* set focus on name field */
    rsprintf("<body OnLoad=\"document.form1.uname.focus();\">\n");
@@ -26584,9 +26580,9 @@ void show_top_selection_page() {
 
    if (getcfg("global", "Page Title", str, sizeof(str))) {
       strip_html(str);
-      show_html_header(NULL, TRUE, str, TRUE, FALSE, NULL, FALSE, 0);
+      show_html_header(NULL, TRUE, str, TRUE, FALSE, NULL, FALSE, 0, 200);
    } else
-      show_html_header(NULL, TRUE, "ELOG Logbook Selection", TRUE, FALSE, NULL, FALSE, 0);
+      show_html_header(NULL, TRUE, "ELOG Logbook Selection", TRUE, FALSE, NULL, FALSE, 0, 200);
    rsprintf("<body>\n\n");
    rsprintf("<table class=\"selframe\" cellspacing=0 align=center>\n");
    rsprintf("<tr><td class=\"dlgtitle\">\n");
@@ -26654,7 +26650,7 @@ void show_selection_page(void) {
          strlcpy(file_name, logbook_dir, sizeof(file_name));
          strlcat(file_name, str, sizeof(file_name));
       }
-      send_file_direct(file_name);
+      send_file_direct(file_name, true);
       return;
    }
 
@@ -26675,9 +26671,9 @@ void show_selection_page(void) {
 
    if (getcfg("global", "Page Title", str, sizeof(str))) {
       strip_html(str);
-      show_html_header(NULL, TRUE, str, TRUE, FALSE, NULL, FALSE, 0);
+      show_html_header(NULL, TRUE, str, TRUE, FALSE, NULL, FALSE, 0, 200);
    } else
-      show_html_header(NULL, TRUE, "ELOG Logbook Selection", TRUE, FALSE, NULL, FALSE, 0);
+      show_html_header(NULL, TRUE, "ELOG Logbook Selection", TRUE, FALSE, NULL, FALSE, 0, 200);
 
    rsprintf("<body>\n\n");
    rsprintf("<table class=\"selframe\" cellspacing=0 align=center>\n");
@@ -26848,7 +26844,7 @@ void show_calendar(LOGBOOK *lbs) {
    else
       strcpy(index, "1");
 
-   show_html_header(lbs, FALSE, loc("Calendar"), TRUE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, FALSE, loc("Calendar"), TRUE, FALSE, NULL, FALSE, 0, 200);
    rsprintf("<body class=\"calwindow\"><form name=\"form1\" method=\"GET\" action=\"cal.html\">\n");
    rsprintf("<input type=hidden name=\"i\" value=\"%s\">\n", index);
    rsprintf("<input type=hidden name=\"y\" value=\"%d\">\n", cur_year);
@@ -26950,7 +26946,7 @@ void show_calendar(LOGBOOK *lbs) {
 void show_uploader(LOGBOOK *lbs) {
    char str[256];
 
-   show_html_header(lbs, FALSE, loc("Upload image"), TRUE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, FALSE, loc("Upload image"), TRUE, FALSE, NULL, FALSE, 0, 200);
    rsprintf("<body class=\"uploadwindow\"><form name=\"form1\" method=\"POST\" action=\".\" ");
    rsprintf("enctype=\"multipart/form-data\">\n");
    rsprintf("<input type=hidden name=\"jcmd\" value=\"JUpload\">\n");
@@ -26995,7 +26991,7 @@ void show_uploader_finished(LOGBOOK *lbs) {
    int i;
    char str[256], att[256], base_url[256], file_enc[256], ref[1024], ref_thumb[1024];
 
-   show_html_header(lbs, FALSE, loc("Image uploaded successfully"), FALSE, FALSE, NULL, FALSE, 0);
+   show_html_header(lbs, FALSE, loc("Image uploaded successfully"), FALSE, FALSE, NULL, FALSE, 0, 200);
 
    rsprintf("<script type=\"text/javascript\" src=\"../elcode.js\"></script>\n\n");
 
@@ -27188,7 +27184,7 @@ void interprete(char *lbook, const char *path)
 
    /* check for localization command */
    if (stricmp(command, "loc") == 0) {
-      show_http_header(NULL, FALSE, NULL);
+      show_http_header(NULL, FALSE, NULL, 200);
       if (isparam("value") && *getparam("value")) {
          strencode2(str, getparam("value"), sizeof(str));
          rsputs(loc(str));
@@ -27369,7 +27365,7 @@ void interprete(char *lbook, const char *path)
             strlcpy(file_name, logbook_dir, sizeof(file_name));
             strlcat(file_name, str, sizeof(file_name));
          }
-         send_file_direct(file_name);
+         send_file_direct(file_name, true);
          return;
       }
 
@@ -27435,7 +27431,13 @@ void interprete(char *lbook, const char *path)
    getcfg(lbs->name, "Authentication", str, sizeof(str));
    if (stristr(str, "Webserver")) {
       if (http_user[0]) {
-         if (!sid_check(getparam("sid"), http_user)) { /*  if we don't have a sid yet, set it */
+         char user[256];
+         bool flag = sid_check(getparam("sid"), user);
+         if (flag && strcmp(http_user , user) != 0) {  /* user changed */
+            sid_remove(getparam("sid"));
+            flag=FALSE;
+         }
+         if (!flag) { /*  if we don't have a sid yet, set it */
             /* get a new session ID */
             sid_new(lbs, http_user, (char *) inet_ntoa(rem_addr), sid);
             /* set SID cookie */
@@ -27518,7 +27520,7 @@ void interprete(char *lbook, const char *path)
       strlcpy(str, resource_dir, sizeof(str));
       strlcat(str, path, sizeof(str));
       if (exist_file(str)) {
-         send_file_direct(str);
+         send_file_direct(str, true);
          return;
       } else {
          /* else search file in themes directory */
@@ -27529,7 +27531,7 @@ void interprete(char *lbook, const char *path)
          strlcat(str, DIR_SEPARATOR_STR, sizeof(str));
          strlcat(str, path, sizeof(str));
          if (exist_file(str)) {
-            send_file_direct(str);
+            send_file_direct(str, true);
             return;
          }
       }
@@ -27570,7 +27572,7 @@ void interprete(char *lbook, const char *path)
 #ifdef HAVE_PAM
                                                                                                                            /* save new user */
    if (strieq(command, loc("Save")) && isparam("new_user_name") && !isparam("config")) {
-      save_user_config(NULL, getparam("new_user_name"), 1);
+      save_user_config(lbs, getparam("new_user_name"), 1);
       redirect(lbs, "");
       check_login(lbs, NULL);
       return;
@@ -27783,6 +27785,8 @@ void interprete(char *lbook, const char *path)
    if (strchr(pfile, '/') && pfile[13] != '/' && isdigit(pfile[0]))
       pfile = strchr(pfile, '/') + 1;
 
+   bool allow_html = false;
+
    if ((strlen(pfile) > 13 && pfile[6] == '_' && pfile[13] == '_') || (strlen(pfile) > 13 && pfile[6] == '_'
                                                                        && pfile[13] == '/')
        || chkext(pfile, ".gif") || chkext(pfile, ".ico") || chkext(pfile, ".jpg")
@@ -27800,6 +27804,7 @@ void interprete(char *lbook, const char *path)
          strlcat(file_name, pfile, sizeof(file_name));
       } else {
          /* file from theme directory requested */
+         allow_html = true;
          strlcpy(file_name, resource_dir, sizeof(file_name));
          if (file_name[0] && file_name[strlen(file_name)
                                        - 1] != DIR_SEPARATOR)
@@ -27816,11 +27821,11 @@ void interprete(char *lbook, const char *path)
       if (isparam("thumb")) {
          get_thumb_name(file_name, thumb_name, sizeof(thumb_name), 0);
          if (thumb_name[0])
-            send_file_direct(thumb_name);
+            send_file_direct(thumb_name, allow_html);
          else
-            send_file_direct(file_name);
+            send_file_direct(file_name, allow_html);
       } else
-         send_file_direct(file_name);
+         send_file_direct(file_name, allow_html);
       return;
    }
 
@@ -27913,7 +27918,7 @@ void interprete(char *lbook, const char *path)
             show_error(str);
          } else {
             fclose(f);
-            send_file_direct(file_name);
+            send_file_direct(file_name, true);
          }
          return;
       }
@@ -27935,7 +27940,7 @@ void interprete(char *lbook, const char *path)
          redirect(lbs, "https://elog.psi.ch/elog/eloghelp_english.html");
       else {
          fclose(f);
-         send_file_direct(file_name);
+         send_file_direct(file_name, true);
       }
       return;
    }
@@ -27958,7 +27963,7 @@ void interprete(char *lbook, const char *path)
          redirect(lbs, "https://elog.psi.ch/elog/elcode_english.html");
       else {
          fclose(f);
-         send_file_direct(file_name);
+         send_file_direct(file_name, true);
       }
       return;
    }
@@ -28156,9 +28161,9 @@ void interprete(char *lbook, const char *path)
       getcfg("global", "Allow clone", allow, sizeof(allow));
       if (atoi(allow) == 1) {
          if (get_password_file(lbs, file_name, sizeof(file_name)))
-            send_file_direct(file_name);
+            send_file_direct(file_name, false);
       } else {
-         show_http_header(NULL, FALSE, NULL);
+         show_http_header(NULL, FALSE, NULL, 200);
          rsputs(loc("Cloning not allowed. Set \"Allow clone = 1\" to enable cloning."));
          rsputs("\r\n");
          return;
@@ -28355,7 +28360,7 @@ void interprete(char *lbook, const char *path)
          strlcpy(file_name, resource_dir, sizeof(file_name));
          strlcat(file_name, str, sizeof(file_name));
       }
-      send_file_direct(file_name);
+      send_file_direct(file_name, true);
       return;
    }
 
@@ -28445,10 +28450,10 @@ void hexdump(void *p, int len)
 /*------------------------------------------------------------------*/
 
 void decode_post(char *logbook, LOGBOOK *lbs, char *string, const char *boundary, int length) {
-   int n_att, size, status, header_size;
+   int n_att;
    char *pinit, *p;
-   char *pctmp, *pbody;
-   char *buffer, *ptmp;
+   char *pctmp;
+   char *ptmp;
    char file_name[MAX_PATH_LENGTH], full_name[MAX_PATH_LENGTH], str[NAME_LENGTH+100], str2[NAME_LENGTH],
            line[NAME_LENGTH], item[NAME_LENGTH];
 
@@ -28564,6 +28569,10 @@ void decode_post(char *logbook, LOGBOOK *lbs, char *string, const char *boundary
                      show_error(str);
                      return;
                   }
+                  /* replace non-ASCII characters */
+                  for (int i=0 ; i<(int)strlen(file_name) ; i++)
+                     if (file_name[i] < ' ' || file_name[i] > 'z')
+                        file_name[i] = '_';
                }
 
                /* find next boundary */
@@ -28594,6 +28603,10 @@ void decode_post(char *logbook, LOGBOOK *lbs, char *string, const char *boundary
                   /* check for URL */
                   if (stristr(file_name, "http://") || stristr(file_name, "https://")) {
 
+                     return;
+
+                     /*---- disabled for security reasons ----
+
                      // check for logbook access
                      if (getcfg(lbs->name, "Password file", str, sizeof(str))) {
                         if (!check_login(lbs, getparam("sid"))) {
@@ -28609,7 +28622,7 @@ void decode_post(char *logbook, LOGBOOK *lbs, char *string, const char *boundary
                         return;
                      }
 
-                     /* check for HTTP header */
+                     // check for HTTP header
                      pbody = strstr(buffer, "\r\n\r\n");
                      if (!pbody) {
                         show_error(loc("Invalid HTTP header"));
@@ -28619,7 +28632,7 @@ void decode_post(char *logbook, LOGBOOK *lbs, char *string, const char *boundary
                      pbody += 4;
                      header_size = pbody - buffer;
 
-                     /* check for file found */
+                     // check for file found
                      if (strchr(buffer, ' ')) {
                         status = atoi(strchr(buffer, ' ') + 1);
                         if (status != 200) {
@@ -28642,6 +28655,9 @@ void decode_post(char *logbook, LOGBOOK *lbs, char *string, const char *boundary
                      xfree(buffer);
                      sprintf(str, "attachment%d", n_att++);
                      setparam(str, full_name);
+
+                     ---- */
+
                   } else {
                      strencode2(str2, file_name, sizeof(str2));
                      sprintf(str, loc("Attachment file <b>\"%s\"</b> empty or not found"), str2);
@@ -28770,8 +28786,8 @@ int process_http_request(const char *crequest, int i_conn) {
    }
 
    /* extract content length */
-   if (strstr(crequest, "Content-Length:")) {
-      content_length = atoi(strstr(crequest, "Content-Length:") + 15);
+   if (strcasestr(crequest, "Content-Length:")) {
+      content_length = atoi(strcasestr(crequest, "Content-Length:") + 15);
 
       strsize = content_length + header_length + 15;
    }
@@ -28946,7 +28962,7 @@ int process_http_request(const char *crequest, int i_conn) {
       keep_alive = TRUE;
 
    /* extract logbook */
-   if (strchr(request, '/') == NULL || strchr(request, '\r') == NULL || strstr(request, "HTTP") == NULL) {
+   if (strchr(request, '/') == NULL || strchr(request, '\r') == NULL || strcasestr(request, "HTTP") == NULL) {
       /* invalid request, make valid */
       strcpy(str, "GET / HTTP/1.0\r\n\r\n");
       xfree(str);
@@ -28994,7 +29010,7 @@ int process_http_request(const char *crequest, int i_conn) {
       strlcat(str, DIR_SEPARATOR_STR, strsize);
       strlcat(str, url, strsize);
       if (exist_file(str)) {
-         send_file_direct(str);
+         send_file_direct(str, true);
          xfree(str);
          xfree(request);
          return 1;
@@ -29098,7 +29114,7 @@ int process_http_request(const char *crequest, int i_conn) {
       strlcpy(str, resource_dir, strsize);
       strlcat(str, logbook, strsize);
       if (exist_file(str))
-         send_file_direct(str);
+         send_file_direct(str, true);
       else {
          /* else search file in themes directory */
          strlcpy(str, resource_dir, strsize);
@@ -29110,7 +29126,7 @@ int process_http_request(const char *crequest, int i_conn) {
             strlcat(str, "default", strsize);
          strlcat(str, DIR_SEPARATOR_STR, strsize);
          strlcat(str, logbook, strsize);
-         send_file_direct(str);
+         send_file_direct(str, true);
       }
       xfree(str);
       xfree(request);
@@ -29249,7 +29265,7 @@ int process_http_request(const char *crequest, int i_conn) {
       if (atoi(allow) == 1)
          download_config();
       else {
-         show_http_header(NULL, FALSE, NULL);
+         show_http_header(NULL, FALSE, NULL, 200);
          rsputs(loc("Cloning not allowed. Set \"Allow clone = 1\" to enable cloning."));
          rsputs("\r\n");
          return 1;
@@ -29260,19 +29276,19 @@ int process_http_request(const char *crequest, int i_conn) {
       time(&now);
       ts = localtime(&now);
       my_strftime(str, strsize, format, ts);
-      show_http_header(NULL, FALSE, NULL);
+      show_http_header(NULL, FALSE, NULL, 200);
       rsputs(str);
       rsputs(" ");
    } else if (strncmp(request, "GET", 3) == 0) {
       /* extract path and commands */
       if (strchr(request, '\r'))
          *strchr(request, '\r') = 0;
-      if (!strstr(request, "HTTP/1")) {
+      if (!strcasestr(request, "HTTP/1")) {
          xfree(str);
          xfree(request);
          return 0;
       }
-      *(strstr(request, "HTTP/1") - 1) = 0;
+      *(strcasestr(request, "HTTP/1") - 1) = 0;
       /* strip logbook from path */
       strlcpy(str, request + 5, strsize);
       p = str;
@@ -29286,10 +29302,10 @@ int process_http_request(const char *crequest, int i_conn) {
    } else if (strncmp(request, "POST", 4) == 0) {
 
       /* extract content length */
-      if (strstr(request, "Content-Length:"))
-         content_length = atoi(strstr(request, "Content-Length:") + 15);
-      else if (strstr(request, "Content-length:"))
-         content_length = atoi(strstr(request, "Content-length:") + 15);
+      if (strcasestr(request, "Content-Length:"))
+         content_length = atoi(strcasestr(request, "Content-Length:") + 15);
+      else if (strcasestr(request, "Content-length:"))
+         content_length = atoi(strcasestr(request, "Content-length:") + 15);
       if (content_length <= 0) {
          show_error("Invalid Content-Length in header");
          xfree(str);
@@ -29298,8 +29314,8 @@ int process_http_request(const char *crequest, int i_conn) {
       }
 
       /* extract boundary */
-      if (strstr(request, "boundary=")) {
-         strlcpy(boundary, strstr(request, "boundary=") + 9, sizeof(boundary));
+      if (strcasestr(request, "boundary=")) {
+         strlcpy(boundary, strcasestr(request, "boundary=") + 9, sizeof(boundary));
          if (strchr(boundary, '\r'))
             *strchr(boundary, '\r') = 0;
       }
@@ -29357,10 +29373,8 @@ void send_return(int s, const char *net_buffer)
       }
 
       length = 0;
-      if ((keep_alive && strstr(return_buffer, "Content-Length") == NULL) || strstr(return_buffer,
-                                                                                    "Content-Length") >
-                                                                             strstr(return_buffer,
-                                                                                    "\r\n\r\n")) {
+      if ((keep_alive && strcasestr(return_buffer, "Content-Length") == NULL) ||
+         strcasestr(return_buffer, "Content-Length") > strstr(return_buffer, "\r\n\r\n")) {
 
          /*---- add content-length ----*/
 
@@ -29882,37 +29896,32 @@ void server_loop(void) {
       eprintf("CKeditor NOT detected\n");
 
    /* check for ImageMagick */
-   strlcpy(_convert_cmd, "magick", sizeof(_convert_cmd));
+   strlcpy(_convert_cmd, "convert", sizeof(_convert_cmd));
    strlcpy(_identify_cmd, "identify", sizeof(_convert_cmd));
    
    sprintf(str, "%s -version", _convert_cmd);
    my_shell(str, str, sizeof(str));
-   image_magick_exist = (strstr(str, "ImageMagick") != NULL);
-   if (!image_magick_exist) {
-       sprintf(str, "%s -version", _identify_cmd);
-       my_shell(str, str, sizeof(str));
-       image_magick_exist = (strstr(str, "ImageMagick") != NULL);
-   }
+   image_magick_exist = (strcasestr(str, "ImageMagick") != NULL);
    if (!image_magick_exist) {
       strlcpy(_convert_cmd, "/usr/bin/convert", sizeof(_convert_cmd));
       strlcpy(_identify_cmd, "/usr/bin/identify", sizeof(_convert_cmd));
       sprintf(str, "%s -version", _convert_cmd);
       my_shell(str, str, sizeof(str));
-      image_magick_exist = (strstr(str, "ImageMagick") != NULL);
+      image_magick_exist = (strcasestr(str, "ImageMagick") != NULL);
    }
    if (!image_magick_exist) {
       strlcpy(_convert_cmd, "/usr/local/bin/convert", sizeof(_convert_cmd));
       strlcpy(_identify_cmd, "/usr/local/bin/identify", sizeof(_convert_cmd));
       sprintf(str, "%s -version", _convert_cmd);
       my_shell(str, str, sizeof(str));
-      image_magick_exist = (strstr(str, "ImageMagick") != NULL);
+      image_magick_exist = (strcasestr(str, "ImageMagick") != NULL);
    }
    if (!image_magick_exist) {
       strlcpy(_convert_cmd, "/opt/local/bin/convert", sizeof(_convert_cmd));
       strlcpy(_identify_cmd, "/opt/local/bin/identify", sizeof(_convert_cmd));
       sprintf(str, "%s -version", _convert_cmd);
       my_shell(str, str, sizeof(str));
-      image_magick_exist = (strstr(str, "ImageMagick") != NULL);
+      image_magick_exist = (strcasestr(str, "ImageMagick") != NULL);
    }
    
    if (image_magick_exist)
@@ -29941,7 +29950,7 @@ void server_loop(void) {
    }
 #endif
 #ifndef HAVE_LDAP
-   /* check for Kerberos authentication */
+   /* check for LDAP authentication */
    /* NPA change */
    getcfg("global", "Authentication", str, sizeof(str));
    if (stristr(str, "LDAP")) {
@@ -30193,17 +30202,17 @@ void server_loop(void) {
                      if (header_length == 0) {
                         /* extract logbook */
                         strlcpy(str, net_buffer + 6, sizeof(str));
-                        if (strstr(str, "HTTP"))
-                           *(strstr(str, "HTTP") - 1) = 0;
+                        if (strcasestr(str, "HTTP"))
+                           *(strcasestr(str, "HTTP") - 1) = 0;
                         strlcpy(logbook, str, sizeof(logbook));
                         strlcpy(logbook_enc, str, sizeof(logbook));
                         url_decode(logbook);
 
                         /* extract content length */
-                        if (strstr(net_buffer, "Content-Length:"))
-                           content_length = atoi(strstr(net_buffer, "Content-Length:") + 15);
-                        else if (strstr(net_buffer, "Content-length:"))
-                           content_length = atoi(strstr(net_buffer, "Content-length:") + 15);
+                        if (strcasestr(net_buffer, "Content-Length:"))
+                           content_length = atoi(strcasestr(net_buffer, "Content-Length:") + 15);
+                        else if (strcasestr(net_buffer, "Content-length:"))
+                           content_length = atoi(strcasestr(net_buffer, "Content-length:") + 15);
 
                         /* check for valid content-length */
                         if (content_length < 0) {
@@ -30265,7 +30274,7 @@ void server_loop(void) {
                         break;
                      }
 
-                  } else if (strstr(net_buffer, "HEAD") != NULL) {
+                  } else if (strcasestr(net_buffer, "HEAD") != NULL) {
                      /* just return header */
                      rsprintf("HTTP/1.1 200 OK\r\n");
                      rsprintf("Server: ELOG HTTP %s-%s\r\n", VERSION, git_revision());
@@ -30274,7 +30283,7 @@ void server_loop(void) {
                      keep_alive = FALSE;
                      return_length = strlen_retbuf + 1;
                      break;
-                  } else if (strstr(net_buffer, "OPTIONS") != NULL) {
+                  } else if (strcasestr(net_buffer, "OPTIONS") != NULL) {
                      return_length = -1;
                      break;
                   } else {
@@ -30448,28 +30457,24 @@ int ss_getchar(BOOL reset)
 
 #elif defined(OS_WINNT)
 
-                                                                                                                           static BOOL init = FALSE;
+   static BOOL init = FALSE;
    static int repeat_count = 0;
    static int repeat_char;
    HANDLE hConsole;
    DWORD nCharsRead;
    INPUT_RECORD ir;
-   OSVERSIONINFO vi;
-
+   
    /* find out if we are under W95 */
-   vi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
-   //GetVersionEx(&vi);
+   if (!Is_WinXP_SP2_or_Later()) {
+      /* under W95, console doesn't work properly */
+      int c;
 
-   //if (vi.dwPlatformId != VER_PLATFORM_WIN32_NT) {
-   //   /* under W95, console doesn't work properly */
-   //   int c;
+      if (!kbhit())
+         return 0;
 
-   //   if (!kbhit())
-   //      return 0;
-
-   //   c = getch();
-   //   return c;
-   //}
+      c = getch();
+      return c;
+   }
 
    hConsole = GetStdHandle(STD_INPUT_HANDLE);
 
@@ -30689,19 +30694,14 @@ SERVICE_STATUS_HANDLE serviceStatusHandle = 0;
 
 int install_service(void)
 {
-   OSVERSIONINFO vi;
    char path[2048], dir[2048], cmd[2080];
    SC_HANDLE hservice;
    SC_HANDLE hsrvmanager;
 
-   /* check for Windows NT+ */
-
-   vi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
-   //GetVersionEx(&vi);
-   /*if (vi.dwPlatformId != VER_PLATFORM_WIN32_NT) {
-      eprintf("Can install service only under Windows NT/2k/XP.\n");
+   if (!Is_WinXP_SP2_or_Later()) {
+      eprintf("Can install service only under Windows XP.\n");
       return -1;
-   }*/
+   }
 
    if (GetModuleFileName(NULL, path, sizeof(path)) == 0) {
       eprintf("Cannot retrieve module file name.\n");
@@ -30908,6 +30908,36 @@ int run_service(void)
    return SUCCESS;
 }
 
+BOOL Is_WinXP_SP2_or_Later() 
+{
+   OSVERSIONINFOEX osvi;
+   DWORDLONG dwlConditionMask = 0;
+   int op=VER_GREATER_EQUAL;
+
+   // Initialize the OSVERSIONINFOEX structure.
+
+   ZeroMemory(&osvi, sizeof(OSVERSIONINFOEX));
+   osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFOEX);
+   osvi.dwMajorVersion = 5;
+   osvi.dwMinorVersion = 1;
+   osvi.wServicePackMajor = 2;
+   osvi.wServicePackMinor = 0;
+
+   // Initialize the condition mask.
+
+   VER_SET_CONDITION( dwlConditionMask, VER_MAJORVERSION, op );
+   VER_SET_CONDITION( dwlConditionMask, VER_MINORVERSION, op );
+   VER_SET_CONDITION( dwlConditionMask, VER_SERVICEPACKMAJOR, op );
+   VER_SET_CONDITION( dwlConditionMask, VER_SERVICEPACKMINOR, op );
+
+   // Perform the test.
+
+   return VerifyVersionInfo(
+      &osvi, 
+      VER_MAJORVERSION | VER_MINORVERSION | 
+      VER_SERVICEPACKMAJOR | VER_SERVICEPACKMINOR,
+      dwlConditionMask);
+}
 #endif
 
 /*------------------------------------------------------------------*/
